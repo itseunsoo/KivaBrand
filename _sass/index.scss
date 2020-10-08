@@ -11,8 +11,6 @@
 }
 
 .hero-header-title {
-    align-items: center;
-    justify-content: center;
     width: 70%;
     font-size: 5rem;
     font-weight: bolder;
@@ -31,9 +29,7 @@
     height: 700px;
     display: flex;
     flex-direction: column;
-
     justify-content: center;
-
     img {
         width: 100%;
         height: 100%;
@@ -51,22 +47,9 @@
         margin: $block1;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
     button {
         width: 100%;
         position: relative;
-
         border-radius: $block2;
         background-color: $twilight;
         color: white;
@@ -85,6 +68,7 @@
             width: 100%;
             position: absolute;
             bottom: $block7;
+
         }
     }
     button:hover img {
@@ -117,9 +101,16 @@
         border-style: solid;
         border-width: 1px;
         font-weight: bold;
+        img {
+            width: 30px;
+            margin-right: $block4;
+        }
 
         .grid-text {
-            position: absolute;
+            width: 100%;
+            position: relative;
+            bottom: initial;
+            text-align: left;
         }
     }
 }
@@ -131,4 +122,83 @@
     color: $bodyColor;
     border-radius: $block10;
     padding: $block2 $block4 $block2 $block4;
+}
+
+@media only screen and (max-width: 728px) {
+    .hero-header {
+        padding: $block4;
+    }
+    .page-grid {
+        grid-template-columns: 1fr;
+        padding: $block4;
+        button {
+            padding: $block5;
+            height: 100px;
+
+            img {
+                width: 40px;
+                margin-right: $block4;
+            }
+            .grid-text {
+                width: 100%;
+                position: relative;
+                bottom: initial;
+                text-align: left;
+            }
+        }
+        button:hover img {
+            width: 50px;
+        }
+    }
+
+    .hero {
+        height: 100vh;
+        justify-content: flex-end;
+    }
+    .hero-header-title {
+        width: 90%;
+    }
+
+    .hero-header-sub {
+        width: 90%;
+    }
+    .download-assets {
+        padding: $block4;
+    }
+
+
+
+
+    .download-assets-grid {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+        button {
+            position: relative;
+            margin: $block1;
+            border-radius: $block2;
+            background-color: $backgroundColor;
+            color: $bodyColor;
+            display: flex;
+            align-items: center;
+    
+            padding: $block4;
+            cursor: pointer;
+            border-style: solid;
+            border-width: 1px;
+            font-weight: bold;
+            img {
+                width: 30px;
+                margin-right: $block4;
+            }
+    
+            .grid-text {
+                width: 100%;
+                position: relative;
+                bottom: initial;
+                text-align: left;
+            }
+        }
+    }
 }
