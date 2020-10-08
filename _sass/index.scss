@@ -30,6 +30,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     img {
         width: 100%;
         height: 100%;
@@ -56,7 +57,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: $block11;
+        padding: $block9;
         cursor: pointer;
         border: none;
         font-weight: bold;
@@ -68,7 +69,6 @@
             width: 100%;
             position: absolute;
             bottom: $block7;
-
         }
     }
     button:hover img {
@@ -112,6 +112,9 @@
             bottom: initial;
             text-align: left;
         }
+    }
+    button:hover {
+        background-color: rgba(128, 128, 128, 0.089);
     }
 }
 
@@ -166,38 +169,67 @@
         padding: $block4;
     }
 
-
-
-
     .download-assets-grid {
-        margin: auto;
-        display: grid;
         grid-template-columns: 1fr 1fr;
-    
         button {
-            position: relative;
-            margin: $block1;
-            border-radius: $block2;
-            background-color: $backgroundColor;
-            color: $bodyColor;
-            display: flex;
-            align-items: center;
-    
             padding: $block4;
-            cursor: pointer;
-            border-style: solid;
-            border-width: 1px;
-            font-weight: bold;
             img {
                 width: 30px;
                 margin-right: $block4;
             }
-    
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 729px) {
+    .hero-header {
+        padding: $block6;
+    }
+    .page-grid {
+        grid-template-columns: 1fr 1fr;
+        padding: $block6;
+        button {
+            padding: $block5;
+            height: 100px;
+
+            img {
+                width: 40px;
+                margin-right: $block6;
+            }
             .grid-text {
                 width: 100%;
                 position: relative;
                 bottom: initial;
                 text-align: left;
+            }
+        }
+        button:hover img {
+            width: 50px;
+        }
+    }
+
+    .hero {
+        height: 100vh;
+        justify-content: flex-end;
+    }
+    .hero-header-title {
+        width: 75%;
+    }
+
+    .hero-header-sub {
+        width: 75%;
+    }
+    .download-assets {
+        padding: $block6;
+    }
+
+    .download-assets-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        button {
+            padding: $block6;
+            img {
+                width: 30px;
+                margin-right: $block6;
             }
         }
     }
