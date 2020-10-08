@@ -1,0 +1,89 @@
+$backgroundColor: var(--background-color);
+$bodyColor: var(--light-text-color);
+$bodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+}
+
+$block1: 4px;
+$block2: 8px;
+$block3: 12px;
+$block4: 16px;
+$block5: 20px;
+$block6: 24px;
+$block7: 32px;
+$block8: 48px;
+$block9: 64px;
+$block10: 96px;
+$block11: 128px;
+
+$twilight: #3e4653;
+$mint: #9eebd5;
+
+html,
+html[data-theme="light"] {
+  --background-color: #ffffff;
+  --light-text-color: #3e4653;
+  --link-color: rgb(0, 112, 201);
+  --main-background-color: rgb(255, 255, 255);
+  --main-text-color: rgb(51, 51, 51);
+}
+
+html[data-theme="dark"] {
+  --background-color: #3e4653;
+  --light-text-color: #ffffff;
+  --link-color: rgb(100, 210, 255);
+  --main-background-color: rgb(28, 28, 30);
+  --main-text-color: rgb(229, 229, 234);
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  html[data-theme="dark"] {
+    --background-color: #151515;
+    --light-text-color: #ffffff;
+    --link-color: rgb(100, 210, 255);
+    --main-background-color: rgb(28, 28, 30);
+    --main-text-color: rgb(229, 229, 234);
+  }
+
+  html[data-theme="light"] {
+    --background-color: #ffffff;
+    --light-text-color: #151515;
+    --link-color: rgb(0, 112, 201);
+    --main-background-color: rgb(255, 255, 255);
+    --main-text-color: rgb(51, 51, 51);
+  }
+}
+
+body {
+  width: 100%;
+  margin: auto;
+
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+
+  padding: 0;
+  transition: background-color 0.3s ease-in-out;
+
+  ::selection {
+    background: $mint;
+  }
+  ::-moz-selection {
+    background: $mint;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+</head>
+
+<body>
+
+
+
+    {% include header.html %}
+
+    <div class="hero">
+        <img src="../assets/blob.svg">
+
+        <div class="hero-header">
+            <div class="hero-header-title">Kiva Brand Guide</div>
+            <div class="hero-header-sub">Assets for building high-quiality, consistent user experiences at Kiva.</div>
+            <br>
+            <button class="hollow">
+                Explore
+            </button>
+        </div>
+    </div>
+
+
+    <div class="page-grid">
+        <a href="{{ site.url }}{{ site.baseurl }}/logo">
+            <button>
+                <img src="../assets/icons/kiva-icon.svg">
+                <div class="grid-text">Logo Usage</div>
+            </button>
+        </a>
+        <a href="{{ site.url }}{{ site.baseurl }}/palette">
+        <button>
+            <img src="../assets/icons/palette-icon.svg">
+            <div class="grid-text">Color Palette</div>
+        </button>
+    </a>
+    <a href="{{ site.url }}{{ site.baseurl }}/typography">
+        <button>
+            <img src="../assets/icons/type-icon.svg">
+            <div class="grid-text">Typography</div>
+        </button>
+        </a>
+        <a href="{{ site.url }}{{ site.baseurl }}/imagery">
+        <button>
+            <img src="../assets/icons/image-icon.svg">
+            <div class="grid-text">Imagery</div>
+        </button>
+        </a>
+        <a href="{{ site.url }}{{ site.baseurl }}/voice+tone">
+        <button>
+            <img src="../assets/icons/voicetone-icon.svg">
+            <div class="grid-text">Voice & Tone</div>
+        </button>
+        </a>
+        <a href="{{ site.url }}{{ site.baseurl }}/copy+data">
+        <button>
+            <img src="../assets/icons/copydata-icon.svg">
+            <div class="grid-text">Copy & Data</div>
+        </button>
+        </a>
+    </div>
+
+
+
+
+    <div class="download-assets">
+        <h1>Download Assets</h1>
+        <p>Lorem ipsum dolor sit</p>
+        <div class="download-assets-grid">
+            <button>
+                <div class="grid-text">Kiva Logos</div>
+            </button>
+            <button>
+                <div class="grid-text">Color Palette</div>
+            </button>
+            <button>
+                <div class="grid-text">Figma Libraries</div>
+            </button>
+            <button>
+                <div class="grid-text">Images</div>
+            </button>
+            <button>
+                <div class="grid-text">Illustrations</div>
+            </button>
+            <button>
+                <div class="grid-text">Patterns</div>
+            </button>
+        </div>
+    </div>
+
+
+
+    {{ content}}
+
+
+    {% include footer.html %}
+</body>
+
+</html>

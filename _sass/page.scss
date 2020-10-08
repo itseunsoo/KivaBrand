@@ -1,0 +1,18 @@
+.page-body {
+    display: flex;
+}
+
+.page-title {
+    font-size: 4rem;
+    color: $bodyColor;
+    font-weight: bolder;
+    margin-bottom: $block8;
+}
+
+.page-content {
+    width: 60%;
+    padding: $block8;
+    h1 {
+        margin-top: $block9;
+    }
+}
