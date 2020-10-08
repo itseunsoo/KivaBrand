@@ -1,12 +1,25 @@
 $backgroundColor: var(--background-color);
 $bodyColor: var(--light-text-color);
+$highlightColor: var(--highlight-color);
 $bodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol";
-
 body {
+  width: 100%;
+  margin: auto;
+
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
+
+  padding: 0;
+  // transition: background-color 0.3s ease-in-out;
+
+  ::selection {
+    background: $highlightColor;
+  }
+  ::-moz-selection {
+    background: $highlightColor;
+  }
 }
 
 $block1: 4px;
@@ -28,6 +41,7 @@ html,
 html[data-theme="light"] {
   --background-color: #ffffff;
   --light-text-color: #3e4653;
+  --highlight-color: #9eebd5;
   --link-color: rgb(0, 112, 201);
   --main-background-color: rgb(255, 255, 255);
   --main-text-color: rgb(51, 51, 51);
@@ -36,6 +50,7 @@ html[data-theme="light"] {
 html[data-theme="dark"] {
   --background-color: #3e4653;
   --light-text-color: #ffffff;
+  --highlight-color: #bf5344;
   --link-color: rgb(100, 210, 255);
   --main-background-color: rgb(28, 28, 30);
   --main-text-color: rgb(229, 229, 234);
@@ -44,8 +59,9 @@ html[data-theme="dark"] {
 @media (prefers-color-scheme: dark) {
   html,
   html[data-theme="dark"] {
-    --background-color: #151515;
+    --background-color: #26292e;
     --light-text-color: #ffffff;
+    --highlight-color: #bf5344;
     --link-color: rgb(100, 210, 255);
     --main-background-color: rgb(28, 28, 30);
     --main-text-color: rgb(229, 229, 234);
@@ -53,29 +69,11 @@ html[data-theme="dark"] {
 
   html[data-theme="light"] {
     --background-color: #ffffff;
-    --light-text-color: #151515;
+    --light-text-color: #26292e;
+    --highlight-color: #9eebd5;
     --link-color: rgb(0, 112, 201);
     --main-background-color: rgb(255, 255, 255);
     --main-text-color: rgb(51, 51, 51);
-  }
-}
-
-body {
-  width: 100%;
-  margin: auto;
-
-  background: $backgroundColor;
-  color: $bodyColor;
-  font-family: $bodyFont;
-
-  padding: 0;
-  transition: background-color 0.3s ease-in-out;
-
-  ::selection {
-    background: $mint;
-  }
-  ::-moz-selection {
-    background: $mint;
   }
 }
 

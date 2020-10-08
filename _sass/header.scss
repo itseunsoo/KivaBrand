@@ -24,7 +24,7 @@ header {
             color: $bodyColor;
             text-decoration: none;
 
-            background: linear-gradient(to bottom, $mint 0%, $mint 100%);
+            background: linear-gradient(to bottom, $highlightColor 0%, $highlightColor 100%);
             background-position: 0 100%;
             background-repeat: repeat-x;
             background-size: 4px 0px;
