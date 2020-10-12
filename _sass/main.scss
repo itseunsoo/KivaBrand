@@ -87,9 +87,19 @@ h1 {
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 
+
+
+hr {
+  border: none;
+  height: .5px;
+  /* Set the hr color */
+  color: rgba(125, 125, 125, 0.5); /* old IE */
+  background-color: rgba(125, 125, 125, 0.5); /* Modern Browsers */
+
+}
 
 $animationSpeed1: 180ms;

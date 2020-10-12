@@ -5,14 +5,16 @@
 
 .mobileheader {
   display: none;
+
+  align-items: center;
+  justify-content: center;
   div {
     padding: $block4;
   }
   svg {
-    width: 60px;
+    width: 50px;
     fill: $bodyColor;
   }
-
 }
 
 .overlay {
@@ -26,17 +28,21 @@
 
   overflow-y: hidden;
   transition: 0.3s;
+
   svg {
-    width: 60px;
+    width: 50px;
     fill: white;
   }
 }
 
-
 .overlay-content {
   position: relative;
-
+  color: white;
   width: 100%;
+  p {
+    padding: $block4 $block4 0 $block4;
+    opacity: 0.9;
+  }
   a {
     font-weight: bold;
   }
@@ -56,9 +62,11 @@
 
     align-items: center;
 
+
     img {
       width: 30px;
-      margin-right: $block4;
+      margin-right: $block7;
+      margin-left: $block4
     }
   }
   li:hover {
@@ -70,6 +78,9 @@
   a {
     color: white;
     text-decoration: none;
+  }
+  hr {
+    margin: $block4 $block7 $block4 $block7;
   }
 }
 
@@ -95,8 +106,7 @@
 .openbtn,
 .closebtn {
   svg {
-    width: 30px;
-
+    width: 20px;
     stroke-width: 20;
     stroke-linecap: round;
     stroke-miterlimit: 10;
@@ -112,15 +122,13 @@
 
 .closebtn {
   svg {
-  fill: #ffffff;
-  stroke: white;
+    fill: #ffffff;
+    stroke: white;
   }
 }
-
 
 @media only screen and (max-width: 728px) {
   .mobileheader {
     display: flex;
- 
   }
 }
