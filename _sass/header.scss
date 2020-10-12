@@ -49,13 +49,7 @@ header {
 
 @media only screen and (max-width: 728px) {
 	header {
-		.header-logo,
-		ul {
-			padding: $block4 $block4 $block4 $block4;
-		}
-		ul {
-			display: none;
-		}
+display: none;
 	}
 }
 

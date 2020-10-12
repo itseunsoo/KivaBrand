@@ -1,0 +1,126 @@
+// * {
+//     border-style: solid;
+//     border-width: 1px;
+// }
+
+.mobileheader {
+  display: none;
+  div {
+    padding: $block4;
+  }
+  svg {
+    width: 60px;
+    fill: $bodyColor;
+  }
+
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $twilight;
+
+  overflow-y: hidden;
+  transition: 0.3s;
+  svg {
+    width: 60px;
+    fill: white;
+  }
+}
+
+
+.overlay-content {
+  position: relative;
+
+  width: 100%;
+  a {
+    font-weight: bold;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+    padding: $block4;
+    list-style: none;
+    border-style: solid;
+    border-width: 0px 0px 0px 4px;
+    border-color: transparent;
+    cursor: pointer;
+
+    align-items: center;
+
+    img {
+      width: 30px;
+      margin-right: $block4;
+    }
+  }
+  li:hover {
+    background-color: rgba(0, 0, 0, 0.103);
+    border-style: solid;
+    border-width: 0px 0px 0px 4px;
+    border-color: #afe9d6;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.overlay a {
+  text-decoration: none;
+
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  padding: $block4;
+  right: 0;
+}
+
+.openbtn,
+.closebtn {
+  svg {
+    width: 30px;
+
+    stroke-width: 20;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+  }
+}
+
+.openbtn {
+  svg {
+    fill: #ffffff;
+    stroke: $bodyColor;
+  }
+}
+
+.closebtn {
+  svg {
+  fill: #ffffff;
+  stroke: white;
+  }
+}
+
+
+@media only screen and (max-width: 728px) {
+  .mobileheader {
+    display: flex;
+ 
+  }
+}

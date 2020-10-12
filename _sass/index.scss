@@ -39,6 +39,7 @@
 }
 
 .page-grid {
+
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -46,6 +47,7 @@
     background-color: rgba(120, 120, 120, 0.075);
     a {
         margin: $block1;
+        text-decoration: none;
     }
 
     button {
@@ -134,6 +136,7 @@
     .page-grid {
         grid-template-columns: 1fr;
         padding: $block4;
+
         button {
             padding: $block5;
             height: 100px;
@@ -147,6 +150,7 @@
                 position: relative;
                 bottom: initial;
                 text-align: left;
+
             }
         }
         button:hover img {
@@ -191,6 +195,7 @@
         button {
             padding: $block5;
             height: 100px;
+
 
             img {
                 width: 40px;
