@@ -45,9 +45,9 @@ header svg { width: 60px; fill: var(--light-text-color); }
 
 .hero-header { position: absolute; left: 0; right: 0; padding: 48px; }
 
-.hero-header-title { width: 70%; font-size: 5rem; font-weight: bolder; color: var(--light-text-color); }
+.hero-header-title { width: 70%; font-size: 4rem; line-height: 4rem; font-weight: bolder; color: var(--light-text-color); }
 
-.hero-header-sub { margin-top: 12px; opacity: 0.8; width: 70%; font-size: 1.5rem; color: var(--light-text-color); }
+.hero-header-sub { margin-top: 12px; opacity: 0.8; width: 70%; font-size: 1.2rem; color: var(--light-text-color); }
 
 .hero { height: 700px; display: flex; flex-direction: column; justify-content: center; }
 
@@ -85,7 +85,7 @@ header svg { width: 60px; fill: var(--light-text-color); }
   .page-grid button img { width: 40px; margin-right: 16px; }
   .page-grid button .grid-text { width: 100%; position: relative; bottom: initial; text-align: left; }
   .page-grid button:hover img { width: 50px; }
-  .hero { height: 100vh; justify-content: flex-end; }
+  .hero { height: 600px; justify-content: flex-end; }
   .hero-header-title { width: 90%; }
   .hero-header-sub { width: 90%; }
   .download-assets { padding: 16px; }
@@ -151,17 +151,17 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 
 .mobileheader div { padding: 16px; }
 
-.mobileheader svg { width: 50px; fill: var(--light-text-color); }
+.mobileheader svg { width: 45px; fill: var(--light-text-color); }
 
 .overlay { height: 0%; width: 100%; position: fixed; z-index: 1; top: 0; left: 0; background-color: #3e4653; overflow-y: hidden; transition: 0.3s; }
 
-.overlay svg { width: 50px; fill: white; }
+.overlay svg { width: 45px; fill: white; }
 
 .overlay-content { position: relative; color: white; width: 100%; }
 
 .overlay-content p { padding: 16px 16px 0 16px; opacity: 0.9; }
 
-.overlay-content a { font-weight: bold; }
+.overlay-content a { font-size: .9rem; }
 
 .overlay-content ul { padding: 0; }
 
@@ -181,7 +181,7 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 
 .overlay .closebtn { position: absolute; padding: 16px; right: 0; }
 
-.openbtn svg, .closebtn svg { width: 20px; stroke-width: 20; stroke-linecap: round; stroke-miterlimit: 10; }
+.openbtn svg, .closebtn svg { width: 20px; stroke-width: 15; stroke-linecap: round; stroke-miterlimit: 10; }
 
 .openbtn svg { fill: #ffffff; stroke: var(--light-text-color); }
 

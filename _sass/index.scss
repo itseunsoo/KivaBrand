@@ -12,7 +12,8 @@
 
 .hero-header-title {
     width: 70%;
-    font-size: 5rem;
+    font-size: 4rem;
+    line-height: 4rem;
     font-weight: bolder;
     color: $bodyColor;
 }
@@ -21,7 +22,7 @@
     margin-top: $block3;
     opacity: 0.8;
     width: 70%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: $bodyColor;
 }
 
@@ -159,7 +160,7 @@
     }
 
     .hero {
-        height: 100vh;
+        height: 600px;
         justify-content: flex-end;
     }
     .hero-header-title {
