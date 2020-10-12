@@ -12,8 +12,8 @@
 
 .hero-header-title {
     width: 70%;
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 5rem;
+    line-height: 5rem;
     font-weight: bolder;
     color: $bodyColor;
 }
@@ -49,6 +49,7 @@
     a {
         margin: $block1;
         text-decoration: none;
+ 
     }
 
     button {
@@ -65,6 +66,7 @@
         border: none;
         font-weight: bold;
         height: 300px;
+
         img {
             width: 75px;
         }
