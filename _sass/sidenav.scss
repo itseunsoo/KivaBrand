@@ -66,3 +66,9 @@
     .sidenav-spacer {display: none;}
 
 }
+
+
+@media only screen and (max-width: 1024px) and (min-width: 729px) {
+    .sidenav {display: none;}
+    .sidenav-spacer {display: none;}
+}

@@ -39,6 +39,9 @@
         h1 {
             margin-top: $block9;
         }
+        h1:first-child {
+            margin-top: 0;
+        }
     }
 }
 
@@ -84,5 +87,20 @@
 
     .color-palette-info {
         padding: 0 $block4 0 $block4;
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 729px) {
+    .page-content {
+        width: 100%;
+        padding: $block8;
+        h1 {
+            margin-top: $block9;
+        }
+        h1:first-child {
+            margin-top: 0;
+        }
     }
 }
