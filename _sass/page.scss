@@ -47,8 +47,9 @@
     width: auto;
     border-radius: 20px;
     position: relative;
-    margin-right: $block4;
-    margin-bottom: $block4;
+    display: flex;
+    justify-content: space-between;
+    margin: $block2;
 }
 
 .color-palette-info-container {

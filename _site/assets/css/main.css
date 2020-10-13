@@ -66,7 +66,7 @@ header svg { width: 60px; fill: var(--light-text-color); }
 
 .page-grid a { margin: 4px; text-decoration: none; }
 
-.page-grid button { width: 100%; position: relative; border-radius: 8px; background-color: #3e4653; color: white; display: flex; align-items: center; justify-content: center; padding: 64px; cursor: pointer; border: none; font-weight: bold; height: 300px; }
+.page-grid button { width: 100%; position: relative; border-radius: 8px; background-color: #3e4653; color: white; display: flex; align-items: center; justify-content: center; padding: 64px; cursor: pointer; border: none; font-weight: bold; font-size: 1rem; height: 300px; }
 
 .page-grid button img { width: 75px; }
 
@@ -78,7 +78,7 @@ header svg { width: 60px; fill: var(--light-text-color); }
 
 .download-assets-grid { margin: auto; display: grid; grid-template-columns: 1fr 1fr 1fr; }
 
-.download-assets-grid button { position: relative; margin: 4px; border-radius: 8px; background-color: var(--background-color); color: var(--light-text-color); display: flex; align-items: center; padding: 48px; cursor: pointer; border-style: solid; border-width: 1px; font-weight: bold; }
+.download-assets-grid button { position: relative; margin: 4px; border-radius: 8px; background-color: var(--background-color); color: var(--light-text-color); display: flex; align-items: center; padding: 48px; cursor: pointer; border-style: solid; border-width: 1px; font-weight: bold; font-size: 1rem; }
 
 .download-assets-grid button img { width: 30px; margin-right: 16px; }
 
@@ -156,7 +156,7 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 @media only screen and (max-width: 728px) { .page-content { width: 100%; padding: 16px; }
   .page-content h1 { margin-top: 64px; } }
 
-.color-palette { height: 250px; width: auto; border-radius: 20px; position: relative; margin-right: 16px; margin-bottom: 16px; }
+.color-palette { height: 250px; width: auto; border-radius: 20px; position: relative; display: flex; justify-content: space-between; margin: 8px; }
 
 .color-palette-info-container { background-color: #ebebeb; position: absolute; width: 100%; bottom: 0; height: 100px; border-radius: 0 0 20px 20px; }
 
