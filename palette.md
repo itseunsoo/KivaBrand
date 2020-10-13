@@ -6,6 +6,29 @@ title: "Color Palette"
 # Primary Palette
 Kiva color palette has been created to reflect the spirit of the brand. Red and Green is used across all our communication as an essential element of branding. Black is used primarily for body text and headings, and White is used for screen backgrounds and negative space.
 
+<div class="triple-grid">
+  <div class="color-palette" style="background-color:#9EEBD5;">
+    <div class="color-palette-info-container">
+      <div class="color-palette-info"><h5>NAME</h5><p>Mint</p></div>
+      <div class="color-palette-info"><h5>HEX</h5><p>#9EEBD5</p></div>
+    </div>
+  </div>
+
+  <div class="color-palette" style="background-color:#CD4A3D;">
+    <div class="color-palette-info-container">
+      <div class="color-palette-info"><h5>NAME</h5><p>Tomato</p></div>
+      <div class="color-palette-info"><h5>HEX</h5><p>#CD4A3D</p></div>
+    </div>
+  </div>
+
+  <div class="color-palette" style="background-color: #3E4653;">
+    <div class="color-palette-info-container">
+      <div class="color-palette-info"><h5>NAME</h5><p>Twilight</p></div>
+      <div class="color-palette-info"><h5>HEX</h5><p>#3E4653</p></div>
+    </div>
+  </div>
+</div>
+
 # Secondary Palette
 Secondary color provides more ways to accent and distinguish our product. Each color is selected with purpose in order to provide meaningful feedback within our products. Usage of these colors varies depending on the touch point, but they come in handy for illustrations and components 
 

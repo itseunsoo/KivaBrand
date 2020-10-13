@@ -11,6 +11,8 @@ body ::-moz-selection { background: var(--highlight-color); }
 
 .triple-grid img { width: 100%; }
 
+@media only screen and (max-width: 728px) { .triple-grid { grid-template-columns: 1fr 1fr; } }
+
 html, html[data-theme="light"] { --background-color: #ffffff; --light-text-color: #3e4653; --highlight-color: #9eebd5; --link-color: rgb(0, 112, 201); --main-background-color: rgb(255, 255, 255); --main-text-color: rgb(51, 51, 51); }
 
 html[data-theme="dark"] { --background-color: #3e4653; --light-text-color: #ffffff; --highlight-color: #bf5344; --link-color: rgb(100, 210, 255); --main-background-color: rgb(28, 28, 30); --main-text-color: rgb(229, 229, 234); }
@@ -153,6 +155,18 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 
 @media only screen and (max-width: 728px) { .page-content { width: 100%; padding: 16px; }
   .page-content h1 { margin-top: 64px; } }
+
+.color-palette { height: 250px; width: auto; border-radius: 20px; position: relative; margin-right: 16px; margin-bottom: 16px; }
+
+.color-palette-info-container { background-color: #ebebeb; position: absolute; width: 100%; bottom: 0; height: 100px; border-radius: 0 0 20px 20px; }
+
+.color-palette-info { height: 32px; display: grid; grid-template-columns: 1fr 1fr; color: #3e4653; padding: 0 24px 0 24px; margin: 0; }
+
+.color-palette-info p { text-align: right; }
+
+@media only screen and (max-width: 728px) { .color-palette { height: 200px; }
+  .color-palette-info-container { height: 90px; }
+  .color-palette-info { padding: 0 16px 0 16px; } }
 
 .mobileheader { display: none; align-items: center; justify-content: center; }
 

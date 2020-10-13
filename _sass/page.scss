@@ -1,3 +1,8 @@
+// * {
+//     border-style: solid;
+//     border-width: 1px;
+// }
+
 .page-body {
     display: flex;
 }
@@ -20,12 +25,11 @@
     h2 {
         margin-top: $block7;
     }
-svg{
-
-    .st0 {
-        fill: $bodyColor;
+    svg {
+        .st0 {
+            fill: $bodyColor;
+        }
     }
-}
 }
 
 @media only screen and (max-width: 728px) {
@@ -38,3 +42,46 @@ svg{
     }
 }
 
+.color-palette {
+    height: 250px;
+    width: auto;
+    border-radius: 20px;
+    position: relative;
+    margin-right: $block4;
+    margin-bottom: $block4;
+}
+
+.color-palette-info-container {
+    background-color: rgb(235, 235, 235);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    border-radius: 0 0 20px 20px;
+}
+
+.color-palette-info {
+    height: $block7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: $twilight;
+    padding: 0 $block6 0 $block6;
+    margin: 0;
+    p {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 728px) {
+    .color-palette {
+        height: 200px;
+    }
+
+    .color-palette-info-container {
+        height: 90px;
+    }
+
+    .color-palette-info {
+        padding: 0 $block4 0 $block4;
+    }
+}
