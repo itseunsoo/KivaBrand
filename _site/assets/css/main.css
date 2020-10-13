@@ -9,6 +9,8 @@ body ::-moz-selection { background: var(--highlight-color); }
 
 .triple-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; }
 
+.triple-grid img { width: 100%; }
+
 html, html[data-theme="light"] { --background-color: #ffffff; --light-text-color: #3e4653; --highlight-color: #9eebd5; --link-color: rgb(0, 112, 201); --main-background-color: rgb(255, 255, 255); --main-text-color: rgb(51, 51, 51); }
 
 html[data-theme="dark"] { --background-color: #3e4653; --light-text-color: #ffffff; --highlight-color: #bf5344; --link-color: rgb(100, 210, 255); --main-background-color: rgb(28, 28, 30); --main-text-color: rgb(229, 229, 234); }

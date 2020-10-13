@@ -5,8 +5,7 @@ title: "Kiva Logo"
 # Construction
 Our logo is based on simple shapes. It is carefully constructed to maintain ownable characteristics while allowing for perfect legibility at any size on any application. The dynamic space between the U and the B is made possible by our kickstand U that has a vertical stroke descending from the right side.
 
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 837.7 368.6" style="enable-background:new 0 0 837.7 368.6;" xml:space="preserve">
 <style type="text/css">
