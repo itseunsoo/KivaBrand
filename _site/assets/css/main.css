@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 html, body { height: 100%; }
 
-body { width: 100%; margin: auto; background: var(--background-color); color: var(--light-text-color); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; padding: 0; }
+body { width: 100%; margin: auto; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; background: var(--background-color); color: var(--light-text-color); padding: 0; }
 
 body ::selection { background: var(--highlight-color); }
 
 body ::-moz-selection { background: var(--highlight-color); }
+
+.triple-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; }
 
 html, html[data-theme="light"] { --background-color: #ffffff; --light-text-color: #3e4653; --highlight-color: #9eebd5; --link-color: rgb(0, 112, 201); --main-background-color: rgb(255, 255, 255); --main-text-color: rgb(51, 51, 51); }
 
@@ -19,7 +22,7 @@ h2 { font-size: 1.2rem; }
 
 p { font-size: 1rem; line-height: 1.5rem; }
 
-hr { border: none; height: .5px; /* Set the hr color */ color: rgba(125, 125, 125, 0.5); /* old IE */ background-color: rgba(125, 125, 125, 0.5); /* Modern Browsers */ }
+hr { border: none; height: 0.5px; /* Set the hr color */ color: rgba(125, 125, 125, 0.5); /* old IE */ background-color: rgba(125, 125, 125, 0.5); /* Modern Browsers */ }
 
 header { position: absolute; display: flex; align-items: center; justify-content: center; color: var(--light-text-color); width: 100%; }
 
@@ -67,7 +70,7 @@ header svg { width: 60px; fill: var(--light-text-color); }
 
 .page-grid button:hover img { transition-duration: 0.1s; transition-timing-function: ease-out; width: 85px; }
 
-.download-assets { padding: 48px; }
+.padding { padding: 48px; }
 
 .download-assets-grid { margin: auto; display: grid; grid-template-columns: 1fr 1fr 1fr; }
 
@@ -90,7 +93,7 @@ header svg { width: 60px; fill: var(--light-text-color); }
   .hero { height: 600px; justify-content: flex-end; }
   .hero-header-title { width: 90%; }
   .hero-header-sub { width: 90%; }
-  .download-assets { padding: 16px; }
+  .padding { padding: 16px; }
   .download-assets-grid { grid-template-columns: 1fr 1fr; }
   .download-assets-grid button { padding: 16px; }
   .download-assets-grid button img { width: 30px; margin-right: 16px; } }
@@ -104,16 +107,12 @@ header svg { width: 60px; fill: var(--light-text-color); }
   .hero { height: 100vh; justify-content: flex-end; }
   .hero-header-title { width: 75%; }
   .hero-header-sub { width: 75%; }
-  .download-assets { padding: 24px; }
+  .padding { padding: 24px; }
   .download-assets-grid { grid-template-columns: 1fr 1fr 1fr; }
   .download-assets-grid button { padding: 24px; }
   .download-assets-grid button img { width: 30px; margin-right: 24px; } }
 
-footer { padding: 48px; }
-
 footer svg { width: 60px; fill: var(--light-text-color); }
-
-@media only screen and (max-width: 728px) { footer { padding: 16px; } }
 
 .sidenav { position: fixed; background-color: #3e4653; color: white; width: 20%; height: 100vh; }
 
@@ -142,11 +141,13 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 
 .page-title { font-size: 3rem; color: var(--light-text-color); font-weight: bolder; margin-bottom: 48px; }
 
-.page-content { width: 60%; padding: 48px; margin-top: 16px; background-color: var(--background-color); }
+.page-content { width: 55%; padding: 48px; margin-top: 16px; background-color: var(--background-color); }
 
 .page-content h1 { margin-top: 64px; }
 
 .page-content h2 { margin-top: 32px; }
+
+.page-content svg .st0 { fill: var(--light-text-color); }
 
 @media only screen and (max-width: 728px) { .page-content { width: 100%; padding: 16px; }
   .page-content h1 { margin-top: 64px; } }
@@ -157,7 +158,7 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 
 .mobileheader svg { width: 45px; fill: var(--light-text-color); }
 
-.overlay { height: 0%; width: 100%; position: fixed; z-index: 1; top: 0; left: 0; background-color: #3e4653; overflow-y: hidden; transition: 0.3s; }
+.overlay { height: 0%; width: 100%; position: fixed; z-index: 1; top: 0; left: 0; background-color: #3e4653; overflow-y: hidden; transition: .5s; transition-timing-function: cubic-bezier(0.5, 0, 0, 0.8); }
 
 .overlay svg { width: 45px; fill: white; }
 
@@ -192,5 +193,11 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 .closebtn svg { fill: #ffffff; stroke: white; }
 
 @media only screen and (max-width: 728px) { .mobileheader { display: flex; } }
+
+@font-face { font-family: "KivaPostGrot"; src: url("../assets/fonts/KivaPostGrot-Book.ttf"); src: url("../assets/fonts/KivaPostGrot-Book.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: "KivaPostGrot"; src: url("../assets/fonts/KivaPostGrot-Medium.ttf"); src: url("../assets/fonts/KivaPostGrot-Medium.ttf") format("truetype"); font-weight: medium; font-style: medium; }
+
+@font-face { font-family: "KivaPostGrot"; src: url("../assets/fonts/KivaPostGrot-Bold.ttf"); src: url("../assets/fonts/KivaPostGrot-Bold.ttf") format("truetype"); font-weight: bold; font-style: bold; }
 
 /*# sourceMappingURL=main.css.map */

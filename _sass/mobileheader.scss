@@ -27,7 +27,8 @@
   background-color: $twilight;
 
   overflow-y: hidden;
-  transition: 0.3s;
+  transition: .5s;
+  transition-timing-function: cubic-bezier(.5,0,0,.8);
 
   svg {
     width: 45px;
