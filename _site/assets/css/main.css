@@ -9,7 +9,7 @@ body ::-moz-selection { background: var(--highlight-color); }
 
 .triple-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 16px; }
 
-.triple-grid img { height: 200px; width: 100%; object-fit: cover; }
+.triple-grid img { height: 200px; width: 100%; object-fit: cover; border-radius: 20px; }
 
 @media only screen and (max-width: 728px) { .triple-grid { grid-template-columns: 1fr; } }
 
@@ -230,5 +230,18 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 @font-face { font-family: "KivaPostGrot"; src: url("../assets/fonts/KivaPostGrot-Medium.ttf"); src: url("../assets/fonts/KivaPostGrot-Medium.ttf") format("truetype"); font-weight: medium; font-style: medium; }
 
 @font-face { font-family: "KivaPostGrot"; src: url("../assets/fonts/KivaPostGrot-Bold.ttf"); src: url("../assets/fonts/KivaPostGrot-Bold.ttf") format("truetype"); font-weight: bold; font-style: bold; }
+
+.color-palette { height: 250px; width: auto; border-radius: 20px; position: relative; }
+
+.color-palette-info-container { background-color: #ebebeb; position: absolute; bottom: 0; height: 100px; border-radius: 0 0 20px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; left: 0; right: 0; }
+
+.color-palette-info { position: relative; height: 32px; display: flex; align-items: center; color: #3e4653; width: 80%; }
+
+.color-palette-info p { width: 100%; text-align: right; }
+
+@media only screen and (max-width: 728px) { .color-palette { height: 200px; }
+  .color-palette-info-container { height: auto; border-radius: 0 0 20px 20px; display: flex; flex-direction: row; }
+  .color-palette-info { color: #3e4653; display: flex; align-items: center; justify-content: center; width: auto; margin: 8px 0 8px 0; }
+  .color-palette-info p { text-align: left; margin-left: 16px; margin-right: 16px; } }
 
 /*# sourceMappingURL=main.css.map */
