@@ -7,11 +7,13 @@ body ::selection { background: var(--highlight-color); }
 
 body ::-moz-selection { background: var(--highlight-color); }
 
-.triple-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+.triple-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 16px; }
 
-.triple-grid img { width: 100%; }
+.triple-grid img { height: 200px; width: 100%; object-fit: cover; }
 
-@media only screen and (max-width: 728px) { .triple-grid { grid-template-columns: 1fr 1fr; } }
+@media only screen and (max-width: 728px) { .triple-grid { grid-template-columns: 1fr; } }
+
+@media only screen and (max-width: 1024px) and (min-width: 729px) { .triple-grid { grid-template-columns: 1fr 1fr; } }
 
 html, html[data-theme="light"] { --background-color: #ffffff; --light-text-color: #3e4653; --highlight-color: #9eebd5; --link-color: rgb(0, 112, 201); --main-background-color: rgb(255, 255, 255); --main-text-color: rgb(51, 51, 51); }
 
@@ -64,9 +66,9 @@ header svg { width: 60px; fill: var(--light-text-color); }
 
 .hero img { width: 100%; height: 100%; object-fit: cover; }
 
-.page-grid { margin: auto; display: grid; grid-template-columns: 1fr 1fr 1fr; padding: 48px; background-color: rgba(120, 120, 120, 0.075); }
+.page-grid { margin: auto; display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 8px; padding: 48px; background-color: rgba(120, 120, 120, 0.075); }
 
-.page-grid a { margin: 4px; text-decoration: none; }
+.page-grid a { text-decoration: none; }
 
 .page-grid button { width: 100%; position: relative; border-radius: 8px; background-color: #3e4653; color: white; display: flex; align-items: center; justify-content: center; padding: 64px; cursor: pointer; border: none; font-weight: bold; font-size: 1rem; height: 300px; }
 
@@ -78,9 +80,9 @@ header svg { width: 60px; fill: var(--light-text-color); }
 
 .padding { padding: 48px; }
 
-.download-assets-grid { margin: auto; display: grid; grid-template-columns: 1fr 1fr 1fr; }
+.download-assets-grid { margin: auto; display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 8px; }
 
-.download-assets-grid button { position: relative; margin: 4px; border-radius: 8px; background-color: var(--background-color); color: var(--light-text-color); display: flex; align-items: center; padding: 48px; cursor: pointer; border-style: solid; border-width: 1px; font-weight: bold; font-size: 1rem; }
+.download-assets-grid button { position: relative; border-radius: 8px; background-color: var(--background-color); color: var(--light-text-color); display: flex; align-items: center; padding: 48px; cursor: pointer; border-style: solid; border-width: 1px; font-weight: bold; font-size: 1rem; }
 
 .download-assets-grid button img { width: 30px; margin-right: 16px; }
 
@@ -159,20 +161,20 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 .page-content svg .st0 { fill: var(--light-text-color); }
 
 @media only screen and (max-width: 728px) { .page-content { width: 100%; padding: 16px; }
-  .page-content h1 { margin-top: 64px; }
-  .page-content h1:first-child { margin-top: 0; } }
+  .page-content h1 { margin-top: 64px; } }
 
-.color-palette { height: 250px; width: auto; border-radius: 20px; position: relative; display: flex; justify-content: space-between; margin: 8px; }
+.color-palette { height: 250px; width: auto; border-radius: 20px; position: relative; }
 
-.color-palette-info-container { background-color: #ebebeb; position: absolute; width: 100%; bottom: 0; height: 100px; border-radius: 0 0 20px 20px; }
+.color-palette-info-container { background-color: #ebebeb; position: absolute; bottom: 0; height: 100px; border-radius: 0 0 20px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; left: 0; right: 0; }
 
-.color-palette-info { height: 32px; display: grid; grid-template-columns: 1fr 1fr; color: #3e4653; padding: 0 24px 0 24px; margin: 0; }
+.color-palette-info { position: relative; height: 32px; display: flex; align-items: center; color: #3e4653; width: 80%; }
 
-.color-palette-info p { text-align: right; }
+.color-palette-info p { width: 100%; text-align: right; }
 
 @media only screen and (max-width: 728px) { .color-palette { height: 200px; }
-  .color-palette-info-container { height: 90px; }
-  .color-palette-info { padding: 0 16px 0 16px; } }
+  .color-palette-info-container { height: auto; border-radius: 0 0 20px 20px; display: flex; flex-direction: row; }
+  .color-palette-info { color: #3e4653; display: flex; align-items: center; justify-content: center; width: auto; }
+  .color-palette-info p { text-align: left; margin-left: 16px; margin-right: 16px; } }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) { .page-content { width: 100%; padding: 48px; }
   .page-content h1 { margin-top: 64px; }

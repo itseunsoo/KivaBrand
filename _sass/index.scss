@@ -44,10 +44,11 @@
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $block2;
     padding: $block8;
     background-color: rgba(120, 120, 120, 0.075);
     a {
-        margin: $block1;
+
         text-decoration: none;
  
     }
@@ -85,6 +86,7 @@
 }
 
 .padding {
+
     padding: $block8;
 }
 
@@ -94,10 +96,11 @@
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $block2;
 
     button {
         position: relative;
-        margin: $block1;
+
         border-radius: $block2;
         background-color: $backgroundColor;
         color: $bodyColor;
@@ -232,6 +235,7 @@
         width: 75%;
     }
     .padding {
+ 
         padding: $block6;
     }
 
