@@ -1,14 +1,9 @@
----
-layout: pages
-title: "Voice & Tone"
----
+I"�<h1 id="language-tone-and-voice">Language tone and voice</h1>
+<p>Kiva’s voice is hopeful, conversational and warm. We focus on opportunity and possibility, not tragedy, in our storytelling and communication.</p>
 
-# Language tone and voice
-Kiva’s voice is hopeful, conversational and warm. We focus on opportunity and possibility, not tragedy, in our storytelling and communication. 
+<p>We highlight what connects all of us as a global community and the human experiences that we all share.</p>
 
-We highlight what connects all of us as a global community and the human experiences that we all share.
-
-# Guidelines for writing for Kiva
+<h1 id="guidelines-for-writing-for-kiva">Guidelines for writing for Kiva</h1>
 <div class="guideline">
 <li>Use clear, simple language</li>
 <li>Express appreciation and emotion where appropriate</li>
@@ -19,7 +14,7 @@ We highlight what connects all of us as a global community and the human experie
 <li>Aim to inspire and connect</li>
 </div>
 
-# Guidelines for writing for Kiva
+<h1 id="guidelines-for-writing-for-kiva-1">Guidelines for writing for Kiva</h1>
 <div class="guideline">
 <li>Keep paragraphs short, 2 to 3 sentences maximum</li>
 <li>Refer to borrowers and lenders by first name whenever possible</li>
@@ -32,3 +27,4 @@ We highlight what connects all of us as a global community and the human experie
 <li>All numbers from 1 to 999,999 should be written as numerals</li>
 <li>For larger numbers, use a numeral and spell out million or billion (e.g., 5 million) </li>
 </div>
+:ET

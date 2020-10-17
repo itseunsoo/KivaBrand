@@ -33,6 +33,10 @@
     }
 }
 
+.pages-footer {
+    display: none;
+}
+
 @media only screen and (max-width: 728px) {
     .page-content {
         width: 100%;
@@ -63,3 +67,27 @@
         margin-top: $block8;
     }
 }
+
+
+
+
+
+// OTHER STUFF
+
+.guideline li {
+    line-height: 1.5rem;
+    list-style-type: none;
+    list-style-position: inside;
+
+    text-indent: -1.5em;
+    padding-left: 1.5em;
+    padding-top: $block6;
+    
+  }
+  
+  .guideline li:before {
+    content: '✓';
+    margin-right: 10px;
+    color: $mint;
+  
+  }

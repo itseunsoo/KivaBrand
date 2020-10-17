@@ -1,18 +1,13 @@
----
-layout: pages
-title: "Copy & Data"
----
+I"N<h1 id="tagline">Tagline</h1>
+<p>Loans that change lives</p>
 
-# Tagline
-Loans that change lives
+<h1 id="mission">Mission</h1>
+<p>We envision a financially inclusive world where all people hold the power to improve their lives</p>
 
-# Mission
-We envision a financially inclusive world where all people hold the power to improve their lives
+<h1 id="kivas-global-impact-report">Kiva’s global impact report</h1>
+<p>https://kiva.global/global-impact-dashboard/</p>
 
-# Kiva’s global impact report
-https://kiva.global/global-impact-dashboard/
-
-# How it works
+<h1 id="how-it-works">How it works</h1>
 <div class="guideline">
 <li>By lending as little as $25 on Kiva, you can make a real difference in someone’s life.</li>
 <li>100% of every dollar you lend on Kiva goes to funding loans. Once you get repaid, that same money can be used to help someone else!</li>
@@ -23,3 +18,4 @@ https://kiva.global/global-impact-dashboard/
 <li>Kiva has provided loans to over 3.6 million borrowers.</li>
 <li>84% of Kiva borrowers are women.</li>
 </div>
+:ET

@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 
-  </head>
-  <body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 
-    {% include mobileheader.html %}
+</head>
 
-    <div class="page-body">
+<body>
 
-      {% include sidenav.html %}
+  {% include mobileheader.html %}
 
-      <div class="sidenav-spacer"></div>
-      <div class="page-content">
-        <div class="page-title">{{page.title}}</div>
-        <hr>
+  <div class="page-body">
 
-        {{ content}}
+    {% include sidenav.html %}
+
+    <div class="sidenav-spacer"></div>
+    <div class="page-content">
+      <div class="page-title">{{page.title}}</div>
+      <hr>
+
+      {{ content}}
 
 
 
 
-        <div class="download-assets">
-          <h1>Download Assets</h1>
-          <p>Lorem ipsum dolor sit</p>
-          <div class="download-assets-grid">
-            <button>
-              <img src="../assets/icons/kiva-dl-icon.svg">
-              <div class="grid-text">Kiva Logos</div>
-            </button>
-            <button>
-              <img src="../assets/icons/palette-dl-icon.svg">
-              <div class="grid-text">Color Palette</div>
-            </button>
-            <button>
-              <img src="../assets/icons/figma-dl-icon.svg">
-              <div class="grid-text">Figma Libraries</div>
-            </button>
-            <button>
-              <img src="../assets/icons/image-dl-icon.svg">
-              <div class="grid-text">Images</div>
-            </button>
-            <button>
-              <img src="../assets/icons/illustration-dl-icon.svg">
-              <div class="grid-text">Illustrations</div>
-            </button>
-            <button>
-              <img src="../assets/icons/pattern-dl-icon.svg">
-              <div class="grid-text">Patterns</div>
-            </button>
-          </div>
+      <div class="download-assets">
+        <h1>Download Assets</h1>
+        <p>Lorem ipsum dolor sit</p>
+        <div class="download-assets-grid">
+          <button>
+            <img src="../assets/icons/kiva-dl-icon.svg">
+            <div class="grid-text">Kiva Logos</div>
+          </button>
+          <button>
+            <img src="../assets/icons/palette-dl-icon.svg">
+            <div class="grid-text">Color Palette</div>
+          </button>
+          <button>
+            <img src="../assets/icons/figma-dl-icon.svg">
+            <div class="grid-text">Figma Libraries</div>
+          </button>
+          <button>
+            <img src="../assets/icons/image-dl-icon.svg">
+            <div class="grid-text">Images</div>
+          </button>
+          <button>
+            <img src="../assets/icons/illustration-dl-icon.svg">
+            <div class="grid-text">Illustrations</div>
+          </button>
+          <button>
+            <img src="../assets/icons/pattern-dl-icon.svg">
+            <div class="grid-text">Patterns</div>
+          </button>
         </div>
+      </div>
 
 
-<br>
+      <br>
+      <div class="pages-footer">
         {% include footer.html %}
-
       </div>
 
     </div>
 
-  </body>
+  </div>
+
+</body>
+
 </html>
