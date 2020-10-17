@@ -123,7 +123,7 @@ header svg { width: 60px; fill: var(--light-text-color); }
 
 footer svg { width: 60px; fill: var(--light-text-color); }
 
-.sidenav { position: fixed; background-color: #3e4653; color: white; width: 20%; height: 100vh; }
+.sidenav { position: fixed; background-color: #3e4653; color: white; width: 20%; height: 100vh; overflow: scroll; }
 
 .sidenav ul { padding: 0; }
 
@@ -135,11 +135,13 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 
 .sidenav a { color: white; text-decoration: none; }
 
+.sidenav ul { margin-bottom: 16px; }
+
 .sidenav-logo { padding: 48px; }
 
 .sidenav-logo svg { width: 60px; fill: white; }
 
-.sidenav-footer { padding: 48px; opacity: 0.3; position: absolute; bottom: 0; }
+.sidenav-footer { position: relative; padding: 48px; opacity: .3; }
 
 .sidenav-spacer { width: 20%; height: 100vh; }
 
@@ -148,6 +150,19 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) { .sidenav { display: none; }
   .sidenav-spacer { display: none; } }
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn { display: block; width: 100%; text-align: left; cursor: pointer; outline: none; }
+
+.dropdown-container a { padding: 16px 0 16px 64px; }
+
+.dropdown-container a:hover { opacity: 0.5; }
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container { display: none; background-color: rgba(0, 0, 0, 0.2); padding: 16px; }
+
+/* Optional: Style the caret down icon */
+.fa-caret-down { float: right; padding-right: 8px; }
 
 .page-body { display: flex; }
 
@@ -172,7 +187,7 @@ footer svg { width: 60px; fill: var(--light-text-color); }
   .page-content h1:first-child { margin-top: 0; }
   .page-title { margin-top: 48px; } }
 
-.guideline li { line-height: 1.5rem; list-style-type: none; list-style-position: inside; text-indent: -1.5em; padding-left: 1.5em; padding-top: 24px; }
+.guideline li { line-height: 1.5rem; list-style-type: none; list-style-position: inside; text-indent: -1.5em; padding-left: 1.5em; padding-top: 16px; }
 
 .guideline li:before { content: '✓'; margin-right: 10px; color: #9eebd5; }
 

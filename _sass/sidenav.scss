@@ -4,10 +4,7 @@
     color: white;
     width: 20%;
     height: 100vh;
-
-
-
-
+overflow: scroll;
     ul {
         padding: 0;
     }
@@ -38,6 +35,9 @@
         color: white;
         text-decoration: none;
     }
+    ul{
+        margin-bottom: $block4;
+    }
 }
 
 .sidenav-logo {
@@ -49,10 +49,9 @@
 }
 
 .sidenav-footer {
-    padding: $block8;
-    opacity: 0.3;
-    position: absolute;
-    bottom: 0;
+position: relative;
+padding: $block8;
+opacity: .3;
 }
 
 .sidenav-spacer {
@@ -62,13 +61,51 @@
 }
 
 @media only screen and (max-width: 728px) {
-    .sidenav {display: none;}
-    .sidenav-spacer {display: none;}
+    .sidenav {
+        display: none;
+    }
+    .sidenav-spacer {
+        display: none;
+    }
+}
 
+@media only screen and (max-width: 1024px) and (min-width: 729px) {
+    .sidenav {
+        display: none;
+    }
+    .sidenav-spacer {
+        display: none;
+    }
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown-container a {
+    padding: $block4 0 $block4 64px;
+}
+
+.dropdown-container a:hover {
+    opacity: 0.5;
 }
 
 
-@media only screen and (max-width: 1024px) and (min-width: 729px) {
-    .sidenav {display: none;}
-    .sidenav-spacer {display: none;}
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: $block4;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
 }
