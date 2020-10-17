@@ -4,10 +4,12 @@
 // }
 
 .mobileheader {
+  position: absolute;
   display: none;
 
   align-items: center;
   justify-content: center;
+  width: 100%;
   div {
     padding: $block4;
   }
@@ -22,7 +24,7 @@
   width: 100%;
   position: fixed;
   z-index: 1;
-  top: 0;
+
   left: 0;
   background-color: $twilight;
 
@@ -40,13 +42,14 @@
   position: relative;
   color: white;
   width: 100%;
+  top: $block8;
   p {
     padding: $block4 $block4 0 $block4;
     opacity: 0.9;
   }
   a {
     
-    font-size: .9rem;
+    font-size: 1rem;
   }
 
   ul {
