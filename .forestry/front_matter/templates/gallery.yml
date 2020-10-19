@@ -8,7 +8,7 @@ fields:
 - type: text
   name: title
   label: title
-- name: favorites
+- name: favorites-gallery
   type: image_gallery
   config: {}
   label: Favorites
