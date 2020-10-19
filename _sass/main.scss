@@ -58,6 +58,10 @@ height: 180px;
 @media only screen and (max-width: 728px) {
   .triple-grid {
     grid-template-columns: 1fr;
+    img {
+      height: 300px;
+
+        }
   }
 
   .quad-grid {

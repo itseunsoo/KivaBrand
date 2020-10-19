@@ -2,6 +2,7 @@
 layout: pages
 title: Photo Gallery
 favorites:
+<<<<<<< Updated upstream
 - "/uploads/better_travel_photos-02.jpeg"
 - "/uploads/kiva-slack-customer-story-hero.jpg"
 - "/uploads/greenloans.jpg"
@@ -14,12 +15,17 @@ recents:
 - "/uploads/greenloans.jpg"
 - "/uploads/kiva-slack-customer-story-hero.jpg"
 - "/uploads/better_travel_photos-02.jpeg"
+=======
+- "/uploads/logo-construction.svg"
+- "/uploads/logo-clearspace.svg"
+- "/uploads/rules.jpeg"
+>>>>>>> Stashed changes
 
 ---
 # Kiva Favourites
 
 <div class="triple-grid">
-{% for image in page.favorites-gallery %}
+{% for image in page.favorites %}
 <img src="{{ image | relative_url }}">
 {% endfor %}
 </div>
@@ -27,8 +33,8 @@ recents:
 # Most Recent
 
 
-<div class="triple-grid">
-{% for image in page.recent-gallery %}
+<div class="quad-grid">
+{% for image in page.recents %}
 <img src="{{ image | relative_url }}">
 {% endfor %}
 </div>
