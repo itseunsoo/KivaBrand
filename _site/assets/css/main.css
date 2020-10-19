@@ -176,7 +176,7 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 
 .page-content { width: 55%; padding: 48px; margin-top: 16px; background-color: var(--background-color); }
 
-.page-content h1 { margin-top: 64px; }
+.page-content h1 { margin-top: 64px; width: 100%; }
 
 .page-content h2 { margin-top: 32px; }
 
@@ -186,16 +186,24 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 
 @media only screen and (max-width: 728px) { .page-content { width: 100%; padding: 16px; }
   .page-content h1 { margin-top: 64px; }
-  .page-title { margin-top: 48px; } }
+  .page-content h1 { margin-top: 24px; }
+  .page-title { margin-top: 64px; } }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) { .page-content { width: 100%; padding: 48px; }
   .page-content h1 { margin-top: 64px; }
-  .page-content h1:first-child { margin-top: 0; }
+  .page-content h1:first-child { margin-top: 48px; }
   .page-title { margin-top: 48px; } }
 
 .guideline li { line-height: 1.5rem; list-style-type: none; list-style-position: inside; text-indent: -1.5em; padding-left: 1.5em; padding-top: 16px; }
 
-.guideline li:before { content: '✓'; margin-right: 10px; color: #9eebd5; }
+.guideline li:before { content: "✓"; margin-right: 10px; color: #9eebd5; }
+
+.h1-link { display: flex; }
+
+.main-button { background-color: #9eebd5; /* Green */ border: none; color: #3e4653; padding: 16px 24px 16px 24px; text-decoration: none; font-weight: bold; height: 45px; align-self: flex-end; width: auto; margin-bottom: 16px; border-radius: 20px; white-space: nowrap; }
+
+@media only screen and (max-width: 728px) { .h1-link { display: inline-block; }
+  .main-button { margin-top: 16px; } }
 
 .mobileheader { position: absolute; display: none; align-items: center; justify-content: center; width: 100%; }
 
@@ -240,7 +248,8 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 @media only screen and (max-width: 728px) { .mobileheader { display: flex; } }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) { .mobileheader { display: flex; }
-  .mobileheader div { padding: 24px; } }
+  .mobileheader div { padding: 24px; }
+  .overlay .closebtn { position: absolute; padding: 24px; right: 0; } }
 
 @font-face { font-family: "KivaPostGrot"; src: url("../assets/fonts/KivaPostGrot-Book.ttf"); src: url("../assets/fonts/KivaPostGrot-Book.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
