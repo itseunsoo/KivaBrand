@@ -1,6 +1,6 @@
 ---
 label: Gallery
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: layout
@@ -12,5 +12,9 @@ fields:
   type: image_gallery
   config: {}
   label: Favorites
+- name: recents
+  type: image_gallery
+  config: {}
+  label: Recents
 pages:
 - photo-gallery.md
