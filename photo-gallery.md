@@ -10,7 +10,7 @@ favorites:
 # Kiva Favourites
 
 <div class="triple-grid">
-{% for image in page.favorites-gallery %}
+{% for image in page.favorites %}
 <img src="{{ image | relative_url }}">
 {% endfor %}
 </div>
