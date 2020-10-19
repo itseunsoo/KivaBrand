@@ -12,9 +12,15 @@ body ::-moz-selection { background: var(--highlight-color); }
 
 .triple-grid img { height: 180px; width: 100%; object-fit: cover; border-radius: 20px; }
 
-@media only screen and (max-width: 728px) { .triple-grid { grid-template-columns: 1fr; } }
+.quad-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 16px; width: 100%; }
 
-@media only screen and (max-width: 1024px) and (min-width: 729px) { .triple-grid { grid-template-columns: 1fr 1fr; } }
+.quad-grid img { height: 180px; width: 100%; object-fit: cover; border-radius: 20px; }
+
+@media only screen and (max-width: 728px) { .triple-grid { grid-template-columns: 1fr; }
+  .quad-grid { grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (max-width: 1024px) and (min-width: 729px) { .triple-grid { grid-template-columns: 1fr 1fr; }
+  .quad-grid { grid-template-columns: 1fr 1fr 1fr; } }
 
 html, html[data-theme="light"] { --background-color: #ffffff; --light-text-color: #3e4653; --highlight-color: #9eebd5; --link-color: rgb(0, 112, 201); --main-background-color: rgb(255, 255, 255); --main-text-color: rgb(51, 51, 51); }
 
@@ -244,14 +250,16 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 
 .color-palette { height: 250px; width: auto; border-radius: 20px; position: relative; }
 
-.color-palette-info-container { background-color: #ebebeb; position: absolute; bottom: 0; height: 100px; border-radius: 0 0 20px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; left: 0; right: 0; }
+.secondary-color-palette { height: 150px; width: auto; border-radius: 20px; position: relative; }
 
-.color-palette-info { position: relative; height: 32px; display: flex; align-items: center; color: #3e4653; width: 80%; }
+.color-palette-info-container { background-color: #ebebeb; position: absolute; padding: 20px; bottom: 0; height: auto; border-radius: 0 0 20px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; left: 0; right: 0; }
+
+.color-palette-info { position: relative; height: 32px; display: flex; align-items: center; color: #3e4653; width: 90%; }
 
 .color-palette-info p { width: 100%; text-align: right; }
 
 @media only screen and (max-width: 728px) { .color-palette { height: 200px; }
-  .color-palette-info-container { height: auto; border-radius: 0 0 20px 20px; display: flex; flex-direction: row; }
+  .color-palette-info-container { height: auto; padding: 0px; border-radius: 0 0 20px 20px; display: flex; flex-direction: row; }
   .color-palette-info { color: #3e4653; display: flex; align-items: center; justify-content: center; width: auto; margin: 8px 0 8px 0; }
   .color-palette-info p { text-align: left; margin-left: 16px; margin-right: 16px; } }
 

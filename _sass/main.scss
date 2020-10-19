@@ -40,15 +40,37 @@ height: 180px;
   }
 }
 
+
+.quad-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  width: 100%;
+
+  img {
+height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+
 @media only screen and (max-width: 728px) {
   .triple-grid {
     grid-template-columns: 1fr;
+  }
+
+  .quad-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
   .triple-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .quad-grid {
+    grid-template-columns: 1fr 1fr 1fr;  
   }
 }
 

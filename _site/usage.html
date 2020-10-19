@@ -153,14 +153,14 @@
 			<a href="http://localhost:4000/KivaBrand//logo"><li><img src="../assets/icons/kiva-icon.svg">Logo</li></a>
 			<a href="http://localhost:4000/KivaBrand//palette"><li><img src="../assets/icons/palette-icon.svg">Color Palette</li></a>
 			<a href="http://localhost:4000/KivaBrand//typography"><li><img src="../assets/icons/type-icon.svg">Typography</li></a>
-        <a class="dropdown-btn">
+        <a class="dropdown-btn2">
             <li><img src="../assets/icons/image-icon.svg">Imagery</li>
         </a>
         <div class="dropdown-container">
-            <a href="http://localhost:4000/KivaBrand//imagery">Usage Guide</a>
-            <a href="#">Photo Gallery</a>
-            <a href="#">Video Gallery</a>
-            <a href="#">Patterns & Illustrations</a>
+            <a href="http://localhost:4000/KivaBrand//usage">Usage Guide</a>
+            <a href="http://localhost:4000/KivaBrand//photo-gallery">Photo Gallery</a>
+            <a href="http://localhost:4000/KivaBrand//video-gallery">Video Gallery</a>
+            <a href="http://localhost:4000/KivaBrand//patterns+illustrations">Patterns & Illustrations</a>
         </div>
 			<a href="http://localhost:4000/KivaBrand//voice+tone"><li><img src="../assets/icons/voicetone-icon.svg">Voice & Tone</li></a>
 			<a href="http://localhost:4000/KivaBrand//copy+data"><li><img src="../assets/icons/copydata-icon.svg">Copy & Data</li></a>
@@ -182,6 +182,27 @@
 			.style
 			.height = "0%";
 	}
+</script>
+
+
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn2");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+            this
+                .classList
+                .toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
 </script>
 
   <div class="page-body">
@@ -236,10 +257,10 @@
             <li><img src="../assets/icons/image-icon.svg">Imagery</li>
         </a>
         <div class="dropdown-container">
-            <a href="http://localhost:4000/KivaBrand//imagery">Usage Guide</a>
-            <a href="#">Photo Gallery</a>
-            <a href="#">Video Gallery</a>
-            <a href="#">Patterns & Illustrations</a>
+            <a href="http://localhost:4000/KivaBrand//usage">Usage Guide</a>
+            <a href="http://localhost:4000/KivaBrand//photo-gallery">Photo Gallery</a>
+            <a href="http://localhost:4000/KivaBrand//video-gallery">Video Gallery</a>
+            <a href="http://localhost:4000/KivaBrand//patterns+illustrations">Patterns & Illustrations</a>
         </div>
         <a href="http://localhost:4000/KivaBrand//voice+tone">
             <li><img src="../assets/icons/voicetone-icon.svg">Voice & Tone</li>
@@ -284,14 +305,15 @@
 <p>Kiva’s photography plays a large role in creating a narrative and an emotional connection to the users. Image usage should always honor the featured individuals, keeping them in focus and highlighting their diverse environments. Kiva images are also not of plight or catastrophe, we aim to highlight the hope and opportunity of Kiva, even if borrowers are in difficult situations. General retouching notes: Images should stay bright, natural and
 vibrant. They should not look over processed or stylized. Maintain the natural light whenever possible. The individuals in the image should be prioritized. DO not alter skin/hair tones or texture. Brightening up images in with heavy shadows/poor lighting is ok but with careful attention to maintaining original skin colour. Removing/ minimizing noisy backgrounds is ok within reason.</p>
 
+<h1 id="what-to-avoid">What to avoid</h1>
+<p>Avoid placing elements or using dark overlays that obstruct faces in the images. Images should always be scaled proportionally. Try to avoid cropping individuals from group images whenever possible. If a crop is necessary, avoid partial limbs/bodies in the frame (for headers and large banners). Avoid images that are dark or overexposed. Generally speaking, images captured on a mobile device should be avoided unless they are high quality. Try to limit the usage of mobile or smaller-file images to social assets, pull-quote avatars, and detail images in articles. There are exceptions when you want an image to look very organic, or taken by someone in the field, but leading images should always be high resolution.</p>
+
 <div class="triple-grid">
 
 <img src="uploads/rules.jpeg" />
 <img src="uploads/rules.jpeg" />
 <img src="uploads/rules.jpeg" />
-<img src="uploads/rules.jpeg" />
-<img src="uploads/rules.jpeg" />
-<img src="uploads/rules.jpeg" />
+
 
 
 </div>

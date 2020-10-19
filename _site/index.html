@@ -210,14 +210,14 @@
 			<a href="http://localhost:4000/KivaBrand//logo"><li><img src="../assets/icons/kiva-icon.svg">Logo</li></a>
 			<a href="http://localhost:4000/KivaBrand//palette"><li><img src="../assets/icons/palette-icon.svg">Color Palette</li></a>
 			<a href="http://localhost:4000/KivaBrand//typography"><li><img src="../assets/icons/type-icon.svg">Typography</li></a>
-        <a class="dropdown-btn">
+        <a class="dropdown-btn2">
             <li><img src="../assets/icons/image-icon.svg">Imagery</li>
         </a>
         <div class="dropdown-container">
-            <a href="http://localhost:4000/KivaBrand//imagery">Usage Guide</a>
-            <a href="#">Photo Gallery</a>
-            <a href="#">Video Gallery</a>
-            <a href="#">Patterns & Illustrations</a>
+            <a href="http://localhost:4000/KivaBrand//usage">Usage Guide</a>
+            <a href="http://localhost:4000/KivaBrand//photo-gallery">Photo Gallery</a>
+            <a href="http://localhost:4000/KivaBrand//video-gallery">Video Gallery</a>
+            <a href="http://localhost:4000/KivaBrand//patterns+illustrations">Patterns & Illustrations</a>
         </div>
 			<a href="http://localhost:4000/KivaBrand//voice+tone"><li><img src="../assets/icons/voicetone-icon.svg">Voice & Tone</li></a>
 			<a href="http://localhost:4000/KivaBrand//copy+data"><li><img src="../assets/icons/copydata-icon.svg">Copy & Data</li></a>
@@ -239,6 +239,27 @@
 			.style
 			.height = "0%";
 	}
+</script>
+
+
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn2");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+            this
+                .classList
+                .toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
 </script>
 
     <div class="hero">
@@ -272,7 +293,7 @@
                 <div class="grid-text">Typography</div>
             </button>
         </a>
-        <a href="http://localhost:4000/KivaBrand//imagery">
+        <a href="http://localhost:4000/KivaBrand//usage">
             <button>
                 <img src="../assets/icons/image-icon.svg">
                 <div class="grid-text">Imagery</div>
