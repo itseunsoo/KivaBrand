@@ -2,15 +2,15 @@
 layout: pages
 title: Photo Gallery
 favorites:
-- "/uploads/logo-construction.svg"
-- "/uploads/logo-clearspace.svg"
-- "/uploads/rules.jpeg"
+- "/uploads/better_travel_photos-02.jpeg"
+- "/uploads/kiva-slack-customer-story-hero.jpg"
+- "/uploads/greenloans.jpg"
 
 ---
 # Kiva Favourites
 
 <div class="triple-grid">
-{% for image in page.favorites %}
+{% for image in page.favorites-gallery %}
 <img src="{{ image | relative_url }}">
 {% endfor %}
 </div>
