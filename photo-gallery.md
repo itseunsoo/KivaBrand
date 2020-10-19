@@ -1,19 +1,25 @@
 ---
 layout: pages
-title: "Photo Gallery"
----
+title: Photo Gallery
+favorites:
+- "/uploads/logo-construction.svg"
+- "/uploads/logo-clearspace.svg"
+- "/uploads/rules.jpeg"
 
-Kiva Favourites
+---
+# Kiva Favourites
 
 <div class="triple-grid">
-  {% for image in page.favorites-gallery %}
-  <img src="{{ image | relative_url }}">
-  {% endfor %}
+{% for image in page.favorites-gallery %}
+<img src="{{ image | relative_url }}">
+{% endfor %}
 </div>
 
-Most Recent
+# Most Recent
+
+
 <div class="triple-grid">
-  {% for image in page.recent-gallery %}
-  <img src="{{ image | relative_url }}">
-  {% endfor %}
+{% for image in page.recent-gallery %}
+<img src="{{ image | relative_url }}">
+{% endfor %}
 </div>
