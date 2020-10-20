@@ -17,3 +17,5 @@ fields:
   config:
     required: false
   label: Popup
+pages:
+- index.md
