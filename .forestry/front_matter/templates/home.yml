@@ -5,6 +5,15 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: text
   name: title
   label: title
+- name: popup-toggle
+  type: boolean
+  label: Popup
+- name: popup
+  type: text
+  config:
+    required: false
+  label: Popup
