@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>{{ page.title }} - {{ site.title }}</title>
+        <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        {% include mobileheader.html %}
+
+        {% include sidenav.html %}
+
+        <div class="page-body">
+            <div class="sidenav-spacer"></div>
+            <div class="page-content">
+                <div class="page-title">{{page.title}}</div>
+                <hr>
+
+                <h1>Kiva Favourites</h1>
+                <div class="favorites-photo-grid">
+
+                    {% for image in page.favorites %}
+                        <div class="favorites-photo">
+                            <a href="{{ image | relative_url }}" download><img src="{{ image | relative_url }}"></a>
+                        </div>
+                    {% endfor %}
+
+                </div>
+
+                <h1>Most Recent</h1>
+
+                <div class="quad-grid">
+                    {% for image in page.recents %}
+                        <img src="{{ image | relative_url }}">
+                    {% endfor %}
+                </div>
+
+                <div class="download-assets">
+                    <h1>Download Assets</h1>
+                    <p>Lorem ipsum dolor sit</p>
+                    <div class="download-assets-grid">
+                        <button>
+                            <img src="../assets/icons/kiva-dl-icon.svg">
+                            <div class="grid-text">Kiva Logos</div>
+                        </button>
+                        <button>
+                            <img src="../assets/icons/palette-dl-icon.svg">
+                            <div class="grid-text">Color Palette</div>
+                        </button>
+                        <button>
+                            <img src="../assets/icons/figma-dl-icon.svg">
+                            <div class="grid-text">Figma Libraries</div>
+                        </button>
+                        <button>
+                            <img src="../assets/icons/image-dl-icon.svg">
+                            <div class="grid-text">Images</div>
+                        </button>
+                        <button>
+                            <img src="../assets/icons/illustration-dl-icon.svg">
+                            <div class="grid-text">Illustrations</div>
+                        </button>
+                        <button>
+                            <img src="../assets/icons/pattern-dl-icon.svg">
+                            <div class="grid-text">Patterns</div>
+                        </button>
+                    </div>
+                </div>
+                <br>
+                <div class="pages-footer">
+                    {% include footer.html %}
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

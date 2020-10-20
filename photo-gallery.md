@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: gallery
 title: Photo Gallery
 favorites:
 - "/uploads/better_travel_photos-02.jpeg"
@@ -16,23 +16,3 @@ recents:
 - "/uploads/about-top-sm-retina_0.jpg"
 
 ---
-# Kiva Favourites
-
-<div class="favorites-photo-grid">
-
-{% for image in page.favorites %}
-<div class="favorites-photo">
-        <a href="{{ image | relative_url }}" download><img src="{{ image | relative_url }}"></a>
-</div>
-{% endfor %}
-
-</div>
-
-# Most Recent
-
-
-<div class="quad-grid">
-    {% for image in page.recents %}
-    <img src="{{ image | relative_url }}">
-    {% endfor %}
-</div>
