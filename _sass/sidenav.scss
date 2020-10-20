@@ -1,10 +1,15 @@
+// * {
+//     border-style: solid;
+//     border-width: 1px;
+// }
+
 .sidenav {
     position: fixed;
     background-color: $twilight;
     color: white;
     width: 20%;
     height: 100vh;
-overflow: scroll;
+    overflow: scroll;
     ul {
         padding: 0;
     }
@@ -35,7 +40,7 @@ overflow: scroll;
         color: white;
         text-decoration: none;
     }
-    ul{
+    ul {
         margin-bottom: $block4;
     }
 }
@@ -49,9 +54,9 @@ overflow: scroll;
 }
 
 .sidenav-footer {
-position: relative;
-padding: $block8;
-opacity: .3;
+    position: relative;
+    padding: $block8;
+    opacity: 0.3;
 }
 
 .sidenav-spacer {
@@ -81,12 +86,53 @@ opacity: .3;
 /* Style the sidenav links and the dropdown button */
 .sidenav a,
 .dropdown-btn {
+    position: relative;
     display: block;
     width: 100%;
     text-align: left;
     cursor: pointer;
     outline: none;
+
 }
+
+.dropdown-btn svg {
+    position: absolute;
+    display: flex;
+    width: 16px;
+    right: 0;
+    bottom: 26px;
+    padding-right: $block7;
+
+    .st0 {
+        fill: #ffffff;
+        stroke: #ffffff;
+        stroke-width: 15;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+    }
+}
+
+.dropdown-btn2 {
+    position: relative;
+}
+
+.dropdown-btn2 svg {
+    position: absolute;
+    display: flex;
+    width: 16px !important;
+    right: 0;
+    bottom: 26px;
+    padding-right: $block7;
+    .st0 {
+        fill: #ffffff;
+        stroke: #ffffff;
+        stroke-width: 15;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+    }
+}
+
+
 
 .dropdown-container a {
     padding: $block4 0 $block4 64px;
@@ -96,16 +142,9 @@ opacity: .3;
     opacity: 0.5;
 }
 
-
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
     display: none;
     background-color: rgba(0, 0, 0, 0.2);
     padding: $block4;
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-    float: right;
-    padding-right: 8px;
 }

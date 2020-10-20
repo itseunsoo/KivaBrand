@@ -33,13 +33,12 @@ body {
   width: 100%;
 
   img {
-height: 180px;
+    height: 180px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
   }
 }
-
 
 .quad-grid {
   display: grid;
@@ -48,10 +47,35 @@ height: 180px;
   width: 100%;
 
   img {
-height: 180px;
+    height: 150px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
+  }
+}
+
+.favorites-photo-grid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.favorites-photo {
+  width: 49%;
+  img {
+    border-radius: 20px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+.favorites-photo:nth-child(3n) {
+  width: 100%;
+  img {
+    height: 350px;
+    margin-top: 1.5%;
   }
 }
 
@@ -60,21 +84,44 @@ height: 180px;
     grid-template-columns: 1fr;
     img {
       height: 300px;
-
-        }
+    }
   }
 
   .quad-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+
+  .favorites-photo {
+    width: 47.5%;
+    img {
+      height: 150px;
+    }
+  }
+
+
+  .favorites-photo:nth-child(3n) {
+
+    img {
+      margin-top: 4%;
+      height: 250px;
+
+    }
   }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
   .triple-grid {
     grid-template-columns: 1fr 1fr;
+    img {
+      height: 250px;
+    }
   }
   .quad-grid {
-    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-columns: 1fr 1fr 1fr;
+    img {
+      height: 200px;
+    }
   }
 }
 

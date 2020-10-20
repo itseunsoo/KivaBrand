@@ -18,17 +18,21 @@ recents:
 ---
 # Kiva Favourites
 
-<div class="triple-grid">
+<div class="favorites-photo-grid">
+
 {% for image in page.favorites %}
-<img src="{{ image | relative_url }}">
+<div class="favorites-photo">
+        <img src="{{ image | relative_url }}">
+</div>
 {% endfor %}
+
 </div>
 
 # Most Recent
 
 
 <div class="quad-grid">
-{% for image in page.recents %}
-<img src="{{ image | relative_url }}">
-{% endfor %}
+    {% for image in page.recents %}
+    <img src="{{ image | relative_url }}">
+    {% endfor %}
 </div>

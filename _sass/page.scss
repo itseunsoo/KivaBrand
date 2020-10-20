@@ -91,9 +91,11 @@
 }
 
 .main-button {
-    background-color: $mint; /* Green */
-    border: none;
-    color: $twilight;
+    background-color: transparent; /* Green */
+    border-style: solid;
+    border-color: $bodyColor;
+    border-width: .5px;
+    color: $bodyColor;
     padding: $block4 $block6 $block4 $block6;
     text-decoration: none;
     font-weight: bold;
@@ -101,14 +103,23 @@
     align-self: flex-end;
     width: auto;
     margin-bottom: $block4;
-    border-radius: 20px;
+    border-radius: .8rem;
     white-space: nowrap;
+    font-size: 1rem;
+    line-height: .8rem;
 }
 
+.main-button:hover {
+    color: $backgroundColor;
+    background-color: $bodyColor;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+
+}
 
 @media only screen and (max-width: 728px) {
     .h1-link {
-    display: inline-block;
+        display: inline-block;
     }
     .main-button {
         margin-top: $block4;

@@ -14,14 +14,29 @@ body ::-moz-selection { background: var(--highlight-color); }
 
 .quad-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 16px; width: 100%; }
 
-.quad-grid img { height: 180px; width: 100%; object-fit: cover; border-radius: 20px; }
+.quad-grid img { height: 150px; width: 100%; object-fit: cover; border-radius: 20px; }
+
+.favorites-photo-grid { position: relative; display: flex; flex-wrap: wrap; justify-content: space-between; }
+
+.favorites-photo { width: 49%; }
+
+.favorites-photo img { border-radius: 20px; width: 100%; height: 250px; object-fit: cover; }
+
+.favorites-photo:nth-child(3n) { width: 100%; }
+
+.favorites-photo:nth-child(3n) img { height: 350px; margin-top: 1.5%; }
 
 @media only screen and (max-width: 728px) { .triple-grid { grid-template-columns: 1fr; }
   .triple-grid img { height: 300px; }
-  .quad-grid { grid-template-columns: 1fr 1fr; } }
+  .quad-grid { grid-template-columns: 1fr 1fr; }
+  .favorites-photo { width: 47.5%; }
+  .favorites-photo img { height: 150px; }
+  .favorites-photo:nth-child(3n) img { margin-top: 4%; height: 250px; } }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) { .triple-grid { grid-template-columns: 1fr 1fr; }
-  .quad-grid { grid-template-columns: 1fr 1fr 1fr; } }
+  .triple-grid img { height: 250px; }
+  .quad-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .quad-grid img { height: 200px; } }
 
 html, html[data-theme="light"] { --background-color: #ffffff; --light-text-color: #3e4653; --highlight-color: #9eebd5; --link-color: rgb(0, 112, 201); --main-background-color: rgb(255, 255, 255); --main-text-color: rgb(51, 51, 51); }
 
@@ -148,7 +163,7 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 
 .sidenav-logo svg { width: 60px; fill: white; }
 
-.sidenav-footer { position: relative; padding: 48px; opacity: .3; }
+.sidenav-footer { position: relative; padding: 48px; opacity: 0.3; }
 
 .sidenav-spacer { width: 20%; height: 100vh; }
 
@@ -159,7 +174,17 @@ footer svg { width: 60px; fill: var(--light-text-color); }
   .sidenav-spacer { display: none; } }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn { display: block; width: 100%; text-align: left; cursor: pointer; outline: none; }
+.sidenav a, .dropdown-btn { position: relative; display: block; width: 100%; text-align: left; cursor: pointer; outline: none; }
+
+.dropdown-btn svg { position: absolute; display: flex; width: 16px; right: 0; bottom: 26px; padding-right: 32px; }
+
+.dropdown-btn svg .st0 { fill: #ffffff; stroke: #ffffff; stroke-width: 15; stroke-linecap: round; stroke-miterlimit: 10; }
+
+.dropdown-btn2 { position: relative; }
+
+.dropdown-btn2 svg { position: absolute; display: flex; width: 16px !important; right: 0; bottom: 26px; padding-right: 32px; }
+
+.dropdown-btn2 svg .st0 { fill: #ffffff; stroke: #ffffff; stroke-width: 15; stroke-linecap: round; stroke-miterlimit: 10; }
 
 .dropdown-container a { padding: 16px 0 16px 64px; }
 
@@ -167,9 +192,6 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container { display: none; background-color: rgba(0, 0, 0, 0.2); padding: 16px; }
-
-/* Optional: Style the caret down icon */
-.fa-caret-down { float: right; padding-right: 8px; }
 
 .page-body { display: flex; }
 
@@ -201,7 +223,9 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 
 .h1-link { display: flex; }
 
-.main-button { background-color: #9eebd5; /* Green */ border: none; color: #3e4653; padding: 16px 24px 16px 24px; text-decoration: none; font-weight: bold; height: 45px; align-self: flex-end; width: auto; margin-bottom: 16px; border-radius: 20px; white-space: nowrap; }
+.main-button { background-color: transparent; /* Green */ border-style: solid; border-color: var(--light-text-color); border-width: .5px; color: var(--light-text-color); padding: 16px 24px 16px 24px; text-decoration: none; font-weight: bold; height: 45px; align-self: flex-end; width: auto; margin-bottom: 16px; border-radius: .8rem; white-space: nowrap; font-size: 1rem; line-height: .8rem; }
+
+.main-button:hover { color: var(--background-color); background-color: var(--light-text-color); transition-duration: 0.1s; transition-timing-function: ease-out; }
 
 @media only screen and (max-width: 728px) { .h1-link { display: inline-block; }
   .main-button { margin-top: 16px; } }
