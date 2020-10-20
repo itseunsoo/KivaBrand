@@ -1,0 +1,44 @@
+
+
+
+{% if page.popup-toggle  %}
+<div id="delayedPopup" class="delayedPopupWindow">
+  <div class="popup">
+    <!-- This is the left side of the popup for the description -->
+    <div class="formDescription">
+      {{ page.popup }}
+    </div>
+    <!-- This is the close button -->
+    <a href="#" id="btnClose" title="Click here to close this deal box.">GOT IT</a>
+  </div>
+</div>
+{% endif %}
+
+<script>
+  $(document).ready(function () {
+    //Fade in delay for the background overlay (control timing here)
+    $("#bkgOverlay")
+      .delay(48)
+      .fadeIn(400);
+    //Fade in delay for the popup (control timing here)
+
+
+    if (sessionStorage.getItem('popState') != 'shown') {
+      $("#delayedPopup")
+        .delay(3000)
+        .fadeIn(400);
+      sessionStorage.setItem('popState', 'shown')
+    }
+
+    //Hide dialouge and background when the user clicks the close button
+    $("#btnClose").click(function (e) {
+      HideDialog();
+      e.preventDefault();
+    });
+  });
+  //Controls how the modal popup is closed with the close button
+  function HideDialog() {
+    $("#bkgOverlay").fadeOut(400);
+    $("#delayedPopup").fadeOut(300);
+  }
+</script>
