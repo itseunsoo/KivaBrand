@@ -7,6 +7,9 @@ title: Version History
 
 
 # Version History
+## 1.0.37
+* Stomping out bugs 🐛
+
 ## 1.0.36
 * Stomping out bugs 🐛
 
