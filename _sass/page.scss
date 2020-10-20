@@ -5,11 +5,11 @@
 
 .page-body {
     display: flex;
-    -webkit-animation: fadein .8s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein .8s; /* Firefox < 16 */
-     -ms-animation: fadein .8s; /* Internet Explorer */
-      -o-animation: fadein .8s; /* Opera < 12.1 */
-         animation: fadein .8s;
+    -webkit-animation: fadein 0.8s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.8s; /* Firefox < 16 */
+    -ms-animation: fadein 0.8s; /* Internet Explorer */
+    -o-animation: fadein 0.8s; /* Opera < 12.1 */
+    animation: fadein 0.8s;
     ul {
         list-style-type: none;
         padding: 0;
@@ -131,7 +131,6 @@
         text-decoration: none;
         color: $bodyColor;
     }
-
 }
 
 .main-button:hover {
@@ -140,7 +139,7 @@
     transition-duration: 0.1s;
     transition-timing-function: ease-out;
 
-    a{
+    a {
         color: $backgroundColor;
     }
 }
@@ -151,5 +150,20 @@
     }
     .main-button {
         margin-top: $block4;
+    }
+}
+
+.photo-description {
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    text-transform: uppercase;
+    padding: $block4 0 $block4 0;
+    a {
+        text-decoration: none;
+        color: $mint;
+    }
+    a:hover {
+        text-decoration: underline;
     }
 }

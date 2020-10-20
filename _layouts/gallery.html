@@ -27,7 +27,10 @@
 
                     {% for image in page.favorites %}
                         <div class="favorites-photo">
-                            <a href="{{ image | relative_url }}" download><img src="{{ image | relative_url }}"></a>
+                            <img src="{{ image | relative_url }}">
+                            <div class="photo-description">
+                                <a href="{{ image | relative_url }}" download>Download 💾</a>
+                            </div>
                         </div>
                     {% endfor %}
 

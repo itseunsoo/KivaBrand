@@ -247,7 +247,7 @@ footer a { text-decoration: none; color: var(--light-text-color); }
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container { display: none; background-color: rgba(0, 0, 0, 0.2); padding: 16px; -webkit-animation: fadein .8s; /* Safari, Chrome and Opera > 12.1 */ -moz-animation: fadein .8s; /* Firefox < 16 */ -ms-animation: fadein .8s; /* Internet Explorer */ -o-animation: fadein .8s; /* Opera < 12.1 */ animation: fadein .8s; }
 
-.page-body { display: flex; -webkit-animation: fadein .8s; /* Safari, Chrome and Opera > 12.1 */ -moz-animation: fadein .8s; /* Firefox < 16 */ -ms-animation: fadein .8s; /* Internet Explorer */ -o-animation: fadein .8s; /* Opera < 12.1 */ animation: fadein .8s; }
+.page-body { display: flex; -webkit-animation: fadein 0.8s; /* Safari, Chrome and Opera > 12.1 */ -moz-animation: fadein 0.8s; /* Firefox < 16 */ -ms-animation: fadein 0.8s; /* Internet Explorer */ -o-animation: fadein 0.8s; /* Opera < 12.1 */ animation: fadein 0.8s; }
 
 .page-body ul { list-style-type: none; padding: 0; }
 
@@ -291,6 +291,12 @@ footer a { text-decoration: none; color: var(--light-text-color); }
 
 @media only screen and (max-width: 728px) { .h1-link { display: inline-block; }
   .main-button { margin-top: 16px; } }
+
+.photo-description { font-family: "Roboto Mono", monospace; font-size: 0.8rem; line-height: 0.8rem; text-transform: uppercase; padding: 16px 0 16px 0; }
+
+.photo-description a { text-decoration: none; color: #9eebd5; }
+
+.photo-description a:hover { text-decoration: underline; }
 
 mobileheader { opacity: .99; background-color: var(--background-color); position: fixed; top: 0; transition: top 0.3s ease-in-out; display: none; align-items: center; justify-content: center; width: 100%; height: 64px; z-index: 1; }
 
