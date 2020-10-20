@@ -3,7 +3,10 @@
 //     border-width: 1px;
 // }
 
+
+
 .page-body {
+
     display: flex;
 }
 
@@ -15,10 +18,11 @@
 }
 
 .page-content {
-    width: 55%;
+width: 55%;
     padding: $block8;
     margin-top: $block4;
     background-color: $backgroundColor;
+
     h1 {
         margin-top: $block9;
         width: 100%;
@@ -40,7 +44,7 @@
 @media only screen and (max-width: 728px) {
     .page-content {
         width: 100%;
-        padding: $block4;
+        padding: $block6;
         h1 {
             margin-top: $block8;
         }
@@ -49,7 +53,7 @@
         }
     }
     .page-title {
-        margin-top: $block9;
+        margin-top: 90px;
     }
 
     .pages-footer {

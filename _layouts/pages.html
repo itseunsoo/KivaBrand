@@ -13,20 +13,16 @@
 
   {% include mobileheader.html %}
 
+
+
+  {% include sidenav.html %}
+
   <div class="page-body">
-
-    {% include sidenav.html %}
-
     <div class="sidenav-spacer"></div>
     <div class="page-content">
       <div class="page-title">{{page.title}}</div>
       <hr>
-
       {{ content}}
-
-
-
-
       <div class="download-assets">
         <h1>Download Assets</h1>
         <p>Lorem ipsum dolor sit</p>
@@ -57,16 +53,13 @@
           </button>
         </div>
       </div>
-
-
       <br>
       <div class="pages-footer">
         {% include footer.html %}
       </div>
-
     </div>
-
   </div>
+
 
 </body>
 

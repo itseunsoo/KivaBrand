@@ -4,10 +4,10 @@
 // }
 
 .sidenav {
-    position: fixed;
+width: 20%;
     background-color: $twilight;
     color: white;
-    width: 20%;
+position: fixed;
     height: 100vh;
     overflow: scroll;
     ul {
