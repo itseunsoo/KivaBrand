@@ -1,4 +1,9 @@
 footer {
+    opacity: 0.5;
+
+    p {
+        line-height: 0.8rem;
+    }
 
     svg {
         width: 60px;
@@ -7,4 +12,11 @@ footer {
     }
 }
 
-
+@media only screen and (max-width: 728px) {
+    footer {
+        margin-top: $block4;
+        svg {
+            width: 45px;
+        }
+    }
+}

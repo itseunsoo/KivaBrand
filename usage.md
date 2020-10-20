@@ -9,9 +9,9 @@ Kiva's photography plays a large role in creating a narrative and an emotional c
 vibrant. They should not look over processed or stylized. Maintain the natural light whenever possible. The individuals in the image should be prioritized. DO not alter skin/hair tones or texture. Brightening up images in with heavy shadows/poor lighting is ok but with careful attention to maintaining original skin colour. Removing/ minimizing noisy backgrounds is ok within reason.
 
 <div class="triple-grid">
-
-![](/uploads/about-top-sm-retina_0.jpg)![](/uploads/kiva-slack-customer-story-hero.jpg)![](/uploads/better_travel_photos-02.jpeg)
-
+<img src="uploads/greenloans.jpg">
+<img src="uploads/better_travel_photos-02.jpeg">
+<img src="uploads/about-top-sm-retina_0.jpg">
 </div>
 
 # What to avoid
