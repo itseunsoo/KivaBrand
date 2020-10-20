@@ -203,6 +203,12 @@ footer svg { width: 60px; fill: var(--light-text-color); }
 
 .page-body { display: flex; }
 
+.page-body ul { padding: 0; list-style-type: none; }
+
+.page-body li { line-height: 1.5rem; list-style-type: none; list-style-position: inside; text-indent: -1.5em; padding-left: 1.5em; padding-top: 16px; }
+
+.page-body li:before { content: "✓"; margin-right: 10px; color: #9eebd5; }
+
 .page-title { font-size: 3rem; color: var(--light-text-color); font-weight: bolder; margin-bottom: 48px; }
 
 .page-content { width: 55%; padding: 48px; margin-top: 16px; background-color: var(--background-color); }
