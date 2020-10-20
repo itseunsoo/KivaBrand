@@ -3,7 +3,46 @@
 //     border-width: 1px;
 // }
 
-.mobileheader {
+
+
+
+
+
+
+
+mobileheader {
+opacity: .99;
+  background-color: $backgroundColor;
+
+  position: fixed;
+  top:0;
+  transition: top 0.3s ease-in-out;
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: $block9;
+
+  z-index: 1;
+  div {
+    padding: $block4;
+  }
+  svg {
+    width: 45px;
+    fill: $bodyColor;
+  }
+}
+
+.mobilenav-up {
+  top: -$block9;
+}
+
+
+.mobileheader-open {
+  height: $block9;
+  background-color: $twilight;
+	opacity: .99;
   position: absolute;
   display: none;
 
@@ -23,7 +62,7 @@
   height: 0%;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 
   left: 0;
   background-color: $twilight;
@@ -43,6 +82,7 @@
   color: white;
   width: 100%;
   top: $block8;
+
   p {
     padding: $block4 $block4 0 $block4;
     opacity: 0.9;
@@ -133,7 +173,10 @@
 }
 
 @media only screen and (max-width: 728px) {
-  .mobileheader {
+  mobileheader {
+    display: flex;
+  }
+  .mobileheader-open {
     display: flex;
   }
 }
@@ -142,11 +185,14 @@
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
   
-  .mobileheader {
+  mobileheader {
     display: flex;
     div {
       padding: $block6;
     }
+  }
+  .mobileheader-open {
+    display: flex;
   }
   .overlay .closebtn {
     position: absolute;

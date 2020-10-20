@@ -6,12 +6,13 @@
   <meta charset="utf-8">
   <title>Typography - Kiva Studio</title>
   <link rel="stylesheet" href="/KivaBrand/assets/css/main.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
 <body>
 
-  <div class="mobileheader">
+  <mobileheader class="mobilenav-down">
 	<div class="header-logo">
 		<a href="http://localhost:4000/KivaBrand//">
 			<?xml version="1.0" encoding="utf-8"?>
@@ -66,10 +67,10 @@
 		</svg>
 
 	</div>
-</div>
+</mobileheader>
 
 <div id="myNav" class="overlay">
-	<div class="mobileheader">
+	<div class="mobileheader-open">
 		<div class="header-logo">
 			<a href="http://localhost:4000/KivaBrand//">
 				<?xml version="1.0" encoding="utf-8"?>
@@ -203,6 +204,54 @@
 	}
 </script>
 
+<script>
+	// Hide Header on on scroll down
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeightt = $('mobileheader').outerHeight();
+
+
+	$(window).scroll(function (event) {
+		didScroll = true;
+	});
+
+	setInterval(function () {
+		if (didScroll) {
+			hasScrolled();
+			didScroll = false;
+		}
+	}, 250);
+
+	function hasScrolled() {
+		var st = $(this).scrollTop();
+
+		// Make sure they scroll more than delta
+		if (Math.abs(lastScrollTop - st) <= delta) 
+			return;
+		
+		// If they scrolled down and are past the navbar, add class .nav-up.
+		// This is necessary so you never see what is "behind" the navbar.
+		if (st > lastScrollTop && st > navbarHeightt) {
+			// Scroll Down
+			$('mobileheader')
+
+				.removeClass('mobilenav-down')
+				.addClass('mobilenav-up');
+		} else {
+			// Scroll Up
+			if (st + $(window).height() < $(document).height()) {
+				$('mobileheader')
+
+					.removeClass('mobilenav-up')
+					.addClass('mobilenav-down');
+			}
+		}
+
+		lastScrollTop = st;
+	}
+</script>
+
 
 
   <div class="sidenav">
@@ -309,7 +358,7 @@
       <hr>
       <div class="h1-link">
 	<h1>Primary Font Family</h1>
-	<button class="main-button">Download Kiva Post Grot</button>
+	<button class="main-button">Download Kiva Post Grot 💾</button>
 </div>
 <p>We use our custom font, Kiva Post Grot, for almost everything brand and marketing—from banner ads to billboards. It was designed to be incredibly versatile with lots of range in terms of tone and playfulness. It can be quirky and expressive when it needs to be, or neutral when the situation calls for something a bit more serious. On rare occasions.</p>
 
@@ -418,11 +467,11 @@
 </g>
 </svg>
 
-<div class="h1-link">
-	<h1>Secondary Font Families</h1>
-	<button class="main-button">Download secondary fonts</button>
-</div>
+<h1 id="secondary-font-families">Secondary Font Families</h1>
 <p>Manrope and Roboto are used as the secondary fonts. Situations where it’s difficult or impossible to use the primary font; for example, when we need to add an embeddable font in that moment we use our secondary font families. The Manrope font is used for the titles and roboto for for the body copies.</p>
+
+<p><button class="main-button"><a href="https://fonts.google.com/specimen/Manrope?query=manrope" target="_blank">Download Manrope via Google 🔗</a></button>
+<button class="main-button"><a href="https://fonts.google.com/specimen/Roboto?query=Roboto" target="_blank">Download Roboto via Google 🔗</a></button></p>
 
       <div class="download-assets">
         <h1>Download Assets</h1>
@@ -488,7 +537,7 @@
 </g>
 </svg>
     <p>© 2005 — 2020 Kiva All rights reserved</p>
-	<p>v1.0.28</p>
+	<p>v1.0.29</p>
 </footer>
       </div>
     </div>

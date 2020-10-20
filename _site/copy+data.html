@@ -6,12 +6,13 @@
   <meta charset="utf-8">
   <title>Copy & Data - Kiva Studio</title>
   <link rel="stylesheet" href="/KivaBrand/assets/css/main.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
 <body>
 
-  <div class="mobileheader">
+  <mobileheader class="mobilenav-down">
 	<div class="header-logo">
 		<a href="http://localhost:4000/KivaBrand//">
 			<?xml version="1.0" encoding="utf-8"?>
@@ -66,10 +67,10 @@
 		</svg>
 
 	</div>
-</div>
+</mobileheader>
 
 <div id="myNav" class="overlay">
-	<div class="mobileheader">
+	<div class="mobileheader-open">
 		<div class="header-logo">
 			<a href="http://localhost:4000/KivaBrand//">
 				<?xml version="1.0" encoding="utf-8"?>
@@ -203,6 +204,54 @@
 	}
 </script>
 
+<script>
+	// Hide Header on on scroll down
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeightt = $('mobileheader').outerHeight();
+
+
+	$(window).scroll(function (event) {
+		didScroll = true;
+	});
+
+	setInterval(function () {
+		if (didScroll) {
+			hasScrolled();
+			didScroll = false;
+		}
+	}, 250);
+
+	function hasScrolled() {
+		var st = $(this).scrollTop();
+
+		// Make sure they scroll more than delta
+		if (Math.abs(lastScrollTop - st) <= delta) 
+			return;
+		
+		// If they scrolled down and are past the navbar, add class .nav-up.
+		// This is necessary so you never see what is "behind" the navbar.
+		if (st > lastScrollTop && st > navbarHeightt) {
+			// Scroll Down
+			$('mobileheader')
+
+				.removeClass('mobilenav-down')
+				.addClass('mobilenav-up');
+		} else {
+			// Scroll Up
+			if (st + $(window).height() < $(document).height()) {
+				$('mobileheader')
+
+					.removeClass('mobilenav-up')
+					.addClass('mobilenav-down');
+			}
+		}
+
+		lastScrollTop = st;
+	}
+</script>
+
 
 
   <div class="sidenav">
@@ -314,7 +363,11 @@
 <p>We envision a financially inclusive world where all people hold the power to improve their lives</p>
 
 <h1 id="kivas-global-impact-report">Kiva’s global impact report</h1>
-<p>https://kiva.global/global-impact-dashboard/</p>
+<p>Kiva is expanding financial access globally through microlending and scaling investment, partnerships, and innovation to help underserved communities thrive.</p>
+
+<p><button class="main-button"><a href="https://kiva.global/global-impact-dashboard/" target="_blank">
+See report 🔗</a>
+</button></p>
 
 <h1 id="how-it-works">How it works</h1>
 <ul>
@@ -392,7 +445,7 @@
 </g>
 </svg>
     <p>© 2005 — 2020 Kiva All rights reserved</p>
-	<p>v1.0.28</p>
+	<p>v1.0.29</p>
 </footer>
       </div>
     </div>

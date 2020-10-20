@@ -1,19 +1,13 @@
----
-layout: pages
-title: "Typography"
----
-
-<div class="h1-link">
+I"m1<div class="h1-link">
 	<h1>Primary Font Family</h1>
-	<button class="main-button">Download Kiva Post Grot 💾</button>
+	<button class="main-button">Download Kiva Post Grot</button>
 </div>
-We use our custom font, Kiva Post Grot, for almost everything brand and marketing—from banner ads to billboards. It was designed to be incredibly versatile with lots of range in terms of tone and playfulness. It can be quirky and expressive when it needs to be, or neutral when the situation calls for something a bit more serious. On rare occasions.
+<p>We use our custom font, Kiva Post Grot, for almost everything brand and marketing—from banner ads to billboards. It was designed to be incredibly versatile with lots of range in terms of tone and playfulness. It can be quirky and expressive when it needs to be, or neutral when the situation calls for something a bit more serious. On rare occasions.</p>
 
-<br>
+<p><br /></p>
 <div class="page-title">Kiva post grot</div>
 <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 656.2 281.2" style="enable-background:new 0 0 656.2 281.2;" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 656.2 281.2" style="enable-background:new 0 0 656.2 281.2;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#656C76;}
 </style>
@@ -59,7 +53,7 @@ We use our custom font, Kiva Post Grot, for almost everything brand and marketin
 		 M369.1,199.8l4-5.9l4,5.9h3l-5.5-8l5-7.1h-2.8l-3.5,5.2l-3.6-5.2h-3.1l5.1,7.3l-5.5,7.8H369.1z M424.2,184.7h-2.6
 		c0,0-3.9,10.2-4.4,11.9h-0.1c-0.5-1.7-4.5-11.9-4.5-11.9h-2.8l6,15l-1.1,2.7c-0.6,1.5-1.3,1.9-2.1,1.9c-0.5,0-1.1-0.2-1.4-0.4
 		l-0.9,2.1c0.6,0.3,1.6,0.6,2.5,0.6c1.8,0,3.3-0.9,4.3-3.4L424.2,184.7z M454.8,186.8h8l-8.2,11.3v1.7h11.5v-2.1h-8.3l8.3-11.4v-1.6
-		h-11.3V186.8z"/>
+		h-11.3V186.8z" />
 	<path class="st0" d="M18.2,9.4h-2.6L7.5,31.8h2.7l2.2-6.1h8.9l2.2,6.1h2.9L18.2,9.4z M16.8,13c0.6,1.8,3.7,10.5,3.7,10.5h-7.4
 		C13.2,23.6,16.2,14.9,16.8,13L16.8,13z M58.5,31.8h8.2c4.3,0,7.3-2.6,7.3-6.4c0-3.3-2.2-4.9-4.6-5.2c1.6-0.6,3.6-2,3.6-5.2
 		c0-3.5-2.3-5.5-6.8-5.5h-7.8V31.8z M65.8,11.6c3,0,4.5,1.2,4.5,3.6c0,2.7-1.7,4-4.8,4h-4.2v-7.6H65.8z M61.2,21.4h4.4
@@ -90,7 +84,7 @@ We use our custom font, Kiva Post Grot, for almost everything brand and marketin
 		c0,0-4.1,14.8-5.1,18.8h-0.1c-0.9-4-4.9-18.8-4.9-18.8h-2.6c0,0-4,14.2-5.1,18.8h-0.1c-1-4.6-4.9-18.8-4.9-18.8H401l6.2,22.4h2.8
 		c0,0,4-13.9,5.1-18.4h0.1c1,4.5,4.8,18.4,4.8,18.4h2.8l6.3-22.4H426.5z M477.5,57.4h-3.1l-5.8,8.4l-5.8-8.4h-3.3l7.4,10.7
 		l-8.2,11.7h3.2l6.6-9.5l6.6,9.5h3.3L470.1,68L477.5,57.4z M516,79.8h2.8V70l8.2-12.6h-3l-6.5,10.1l-6.4-10.1h-3.2L516,70V79.8z
-		 M557.7,59.7h13L557.4,78v1.8H574v-2.2h-13.2l13.3-18.3v-1.9h-16.4V59.7z"/>
+		 M557.7,59.7h13L557.4,78v1.8H574v-2.2h-13.2l13.3-18.3v-1.9h-16.4V59.7z" />
 	<path class="st0" d="M16.5,249.5c-5.5,0-7.6,5-7.6,11.4c0,6.4,2.1,11.4,7.6,11.4s7.6-5,7.6-11.4C24.1,254.5,22,249.5,16.5,249.5z
 		 M16.5,270c-3.6,0-4.8-4.5-4.8-9.2c0-4.6,1.2-9.2,4.8-9.2s4.8,4.5,4.8,9.2C21.3,265.5,20.1,270,16.5,270z M58.1,271.8h13.1v-2.1h-5
 		v-19.9H64c-1.2,1.3-2.7,2.2-5.5,2.5l0.4,2c2,0,3.7-0.6,4.7-1.5v16.8h-5.4V271.8z M105.1,271.8H119v-2.2h-10.5
@@ -111,12 +105,13 @@ We use our custom font, Kiva Post Grot, for almost everything brand and marketin
 		c0-2.2,1.5-4.3,4.8-4.3s4.8,2,4.8,4.3C403.6,267.6,402.7,270.1,398.8,270.1z M445.9,270c-2.7,0-3.4-1.8-3.8-3.1l-2.7,0.4
 		c0.6,2.4,2.3,4.9,6.4,4.9c5.3,0,8-4.2,8-11.8c0-7-2.3-10.9-7.7-10.9c-4.7,0-7.3,3.4-7.3,7.4c0,3.6,2.4,7.2,7,7.2
 		c2.9,0,4.8-1.3,5.5-2.9C451.2,266.1,449.8,270,445.9,270z M446.2,261.9c-2.9,0-4.6-2.1-4.6-5.2c0-3.2,2-5.2,4.6-5.2
-		c2.9,0,4.7,2.4,4.7,5.4C450.9,259.9,449.1,261.9,446.2,261.9z"/>
+		c2.9,0,4.7,2.4,4.7,5.4C450.9,259.9,449.1,261.9,446.2,261.9z" />
 </g>
 </svg>
 
-# Secondary Font Families
-Manrope and Roboto are used as the secondary fonts. Situations where it’s difficult or impossible to use the primary font; for example, when we need to add an embeddable font in that moment we use our secondary font families. The Manrope font is used for the titles and roboto for for the body copies.
+<h1 id="secondary-font-families">Secondary Font Families</h1>
+<p>Manrope and Roboto are used as the secondary fonts. Situations where it’s difficult or impossible to use the primary font; for example, when we need to add an embeddable font in that moment we use our secondary font families. The Manrope font is used for the titles and roboto for for the body copies.</p>
 
-<button class="main-button"><a href="https://fonts.google.com/specimen/Manrope?query=manrope" target="_blank">Download Manrope via Google 🔗</a></button>
-<button class="main-button"><a href="https://fonts.google.com/specimen/Roboto?query=Roboto" target="_blank">Download Roboto via Google 🔗</a></button>
+<p><button class="main-button"><a href="https://fonts.google.com/specimen/Manrope?query=manrope" target="_blank">Download Manrope via Google 🔗</a></button>
+<button class="main-button"><a href="https://fonts.google.com/specimen/Roboto?query=Roboto" target="_blank">Download Roboto via Google 🔗</a></button></p>
+:ET

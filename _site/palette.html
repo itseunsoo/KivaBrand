@@ -6,12 +6,13 @@
   <meta charset="utf-8">
   <title>Color Palette - Kiva Studio</title>
   <link rel="stylesheet" href="/KivaBrand/assets/css/main.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
 <body>
 
-  <div class="mobileheader">
+  <mobileheader class="mobilenav-down">
 	<div class="header-logo">
 		<a href="http://localhost:4000/KivaBrand//">
 			<?xml version="1.0" encoding="utf-8"?>
@@ -66,10 +67,10 @@
 		</svg>
 
 	</div>
-</div>
+</mobileheader>
 
 <div id="myNav" class="overlay">
-	<div class="mobileheader">
+	<div class="mobileheader-open">
 		<div class="header-logo">
 			<a href="http://localhost:4000/KivaBrand//">
 				<?xml version="1.0" encoding="utf-8"?>
@@ -200,6 +201,54 @@
 				dropdownContent.style.display = "block";
 			}
 		});
+	}
+</script>
+
+<script>
+	// Hide Header on on scroll down
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeightt = $('mobileheader').outerHeight();
+
+
+	$(window).scroll(function (event) {
+		didScroll = true;
+	});
+
+	setInterval(function () {
+		if (didScroll) {
+			hasScrolled();
+			didScroll = false;
+		}
+	}, 250);
+
+	function hasScrolled() {
+		var st = $(this).scrollTop();
+
+		// Make sure they scroll more than delta
+		if (Math.abs(lastScrollTop - st) <= delta) 
+			return;
+		
+		// If they scrolled down and are past the navbar, add class .nav-up.
+		// This is necessary so you never see what is "behind" the navbar.
+		if (st > lastScrollTop && st > navbarHeightt) {
+			// Scroll Down
+			$('mobileheader')
+
+				.removeClass('mobilenav-down')
+				.addClass('mobilenav-up');
+		} else {
+			// Scroll Up
+			if (st + $(window).height() < $(document).height()) {
+				$('mobileheader')
+
+					.removeClass('mobilenav-up')
+					.addClass('mobilenav-down');
+			}
+		}
+
+		lastScrollTop = st;
 	}
 </script>
 
@@ -462,7 +511,7 @@
 </g>
 </svg>
     <p>© 2005 — 2020 Kiva All rights reserved</p>
-	<p>v1.0.28</p>
+	<p>v1.0.29</p>
 </footer>
       </div>
     </div>

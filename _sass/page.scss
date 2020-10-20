@@ -3,27 +3,28 @@
 //     border-width: 1px;
 // }
 
-
-
 .page-body {
-
     display: flex;
+    -webkit-animation: fadein .8s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein .8s; /* Firefox < 16 */
+     -ms-animation: fadein .8s; /* Internet Explorer */
+      -o-animation: fadein .8s; /* Opera < 12.1 */
+         animation: fadein .8s;
     ul {
-        padding: 0;
         list-style-type: none;
+        padding: 0;
     }
 
-li {
+    li {
         line-height: 1.5rem;
         list-style-type: none;
         list-style-position: inside;
         text-indent: -1.5em;
         padding-left: 1.5em;
         padding-top: $block4;
-
     }
-    
-li:before {
+
+    li:before {
         content: "✓";
         margin-right: 10px;
         color: $mint;
@@ -38,7 +39,7 @@ li:before {
 }
 
 .page-content {
-width: 55%;
+    width: 55%;
     padding: $block8;
     margin-top: $block4;
     background-color: $backgroundColor;
@@ -78,12 +79,10 @@ width: 55%;
 
     .pages-footer {
         display: initial;
-        svg{
-        margin-top: $block4;
-
+        svg {
+            margin-top: $block4;
         }
     }
-
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
@@ -104,42 +103,34 @@ width: 55%;
 
 // OTHER STUFF
 
-.guideline li {
-    line-height: 1.5rem;
-    list-style-type: none;
-    list-style-position: inside;
-    text-indent: -1.5em;
-    padding-left: 1.5em;
-    padding-top: $block4;
-}
-
-.guideline li:before {
-    content: "✓";
-    margin-right: 10px;
-    color: $mint;
-}
-
 .h1-link {
     display: flex;
 }
 
 .main-button {
+    margin-right: 16px;
     background-color: transparent; /* Green */
     border-style: solid;
     border-color: $bodyColor;
-    border-width: .5px;
+    border-width: 0.5px;
     color: $bodyColor;
     padding: $block4 $block6 $block4 $block6;
     text-decoration: none;
-    font-weight: bold;
+    font-family: "Roboto Mono", monospace;
+    text-transform: uppercase;
     height: 45px;
     align-self: flex-end;
     width: auto;
     margin-bottom: $block4;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     white-space: nowrap;
-    font-size: 1rem;
-    line-height: .8rem;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    a {
+        text-decoration: none;
+        color: $bodyColor;
+    }
+
 }
 
 .main-button:hover {
@@ -148,6 +139,9 @@ width: 55%;
     transition-duration: 0.1s;
     transition-timing-function: ease-out;
 
+    a{
+        color: $backgroundColor;
+    }
 }
 
 @media only screen and (max-width: 728px) {

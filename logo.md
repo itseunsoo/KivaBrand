@@ -5,7 +5,7 @@ title: "Kiva Logo"
 
 <div class="h1-link">
 	<h1>Construction</h1>
-	<button class="main-button">Download Kiva logo</button>
+	<button class="main-button">Download Kiva logo 💾</button>
 </div>
 
 Our logo is based on simple shapes. It is carefully constructed to maintain ownable characteristics while allowing for perfect legibility at any size on any application. The dynamic space between the U and the B is made possible by our kickstand U that has a vertical stroke descending from the right side.

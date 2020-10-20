@@ -10,7 +10,11 @@ Loans that change lives
 We envision a financially inclusive world where all people hold the power to improve their lives
 
 # Kiva’s global impact report
-https://kiva.global/global-impact-dashboard/
+Kiva is expanding financial access globally through microlending and scaling investment, partnerships, and innovation to help underserved communities thrive.
+
+<button class="main-button"><a href ="https://kiva.global/global-impact-dashboard/" target="_blank">
+See report 🔗</a>
+</button>
 
 # How it works
 * By lending as little as $25 on Kiva, you can make a real difference in someone’s life.
