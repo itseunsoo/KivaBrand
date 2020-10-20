@@ -7,6 +7,9 @@ title: Version History
 
 
 # Version History
+## 1.0.40
+* Fixed version history bugs 🐛
+
 ## 1.0.38
 * Image download testing at /photo-gallery 📷
 
