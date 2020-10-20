@@ -1,25 +1,30 @@
 ---
 layout: pages
-title: "Voice & Tone"
----
+title: Voice & Tone
 
+---
 # Language tone and voice
-Kiva’s voice is hopeful, conversational and warm. We focus on opportunity and possibility, not tragedy, in our storytelling and communication. 
+
+Kiva’s voice is hopeful, conversational and warm. We focus on opportunity and possibility, not tragedy, in our storytelling and communication.
 
 We highlight what connects all of us as a global community and the human experiences that we all share.
 
 # Guidelines for writing for Kiva
+
 <div class="guideline">
-<li>Use clear, simple language</li>
-<li>Express appreciation and emotion where appropriate</li>
-<li>Always remain respectful, to all people and cultures</li>
-<li>Tell human stories, give a window into someone else’s life and experience</li>
-<li>Capture the big picture, share how the loan fits into the borrower’s long-term dreams and aspirations</li>
-<li>Look for the ripples of impact, often a loan can create positive change for the whole family or community</li>
-<li>Aim to inspire and connect</li>
-</div>
+
+* Use clear, simple language
+* Express appreciation and emotion where appropriate
+* Always remain respectful, to all people and cultures
+* Tell human stories, give a window into someone else’s life and experience
+* Capture the big picture, share how the loan fits into the borrower’s long-term dreams and aspirations
+* Look for the ripples of impact, often a loan can create positive change for the whole family or community
+* Aim to inspire and connect
+
+  </div>
 
 # Guidelines for writing for Kiva
+
 <div class="guideline">
 <li>Keep paragraphs short, 2 to 3 sentences maximum</li>
 <li>Refer to borrowers and lenders by first name whenever possible</li>
