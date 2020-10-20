@@ -378,7 +378,7 @@ mobileheader svg { width: 45px; fill: var(--light-text-color); }
 @keyframes slideInFromBottom { 0% { transform: translateY(100%); }
   100% { transform: translateY(0); } }
 
-.delayedPopupWindow { border-radius: 1rem; left: 0; right: 0; position: fixed; background-color: #9eebd5; color: #3e4653; z-index: 3; padding: 16px 16px 16px 16px; margin: 16px; font-size: 0.8rem; opacity: 0.98; font-family: "Roboto Mono", monospace; line-height: 0; height: auto; animation: 0.3s ease-out 0s 1 slideInFromBottom; text-transform: uppercase; bottom: 0; display: none; align-items: center; }
+.delayedPopupWindow { border-radius: 1rem; left: 0; right: 0; position: fixed; background-color: #9eebd5; color: #3e4653; z-index: 3; padding: 16px; margin: 16px; font-size: 0.8rem; opacity: 0.98; font-family: "Roboto Mono", monospace; line-height: 0; height: auto; animation: 0.3s ease-out 0s 1 slideInFromBottom; text-transform: uppercase; bottom: 0; display: none; align-items: center; }
 
 .popup { display: flex; width: 100%; }
 
