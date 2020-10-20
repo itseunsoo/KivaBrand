@@ -73,7 +73,7 @@
         height: 300px;
 
         img {
-            width: 75px;
+            width: $block9;
         }
         .grid-text {
             width: 100%;
@@ -84,7 +84,7 @@
     button:hover img {
         transition-duration: 0.1s;
         transition-timing-function: ease-out;
-        width: 85px;
+        width: 72px;
     }
 }
 

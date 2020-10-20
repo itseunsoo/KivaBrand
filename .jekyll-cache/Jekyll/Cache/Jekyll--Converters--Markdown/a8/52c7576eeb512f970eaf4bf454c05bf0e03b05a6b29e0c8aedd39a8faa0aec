@@ -1,0 +1,8 @@
+I"÷<h1 id="version-history">Version History</h1>
+<h2 id="1034">1.0.34</h2>
+<ul>
+  <li>Added toast module. Can now add a custom text to a toast that will appear once and cache close out when user dismisses it.</li>
+  <li>Stomping out bugs</li>
+</ul>
+
+:ET

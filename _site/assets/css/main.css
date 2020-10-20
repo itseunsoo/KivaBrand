@@ -55,6 +55,24 @@ hr { border: none; height: 0.5px; /* Set the hr color */ color: rgba(125, 125, 1
   .quad-grid img { height: 200px; } }
 
 /* Settings */
+.version-history { padding: 48px; margin-top: 96px; }
+
+.version-history h1 { margin-top: 48px; }
+
+.version-history h1:first-child { margin-top: 0; }
+
+.version-history h2 { margin-top: 24px; }
+
+.version-history ul { list-style-type: none; padding: 0; }
+
+.version-history li { line-height: 1.5rem; list-style-type: none; list-style-position: inside; text-indent: -1.5em; padding-left: 1.5em; padding-top: 16px; }
+
+.version-history li:before { content: "-"; margin-right: 10px; color: #9eebd5; }
+
+@media only screen and (max-width: 728px) { .version-history { padding: 16px; margin-top: 48px; }
+  .version-history h1 { margin-top: 48px; }
+  .version-history h1:first-child { margin-top: 48px; } }
+
 @keyframes slideInFromTop { 0% { transform: translateY(-100%); }
   100% { transform: translateY(0); } }
 
@@ -100,11 +118,11 @@ header svg { width: 60px; fill: var(--light-text-color); }
 
 .page-grid button { width: 100%; position: relative; border-radius: 8px; background-color: #3e4653; color: white; display: flex; align-items: center; justify-content: center; padding: 64px; cursor: pointer; border: none; font-weight: bold; font-size: 1rem; height: 300px; }
 
-.page-grid button img { width: 75px; }
+.page-grid button img { width: 64px; }
 
 .page-grid button .grid-text { width: 100%; position: absolute; bottom: 32px; }
 
-.page-grid button:hover img { transition-duration: 0.1s; transition-timing-function: ease-out; width: 85px; }
+.page-grid button:hover img { transition-duration: 0.1s; transition-timing-function: ease-out; width: 72px; }
 
 .padding { padding: 48px; }
 
@@ -153,6 +171,8 @@ footer { opacity: 0.5; }
 footer p { line-height: 0.8rem; }
 
 footer svg { width: 60px; fill: var(--light-text-color); }
+
+footer a { text-decoration: none; color: var(--light-text-color); }
 
 @media only screen and (max-width: 728px) { footer { margin-top: 16px; margin-bottom: 48px; }
   footer svg { width: 45px; } }
@@ -352,23 +372,15 @@ mobileheader svg { width: 45px; fill: var(--light-text-color); }
 @keyframes slideInFromBottom { 0% { transform: translateY(100%); }
   100% { transform: translateY(0); } }
 
-.delayedPopupWindow { border-radius: 1rem; left: 0; right: 0; position: fixed; left: 0; bottom: 0; background-color: #9eebd5; color: #3e4653; display: none; z-index: 3; padding: 8px 12px 8px 16px; margin: 16px; font-size: .8rem; opacity: 0.98; font-family: "Roboto Mono", monospace; line-height: auto; height: auto; animation: 0.5s ease-out 0s 1 slideInFromBottom; text-transform: uppercase; }
+.delayedPopupWindow { border-radius: 1rem; left: 0; right: 0; position: fixed; background-color: #9eebd5; color: #3e4653; z-index: 3; padding: 16px 16px 16px 16px; margin: 16px; font-size: 0.8rem; opacity: 0.98; font-family: "Roboto Mono", monospace; line-height: 0; height: auto; animation: 0.3s ease-out 0s 1 slideInFromBottom; text-transform: uppercase; bottom: 0; display: none; align-items: center; }
 
-.popup { display: flex; }
+.popup { display: flex; width: 100%; }
 
-.formDescription { position: relative; margin: auto; overflow-wrap: break-word; width: 92%; margin-left: 16px; }
+.formDescription { width: 100%; margin: auto; overflow-wrap: break-word; margin-left: 8px; }
 
 /*   This is the closing button  */
-#btnClose { background-color: transparent; /* Green */ border-style: solid; border-color: #3e4653; border-width: 0.5px; color: #3e4653; padding: 16px 24px 16px 24px; text-decoration: none; height: auto; align-self: flex-end; width: auto; margin-bottom: 16px; border-radius: 0.8rem; white-space: nowrap; font-family: "Roboto Mono", monospace; line-height: auto; margin: auto; }
+#btnClose { margin: auto; }
 
-#btnClose a { text-decoration: none; color: var(--light-text-color); }
-
-/*   This is the closing button hover state  */
-#btnClose:hover { color: var(--background-color); background-color: var(--light-text-color); transition-duration: 0.1s; transition-timing-function: ease-out; }
-
-#btnClose:hover a { color: var(--background-color); }
-
-@media only screen and (max-width: 728px) and (min-width: 321px) { .popup { display: grid; grid-template-columns: auto; }
-  #btnClose { border: 2px solid white; padding: 4px 8px 4px 8px; text-decoration: none; color: #ffffff; text-align: center; height: 15px; width: 16px; margin-right: 8px; margin-top: 4px; } }
+#btnClose svg { width: 16px; stroke-width: 15; stroke-linecap: round; stroke-miterlimit: 10; fill: #ffffff; stroke: #3e4653; right: 16px; }
 
 /*# sourceMappingURL=main.css.map */

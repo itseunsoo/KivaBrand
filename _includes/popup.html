@@ -1,17 +1,24 @@
-
-
-
 {% if page.popup-toggle  %}
-<div id="delayedPopup" class="delayedPopupWindow">
-  <div class="popup">
-    <!-- This is the left side of the popup for the description -->
-    <div class="formDescription">
-      {{ page.popup }}
+  <div id="delayedPopup" class="delayedPopupWindow">
+    <div class="popup">
+      <!-- This is the left side of the popup for the description -->
+      <div class="formDescription">
+        {{ page.popup }}
+      </div>
+      <!-- This is the close button -->
+      <a href="#" id="btnClose" title="Click here to close this deal box.">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+			x="0px" y="0px" viewBox="0 0 206.2 206.2" style="enable-background:new 0 0 206.2 206.2;"
+			xml:space="preserve">
+          <style type="text/css"></style>
+          <line class="st0" x1="178.1" y1="28.1" x2="28.1" y2="178.1"/>
+          <line class="st0" x1="28.1" y1="28.1" x2="178.1" y2="178.1"/>
+        </svg>
+      </a>
     </div>
-    <!-- This is the close button -->
-    <a href="#" id="btnClose" title="Click here to close this deal box.">GOT IT</a>
   </div>
-</div>
 {% endif %}
 
 <script>
@@ -22,11 +29,10 @@
       .fadeIn(400);
     //Fade in delay for the popup (control timing here)
 
-
     if (sessionStorage.getItem('popState') != 'shown') {
       $("#delayedPopup")
-        .delay(3000)
-        .fadeIn(400);
+        .delay(1000)
+        .fadeIn(300);
       sessionStorage.setItem('popState', 'shown')
     }
 

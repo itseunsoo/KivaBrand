@@ -17,88 +17,53 @@
   left: 0;
   right: 0;
   position: fixed;
-  left: 0;
-  bottom: 0;
   background-color: $mint;
   color: $twilight;
-  display: none;
+
   z-index: 3;
-  padding: $block2 $block3 $block2 $block4;
+  padding: $block4 $block4 $block4 $block4;
   margin: $block4;
-  font-size: .8rem;
+  font-size: 0.8rem;
   opacity: 0.98;
   font-family: "Roboto Mono", monospace;
 
-  line-height: auto;
+  line-height: 0;
   height: auto;
-  animation: 0.5s ease-out 0s 1 slideInFromBottom;
+  animation: 0.3s ease-out 0s 1 slideInFromBottom;
   text-transform: uppercase;
+  bottom: 0;
+display: none;
+  align-items: center;
 }
 
 .popup {
   display: flex;
-
+  width: 100%;
 }
 
 .formDescription {
-
-  position: relative;
+  width: 100%;
   margin: auto;
   overflow-wrap: break-word;
-  width: 92%;
-  margin-left: $block4;
+
+  margin-left: $block2;
 }
 /*   This is the closing button  */
 #btnClose {
-  background-color: transparent; /* Green */
-  border-style: solid;
-  border-color: $twilight;
-  border-width: 0.5px;
-  color: $twilight;
-  padding: $block4 $block6 $block4 $block6;
-  text-decoration: none;
-  height: auto;
-  align-self: flex-end;
-  width: auto;
-  margin-bottom: $block4;
-  border-radius: 0.8rem;
-  white-space: nowrap;
-  font-family: "Roboto Mono", monospace;
-  line-height: auto;
   margin: auto;
+  svg {
+    width: 16px;
+    stroke-width: 15;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    fill: #ffffff;
+    stroke: $twilight;
 
-  a {
-    text-decoration: none;
-    color: $bodyColor;
-  }
-}
-/*   This is the closing button hover state  */
-#btnClose:hover {
-  color: $backgroundColor;
-  background-color: $bodyColor;
-  transition-duration: 0.1s;
-  transition-timing-function: ease-out;
-
-  a {
-    color: $backgroundColor;
+    right: $block4;
   }
 }
 
-@media only screen and (max-width: 728px) and (min-width: 321px) {
-  .popup {
-    display: grid;
-    grid-template-columns: auto;
-  }
 
-  #btnClose {
-    border: 2px solid white;
-    padding: $block1 $block2 $block1 $block2;
-    text-decoration: none;
-    color: #ffffff;
-    text-align: center;
-    height: 15px;
-    width: $block4;
-    margin-right: $block2;
-    margin-top: $block1;
-  }
-}
+
+
+
