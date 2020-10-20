@@ -22,7 +22,7 @@ recents:
 
 {% for image in page.favorites %}
 <div class="favorites-photo">
-        <img src="{{ image | relative_url }}">
+        <a href="{{ image | relative_url }}" download><img src="{{ image | relative_url }}"></a>
 </div>
 {% endfor %}
 
