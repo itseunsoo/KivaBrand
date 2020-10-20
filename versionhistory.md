@@ -1,5 +1,5 @@
 ---
-layout: version-history
+layout: versionhistory
 title: Version History
 ---
 
