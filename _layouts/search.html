@@ -1,0 +1,42 @@
+  <!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+          <script src="../assets/js/search-script.js"></script>
+</head>
+
+<body> 
+    
+    
+    
+    
+    <div class="search">
+
+
+        <!-- Html Elements for Search -->
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search">
+
+            <ul id="results-container"></ul>
+        </div>
+
+        <!-- Script pointing to search-script.js -->
+        <script src="../assets/js/search-script.js" type="text/javascript"></script>
+
+        <!-- Configuration -->
+        <script>
+            SimpleJekyllSearch({searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('results-container'), json: '/search.json'})
+        </script>
+        <br>
+    </div>
+
+
+</body>
+
+</html>

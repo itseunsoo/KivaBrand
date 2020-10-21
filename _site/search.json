@@ -3,7 +3,7 @@
     {
 
       "title"    : "Copy &amp; Data",
-      "url"      : "/KivaBrand//copy+data.html"
+      "url"      : "/copy+data.html"
 
 
     } ,
@@ -11,7 +11,7 @@
     {
 
       "title"    : "Home",
-      "url"      : "/KivaBrand//"
+      "url"      : "/"
 
 
     } ,
@@ -19,7 +19,7 @@
     {
 
       "title"    : "Kiva Logo",
-      "url"      : "/KivaBrand//logo.html"
+      "url"      : "/logo.html"
 
 
     } ,
@@ -27,7 +27,7 @@
     {
 
       "title"    : "",
-      "url"      : "/KivaBrand//assets/css/main.css"
+      "url"      : "/assets/css/main.css"
 
 
     } ,
@@ -35,7 +35,7 @@
     {
 
       "title"    : "Color Palette",
-      "url"      : "/KivaBrand//palette.html"
+      "url"      : "/palette.html"
 
 
     } ,
@@ -43,7 +43,7 @@
     {
 
       "title"    : "Photo Gallery",
-      "url"      : "/KivaBrand//photo-gallery.html"
+      "url"      : "/photo-gallery.html"
 
 
     } ,
@@ -51,7 +51,15 @@
     {
 
       "title"    : "",
-      "url"      : "/KivaBrand//search.json"
+      "url"      : "/search.json"
+
+
+    } ,
+  
+    {
+
+      "title"    : "Search",
+      "url"      : "/search.html"
 
 
     } ,
@@ -59,7 +67,7 @@
     {
 
       "title"    : "Typography",
-      "url"      : "/KivaBrand//typography.html"
+      "url"      : "/typography.html"
 
 
     } ,
@@ -67,7 +75,7 @@
     {
 
       "title"    : "Usage",
-      "url"      : "/KivaBrand//usage.html"
+      "url"      : "/usage.html"
 
 
     } ,
@@ -75,7 +83,7 @@
     {
 
       "title"    : "Version History",
-      "url"      : "/KivaBrand//versionhistory.html"
+      "url"      : "/versionhistory.html"
 
 
     } ,
@@ -83,7 +91,7 @@
     {
 
       "title"    : "Voice &amp; Tone",
-      "url"      : "/KivaBrand//voice+tone.html"
+      "url"      : "/voice+tone.html"
 
 
     } ,
@@ -91,7 +99,7 @@
     {
 
       "title"    : "",
-      "url"      : "/KivaBrand//assets/css/main.css.map"
+      "url"      : "/assets/css/main.css.map"
 
 
     } 

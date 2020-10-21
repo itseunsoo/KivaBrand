@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Home - Kiva Studio</title>
-    <link rel="stylesheet" href="/KivaBrand/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
           <script src="../assets/js/search-script.js"></script>
@@ -20,7 +20,7 @@
 
 <header id="header">
 	<div class="header-logo">
-		<a href="http://localhost:4000/KivaBrand//">
+		<a href="http://localhost:4000/">
 			<?xml version="1.0" encoding="utf-8"?>
 			<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -57,37 +57,24 @@
 	<ul class="nav">
 
 
-    <div class="search">
-        <!-- Html Elements for Search -->
-        <div id="search-container">
-            <input type="text" id="search-input" placeholder="Search">
-
-            <ul id="results-container"></ul>
-        </div>
-
-        <!-- Script pointing to search-script.js -->
-        <script src="../assets/js/search-script.js" type="text/javascript"></script>
-
-        <!-- Configuration -->
-        <script>
-            SimpleJekyllSearch({searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('results-container'), json: '//search.json'})
-        </script>
-        <br>
-    </div>
 
 
 
 
 		<li>
-			<a href="http://localhost:4000/KivaBrand//logo">Logo</a>
+			<a href="http://localhost:4000/logo">Logo</a>
 		</li>
 		<li>
-			<a href="http://localhost:4000/KivaBrand//palette">Color</a>
+			<a href="http://localhost:4000/palette">Color</a>
 		</li>
 		<li>
-			<a href="http://localhost:4000/KivaBrand//typography">Typography</a>
+			<a href="http://localhost:4000/typography">Typography</a>
 		</li>
 	</div>
+
+
+
+
 </header>
 
 
@@ -109,9 +96,13 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 </script>
+
+
+
+
     <mobileheader class="mobilenav-down">
 	<div class="header-logo">
-		<a href="http://localhost:4000/KivaBrand//">
+		<a href="http://localhost:4000/">
 			<?xml version="1.0" encoding="utf-8"?>
 			<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -169,7 +160,7 @@ var currentScrollPos = window.pageYOffset;
 <div id="myNav" class="overlay">
 	<div class="mobileheader-open">
 		<div class="header-logo">
-			<a href="http://localhost:4000/KivaBrand//">
+			<a href="http://localhost:4000/">
 				<?xml version="1.0" encoding="utf-8"?>
 				<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -225,17 +216,17 @@ var currentScrollPos = window.pageYOffset;
 	<div class="overlay-content">
 
 		<ul>
-			<a href="http://localhost:4000/KivaBrand//">
+			<a href="http://localhost:4000/">
 				<li><img src="../assets/icons/kiva-icon.svg">Home</li>
 			</a>
 			<hr>
-			<a href="http://localhost:4000/KivaBrand//logo">
+			<a href="http://localhost:4000/logo">
 				<li><img src="../assets/icons/kiva-icon.svg">Logo</li>
 			</a>
-			<a href="http://localhost:4000/KivaBrand//palette">
+			<a href="http://localhost:4000/palette">
 				<li><img src="../assets/icons/palette-icon.svg">Color Palette</li>
 			</a>
-			<a href="http://localhost:4000/KivaBrand//typography">
+			<a href="http://localhost:4000/typography">
 				<li><img src="../assets/icons/type-icon.svg">Typography</li>
 			</a>
 			<a class="dropdown-btn2">
@@ -250,15 +241,15 @@ var currentScrollPos = window.pageYOffset;
 				</li>
 			</a>
 			<div class="dropdown-container">
-				<a href="http://localhost:4000/KivaBrand//usage">Usage Guide</a>
-				<a href="http://localhost:4000/KivaBrand//photo-gallery">Photo Gallery</a>
-				<a href="http://localhost:4000/KivaBrand//video-gallery">Video Gallery</a>
-				<a href="http://localhost:4000/KivaBrand//patterns+illustrations">Patterns & Illustrations</a>
+				<a href="http://localhost:4000/usage">Usage Guide</a>
+				<a href="http://localhost:4000/photo-gallery">Photo Gallery</a>
+				<a href="http://localhost:4000/video-gallery">Video Gallery</a>
+				<a href="http://localhost:4000/patterns+illustrations">Patterns & Illustrations</a>
 			</div>
-			<a href="http://localhost:4000/KivaBrand//voice+tone">
+			<a href="http://localhost:4000/voice+tone">
 				<li><img src="../assets/icons/voicetone-icon.svg">Voice & Tone</li>
 			</a>
-			<a href="http://localhost:4000/KivaBrand//copy+data">
+			<a href="http://localhost:4000/copy+data">
 				<li><img src="../assets/icons/copydata-icon.svg">Copy & Data</li>
 			</a>
 		</ul>
@@ -398,7 +389,8 @@ var currentScrollPos = window.pageYOffset;
     $("#delayedPopup").fadeOut(300);
   }
 </script>
-
+     
+   
     <div class="hero">
         <img src="../assets/blob.svg">
 
@@ -406,43 +398,45 @@ var currentScrollPos = window.pageYOffset;
             <div class="hero-header-title">Kiva Brand Guide</div>
             <div class="hero-header-sub">Assets for building high-quiality, consistent user experiences at Kiva.</div>
 
+            <a href="http://localhost:4000/logo"><button class="main-button">Let's get building 🔧</button></a>
+
         </div>
     </div>
 
 
     <div class="page-grid">
 
-        <a href="http://localhost:4000/KivaBrand//logo">
+        <a href="http://localhost:4000/logo">
             <button>
                 <img src="../assets/icons/kiva-icon.svg">
                 <div class="grid-text">Logo Usage</div>
             </button>
         </a>
-        <a href="http://localhost:4000/KivaBrand//palette">
+        <a href="http://localhost:4000/palette">
             <button>
                 <img src="../assets/icons/palette-icon.svg">
                 <div class="grid-text">Color Palette</div>
             </button>
         </a>
-        <a href="http://localhost:4000/KivaBrand//typography">
+        <a href="http://localhost:4000/typography">
             <button>
                 <img src="../assets/icons/type-icon.svg">
                 <div class="grid-text">Typography</div>
             </button>
         </a>
-        <a href="http://localhost:4000/KivaBrand//usage">
+        <a href="http://localhost:4000/usage">
             <button>
                 <img src="../assets/icons/image-icon.svg">
                 <div class="grid-text">Imagery</div>
             </button>
         </a>
-        <a href="http://localhost:4000/KivaBrand//voice+tone">
+        <a href="http://localhost:4000/voice+tone">
             <button>
                 <img src="../assets/icons/voicetone-icon.svg">
                 <div class="grid-text">Voice & Tone</div>
             </button>
         </a>
-        <a href="http://localhost:4000/KivaBrand//copy+data">
+        <a href="http://localhost:4000/copy+data">
             <button>
                 <img src="../assets/icons/copydata-icon.svg">
                 <div class="grid-text">Copy & Data</div>
@@ -525,7 +519,7 @@ var currentScrollPos = window.pageYOffset;
 </g>
 </svg>
     <p>© 2005 — 2020 Kiva All rights reserved</p>
-	<p><a href="http://localhost:4000/KivaBrand//versionhistory">v1.0.40</a></p>
+	<p><a href="http://localhost:4000/versionhistory">v1.0.43</a></p>
 </footer>
 </div>
 </body>

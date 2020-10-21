@@ -8,7 +8,7 @@
     left: 0;
     right: 0;
     padding: $block8;
-
+button {margin-top: $block4;}
 }
 
 .hero-header-title {
@@ -25,6 +25,7 @@
     opacity: 0.8;
     width: 70%;
     font-size: 1rem;
+    line-height: 1.5rem;
     color: $bodyColor;
 
 }
