@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
 html, body { height: 100%; }
 
 body { width: 100%; margin: auto; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; background: var(--background-color); color: var(--light-text-color); padding: 0; }
@@ -108,7 +109,7 @@ header svg { width: 60px; fill: var(--light-text-color); }
 
 .hero-header-title { width: 70%; font-size: 4rem; line-height: 4rem; font-weight: bolder; color: var(--light-text-color); }
 
-.hero-header-sub { margin-top: 12px; opacity: 0.8; width: 70%; font-size: 1rem; line-height: 1.5rem; color: var(--light-text-color); }
+.hero-header-sub { opacity: 0.8; width: 70%; font-size: 1rem; line-height: 1.5rem; color: var(--light-text-color); }
 
 .hero { height: 700px; display: flex; flex-direction: column; justify-content: center; }
 
@@ -451,5 +452,27 @@ input:focus, select:focus, textarea:focus, button:focus { outline: none; -webkit
 .mobile-nav3 li { margin-top: 12px; list-style-type: none; }
 
 @media only screen and (max-width: 728px) { input[type="text"], input[type="text2"] { font-size: 3rem; } }
+
+.carousel { position: relative; width: 100%; font-size: 4rem; line-height: 6rem; height: 6rem; display: flex; }
+
+.carousel .pre { position: relative; height: 4.8rem; margin-right: 16px; line-height: 6rem; }
+
+.carousel .change_outer { text-align: left; height: 4.8rem; overflow: hidden; }
+
+.carousel .change_outer .change_inner { position: relative; animation: rotate 8s ease-in-out infinite; }
+
+.carousel .change_outer .element { display: block; font-weight: 700; }
+
+@keyframes rotate { 0%, 20% { transform: translateY(0); }
+  25%, 45% { transform: translateY(-6rem); }
+  50%, 70% { transform: translateY(-12rem); }
+  75%, 95% { transform: translateY(-18rem); }
+  100% { transform: translateY(-24rem); } }
+
+@media only screen and (max-width: 728px) { .carousel { display: inline-block; }
+  .carousel .pre { margin-bottom: 64px; line-height: 4.8rem; } }
+
+@media only screen and (max-width: 1024px) and (min-width: 729px) { .carousel { display: inline-block; }
+  .carousel .pre { margin-bottom: 0px; line-height: 4.8rem; } }
 
 /*# sourceMappingURL=main.css.map */

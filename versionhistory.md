@@ -7,6 +7,9 @@ title: Version History
 
 
 # Version History
+## 1.0.44
+* Implemented word carousel at hero header
+
 ## 1.0.43
 * Moved search testing to /search
 * Added button to hero header

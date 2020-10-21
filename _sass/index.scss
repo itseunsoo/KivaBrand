@@ -8,7 +8,9 @@
     left: 0;
     right: 0;
     padding: $block8;
-button {margin-top: $block4;}
+    button {
+        margin-top: $block4;
+    }
 }
 
 .hero-header-title {
@@ -17,17 +19,14 @@ button {margin-top: $block4;}
     line-height: 4rem;
     font-weight: bolder;
     color: $bodyColor;
-
 }
 
 .hero-header-sub {
-    margin-top: $block3;
     opacity: 0.8;
     width: 70%;
     font-size: 1rem;
     line-height: 1.5rem;
     color: $bodyColor;
-
 }
 
 .hero {
@@ -44,7 +43,6 @@ button {margin-top: $block4;}
 }
 
 .page-grid {
-
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -52,9 +50,7 @@ button {margin-top: $block4;}
     padding: $block8;
     background-color: rgba(120, 120, 120, 0.075);
     a {
-
         text-decoration: none;
- 
     }
 
     button {
@@ -90,11 +86,8 @@ button {margin-top: $block4;}
 }
 
 .padding {
-
     padding: $block8;
 }
-
-
 
 .download-assets-grid {
     margin: auto;
@@ -164,7 +157,6 @@ button {margin-top: $block4;}
                 position: relative;
                 bottom: initial;
                 text-align: left;
-
             }
         }
         button:hover img {
@@ -210,7 +202,6 @@ button {margin-top: $block4;}
             padding: $block5;
             height: 100px;
 
-
             img {
                 width: 40px;
                 margin-right: $block8;
@@ -239,7 +230,6 @@ button {margin-top: $block4;}
         width: 75%;
     }
     .padding {
- 
         padding: $block8;
     }
 
@@ -255,5 +245,3 @@ button {margin-top: $block4;}
         }
     }
 }
-
-
