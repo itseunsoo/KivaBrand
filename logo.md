@@ -1,8 +1,8 @@
 ---
 layout: pages
-title: "Kiva Logo"
----
+title: Kiva Logo Logo Usage
 
+---
 <div class="h1-link">
 	<h1>Construction</h1>
 	<button class="main-button">Download Kiva logo 💾</button>

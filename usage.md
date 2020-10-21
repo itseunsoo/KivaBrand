@@ -1,6 +1,6 @@
 ---
 layout: pages
-title: Usage
+title: Image Usage
 
 ---
 # Photography
