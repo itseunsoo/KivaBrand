@@ -7,6 +7,10 @@ title: Version History
 
 
 # Version History
+## 1.0.41
+* Updates for responsive headers and footers
+* Implement search function testing at /index
+
 ## 1.0.40
 * Fixed version history bugs 🐛
 

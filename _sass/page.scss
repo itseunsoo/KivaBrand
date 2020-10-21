@@ -29,10 +29,11 @@
         margin-right: 10px;
         color: $mint;
     }
+
 }
 
 .page-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: $bodyColor;
     font-weight: bolder;
     margin-bottom: $block8;
@@ -98,6 +99,12 @@
     }
     .page-title {
         margin-top: $block8;
+    }
+    .pages-footer {
+        display: initial;
+        svg {
+            margin-top: $block8;
+        }
     }
 }
 

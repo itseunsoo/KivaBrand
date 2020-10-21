@@ -1,0 +1,13 @@
+---
+---
+[
+  {% for pages in site.pages %}
+    {
+
+      "title"    : "{{ pages.title | escape }}",
+      "url"      : "{{ site.baseurl }}{{ pages.url }}"
+
+
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

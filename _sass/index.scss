@@ -200,11 +200,11 @@
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
     .hero-header {
-        padding: $block6;
+        padding: $block8;
     }
     .page-grid {
         grid-template-columns: 1fr 1fr;
-        padding: $block6;
+        padding: $block8;
         button {
             padding: $block5;
             height: 100px;
@@ -212,7 +212,7 @@
 
             img {
                 width: 40px;
-                margin-right: $block6;
+                margin-right: $block8;
             }
             .grid-text {
                 width: 100%;
@@ -239,13 +239,14 @@
     }
     .padding {
  
-        padding: $block6;
+        padding: $block8;
     }
 
     .download-assets-grid {
         grid-template-columns: 1fr 1fr 1fr;
         button {
             padding: $block6;
+
             img {
                 width: 30px;
                 margin-right: $block6;

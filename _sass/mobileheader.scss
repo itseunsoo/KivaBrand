@@ -7,10 +7,8 @@
 
 
 
-
-
-
 mobileheader {
+
 opacity: .99;
   background-color: $backgroundColor;
 
@@ -26,7 +24,7 @@ opacity: .99;
 
   z-index: 1;
   div {
-    padding: $block4;
+    padding: $block6;
   }
   svg {
     width: 45px;
@@ -50,7 +48,7 @@ opacity: .99;
   justify-content: center;
   width: 100%;
   div {
-    padding: $block4;
+    padding: $block6;
   }
   svg {
     width: 45px;
@@ -129,6 +127,8 @@ opacity: .99;
   }
 }
 
+
+
 .overlay a {
   text-decoration: none;
 
@@ -140,11 +140,12 @@ opacity: .99;
 .overlay a:hover,
 .overlay a:focus {
   color: #f1f1f1;
+
 }
 
 .overlay .closebtn {
   position: absolute;
-  padding: $block4;
+  padding: $block6;
   right: 0;
 }
 
@@ -188,15 +189,18 @@ opacity: .99;
   mobileheader {
     display: flex;
     div {
-      padding: $block6;
+      padding: $block8;
     }
   }
   .mobileheader-open {
     display: flex;
+    div {
+      padding: $block8;
+    }
   }
   .overlay .closebtn {
     position: absolute;
-    padding: $block6;
+    padding: $block8;
     right: 0;
   }
 }
