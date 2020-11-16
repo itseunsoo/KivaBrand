@@ -51,7 +51,7 @@ width: 20%;
 position: fixed;
     height: 100vh;
     overflow: scroll;
-
+font-size: 14px;
     ul {
         padding: 0;
     }
@@ -61,7 +61,7 @@ position: fixed;
         padding: $block4 $block8 $block4 $block7;
         list-style: none;
         border-style: solid;
-        border-width: 0px 0px 0px 4px;
+        border-width: 0px 0px 0px 2px;
         border-color: transparent;
         cursor: pointer;
 
@@ -70,14 +70,20 @@ position: fixed;
         img {
             width: 30px;
             margin-right: $block4;
+            filter: grayscale(100%);
         }
     }
     li:hover {
         background-color: rgba(0, 0, 0, 0.103);
         border-style: solid;
-        border-width: 0px 0px 0px 4px;
+        border-width: 0px 0px 0px 2px;
         border-color: #afe9d6;
+        img {
+            filter: grayscale(0%);
+        }
     }
+
+
     a {
         color: white;
         text-decoration: none;
