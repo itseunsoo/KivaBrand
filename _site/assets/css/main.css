@@ -1,7 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
 html, body { height: 100%; }
 
 body { width: 100%; margin: auto; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; background: var(--background-color); color: var(--light-text-color); padding: 0; }
@@ -17,11 +15,11 @@ html[data-theme="dark"] { --background-color: #3e4653; --light-text-color: #ffff
 @media (prefers-color-scheme: dark) { html, html[data-theme="dark"] { --background-color: #26292e; --light-text-color: #ffffff; --highlight-color: #bf5344; --link-color: rgb(100, 210, 255); --main-background-color: rgb(28, 28, 30); --main-text-color: rgb(229, 229, 234); }
   html[data-theme="light"] { --background-color: #ffffff; --light-text-color: #26292e; --highlight-color: #9eebd5; --link-color: rgb(0, 112, 201); --main-background-color: rgb(255, 255, 255); --main-text-color: rgb(51, 51, 51); } }
 
-h1 { font-size: 1.4rem; }
+h1 { font-family: "KivaPostGrot-Bold"; font-size: 1.5rem; letter-spacing: -.02rem; }
 
-h2 { font-size: 1.1rem; opacity: .5; }
+h2 { font-size: 1.2rem; opacity: 0.5; font-family: "KivaPostGrot-Medium"; letter-spacing: -.02em; }
 
-p { font-size: 1rem; line-height: 1.5rem; }
+p { font-family: "KivaPostGrot-Book"; font-size: 1rem; line-height: 1.5rem; letter-spacing: -.01rem; }
 
 hr { border: none; height: 0.5px; /* Set the hr color */ color: rgba(125, 125, 125, 0.5); /* old IE */ background-color: rgba(125, 125, 125, 0.5); /* Modern Browsers */ }
 
@@ -109,7 +107,7 @@ header svg { width: 60px; fill: var(--light-text-color); }
 
 .hero-header-title { width: 70%; font-size: 4rem; line-height: 4rem; font-weight: bolder; color: var(--light-text-color); }
 
-.hero-header-sub { opacity: 0.8; width: 70%; font-size: 1rem; line-height: 1.5rem; color: var(--light-text-color); }
+.hero-header-sub { font-family: "KivaPostGrot-Book"; opacity: 0.8; width: 70%; font-size: 1.5rem; line-height: 125%; color: var(--light-text-color); margin-bottom: 8px; }
 
 .hero { height: 700px; display: flex; flex-direction: column; justify-content: center; }
 
@@ -119,7 +117,7 @@ header svg { width: 60px; fill: var(--light-text-color); }
 
 .page-grid a { text-decoration: none; }
 
-.page-grid button { width: 100%; position: relative; border-radius: 8px; background-color: #3e4653; color: white; display: flex; align-items: center; justify-content: center; padding: 64px; cursor: pointer; border: none; font-weight: bold; font-size: 1rem; height: 300px; }
+.page-grid button { width: 100%; position: relative; border-radius: 8px; background-color: #3e4653; color: white; display: flex; align-items: center; justify-content: center; padding: 64px; cursor: pointer; border: none; font-family: "KivaPostGrot-Book"; font-size: 1rem; height: 300px; }
 
 .page-grid button img { width: 64px; }
 
@@ -131,7 +129,7 @@ header svg { width: 60px; fill: var(--light-text-color); }
 
 .download-assets-grid { margin: auto; display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 8px; }
 
-.download-assets-grid button { position: relative; border-radius: 8px; background-color: var(--background-color); color: var(--light-text-color); display: flex; align-items: center; padding: 48px; cursor: pointer; border-style: solid; border-width: 1px; font-weight: bold; font-size: 1rem; }
+.download-assets-grid button { position: relative; border-radius: 8px; background-color: var(--background-color); color: var(--light-text-color); display: flex; align-items: center; padding: 48px; cursor: pointer; border-style: solid; border-width: 1px; font-family: "KivaPostGrot-Book"; font-size: 1rem; }
 
 .download-assets-grid button img { width: 30px; margin-right: 16px; }
 
@@ -360,11 +358,11 @@ mobileheader svg { width: 45px; fill: var(--light-text-color); }
   .mobileheader-open div { padding: 48px; }
   .overlay .closebtn { position: absolute; padding: 48px; right: 0; } }
 
-@font-face { font-family: "KivaPostGrot"; src: url("../assets/fonts/KivaPostGrot-Book.ttf"); src: url("../assets/fonts/KivaPostGrot-Book.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "KivaPostGrot-Book"; src: url("../assets/fonts/KivaPostGrot-WebFonts-103/KivaPostGrot-Book.eot"); src: url("../assets/fonts/KivaPostGrot-WebFonts-103/KivaPostGrot-Book.eot") format("embedded-opentype"), url("../assets/fonts/KivaPostGrot-WebFonts-103/KivaPostGrot-Book.woff") format("woff"), url("../assets/fonts/KivaPostGrot-TTF/KivaPostGrot-Book.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: "KivaPostGrot"; src: url("../assets/fonts/KivaPostGrot-Medium.ttf"); src: url("../assets/fonts/KivaPostGrot-Medium.ttf") format("truetype"); font-weight: medium; font-style: medium; }
+@font-face { font-family: "KivaPostGrot-Medium"; src: url("../assets/fonts/KivaPostGrot-WebFonts-103/KivaPostGrot-Medium.eot"); src: url("../assets/fonts/KivaPostGrot-WebFonts-103/KivaPostGrot-Medium.eot") format("embedded-opentype"), url("../assets/fonts/KivaPostGrot-WebFonts-103/KivaPostGrot-Medium.woff") format("woff"), url("../assets/fonts/KivaPostGrot-TTF/KivaPostGrot-Medium.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: "KivaPostGrot"; src: url("../assets/fonts/KivaPostGrot-Bold.ttf"); src: url("../assets/fonts/KivaPostGrot-Bold.ttf") format("truetype"); font-weight: bold; font-style: bold; }
+@font-face { font-family: "KivaPostGrot-Bold"; src: url("../assets/fonts/KivaPostGrot-WebFonts-103/KivaPostGrot-Bold.eot"); src: url("../assets/fonts/KivaPostGrot-WebFonts-103/KivaPostGrot-Bold.eot") format("embedded-opentype"), url("../assets/fonts/KivaPostGrot-WebFonts-103/KivaPostGrot-Bold.woff") format("woff"), url("../assets/fonts/KivaPostGrot-TTF/KivaPostGrot-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 .color-palette { height: 250px; width: auto; border-radius: 20px; position: relative; }
 
@@ -453,15 +451,15 @@ input:focus, select:focus, textarea:focus, button:focus { outline: none; -webkit
 
 @media only screen and (max-width: 728px) { input[type="text"], input[type="text2"] { font-size: 3rem; } }
 
-.carousel { position: relative; width: 100%; font-size: 4rem; line-height: 6rem; height: 6rem; display: flex; }
+.carousel { position: relative; width: 100%; font-family: "KivaPostGrot-Bold"; letter-spacing: -.12rem; font-size: 4rem; line-height: 6rem; height: 6rem; display: flex; align-items: center; }
 
-.carousel .pre { position: relative; height: 4.8rem; margin-right: 16px; line-height: 6rem; }
+.carousel .pre { height: 4rem; margin-right: 16px; line-height: 4rem; display: flex; align-items: center; }
 
-.carousel .change_outer { text-align: left; height: 4.8rem; overflow: hidden; }
+.carousel .change_outer { text-align: left; height: 6rem; overflow: hidden; padding: 0; }
 
-.carousel .change_outer .change_inner { position: relative; animation: rotate 8s ease-in-out infinite; }
+.carousel .change_outer .change_inner { animation: rotate 8s ease-in-out infinite; }
 
-.carousel .change_outer .element { display: block; font-weight: 700; }
+.carousel .change_outer .element { display: block; }
 
 @keyframes rotate { 0%, 20% { transform: translateY(0); }
   25%, 45% { transform: translateY(-6rem); }
@@ -470,9 +468,9 @@ input:focus, select:focus, textarea:focus, button:focus { outline: none; -webkit
   100% { transform: translateY(-24rem); } }
 
 @media only screen and (max-width: 728px) { .carousel { display: inline-block; }
-  .carousel .pre { margin-bottom: 64px; line-height: 4.8rem; } }
+  .carousel .pre { line-height: 4.8rem; } }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) { .carousel { display: inline-block; }
-  .carousel .pre { margin-bottom: 0px; line-height: 4.8rem; } }
+  .carousel .pre { line-height: 4.8rem; } }
 
 /*# sourceMappingURL=main.css.map */

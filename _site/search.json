@@ -3,7 +3,7 @@
     {
 
       "title"    : "Copy &amp; Data",
-      "url"      : "/copy+data.html"
+      "url"      : "/KivaBrand//copy+data.html"
 
 
     } ,
@@ -11,15 +11,15 @@
     {
 
       "title"    : "Home",
-      "url"      : "/"
+      "url"      : "/KivaBrand//"
 
 
     } ,
   
     {
 
-      "title"    : "Kiva Logo",
-      "url"      : "/logo.html"
+      "title"    : "Kiva Logo Logo Usage",
+      "url"      : "/KivaBrand//logo.html"
 
 
     } ,
@@ -27,7 +27,7 @@
     {
 
       "title"    : "",
-      "url"      : "/assets/css/main.css"
+      "url"      : "/KivaBrand//assets/css/main.css"
 
 
     } ,
@@ -35,7 +35,7 @@
     {
 
       "title"    : "Color Palette",
-      "url"      : "/palette.html"
+      "url"      : "/KivaBrand//palette.html"
 
 
     } ,
@@ -43,7 +43,7 @@
     {
 
       "title"    : "Photo Gallery",
-      "url"      : "/photo-gallery.html"
+      "url"      : "/KivaBrand//photo-gallery.html"
 
 
     } ,
@@ -51,7 +51,7 @@
     {
 
       "title"    : "",
-      "url"      : "/search.json"
+      "url"      : "/KivaBrand//search.json"
 
 
     } ,
@@ -59,7 +59,7 @@
     {
 
       "title"    : "Search",
-      "url"      : "/search.html"
+      "url"      : "/KivaBrand//search.html"
 
 
     } ,
@@ -67,15 +67,15 @@
     {
 
       "title"    : "Typography",
-      "url"      : "/typography.html"
+      "url"      : "/KivaBrand//typography.html"
 
 
     } ,
   
     {
 
-      "title"    : "Usage",
-      "url"      : "/usage.html"
+      "title"    : "Image Usage",
+      "url"      : "/KivaBrand//usage.html"
 
 
     } ,
@@ -83,7 +83,7 @@
     {
 
       "title"    : "Version History",
-      "url"      : "/versionhistory.html"
+      "url"      : "/KivaBrand//versionhistory.html"
 
 
     } ,
@@ -91,7 +91,7 @@
     {
 
       "title"    : "Voice &amp; Tone",
-      "url"      : "/voice+tone.html"
+      "url"      : "/KivaBrand//voice+tone.html"
 
 
     } ,
@@ -99,7 +99,7 @@
     {
 
       "title"    : "",
-      "url"      : "/assets/css/main.css.map"
+      "url"      : "/KivaBrand//assets/css/main.css.map"
 
 
     } 

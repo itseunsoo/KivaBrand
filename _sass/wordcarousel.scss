@@ -1,4 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+
+
+// * {
+//     border-style: solid;
+//     border-width: 1px;
+// }
 
 $numberOfElements: 4;
 $fontSize: 4rem;
@@ -6,31 +11,45 @@ $fontSize: 4rem;
 .carousel {
     position: relative;
     width: 100%;
-
+    font-family: "KivaPostGrot-Bold";
+letter-spacing: -.12rem;
     font-size: $fontSize;
     line-height: $fontSize * 1.5;
     height: $fontSize * 1.5;
     display: flex;
+
+
+
+    align-items: center;
+
     .pre {
-        position: relative;
-        height: $fontSize * 1.2;
+ 
+        height: $fontSize * 1;
         margin-right: $block4;
-        line-height: $fontSize * 1.5;
+        line-height: $fontSize * 1;
+        display: flex;
+
+
+
+        align-items: center;
     }
 
     .change_outer {
+ 
         text-align: left;
-        height: $fontSize * 1.2;
+        height: $fontSize * 1.5;
         overflow: hidden;
 
+        padding: 0;
+
         .change_inner {
-            position: relative;
+
             animation: rotate 8s ease-in-out infinite;
         }
 
         .element {
             display: block;
-            font-weight: 700;
+
         }
     }
 }
@@ -62,7 +81,7 @@ $fontSize: 4rem;
         display: inline-block;
 
         .pre {
-            margin-bottom: 64px;
+     
             line-height: $fontSize * 1.2;
         }
     }
@@ -75,7 +94,7 @@ $fontSize: 4rem;
         display: inline-block;
 
         .pre {
-            margin-bottom: 0px;
+
             line-height: $fontSize * 1.2;
         }
     }
