@@ -8,6 +8,9 @@ title: Version History
 
 # Version History
 ## 1.0.44
+* Word carousel bug fixes
+
+## 1.0.44
 * Implemented word carousel at hero header
 
 ## 1.0.43
