@@ -1,41 +1,34 @@
-
-
 // * {
 //     border-style: solid;
 //     border-width: 1px;
 // }
 
 $numberOfElements: 4;
-$fontSize: 4rem;
+$fontSize: 2rem;
 
 .carousel {
+    margin: auto;
+    text-align: center;
+width: auto;
     position: relative;
-    width: 100%;
-    font-family: "KivaPostGrot-Bold";
-letter-spacing: -.12rem;
+    font-family: "Arial";
+
+    font-weight: normal;
     font-size: $fontSize;
     line-height: $fontSize * 1.5;
     height: $fontSize * 1.5;
     display: flex;
-
-
-
     align-items: center;
 
     .pre {
- 
         height: $fontSize * 1;
         margin-right: $block4;
         line-height: $fontSize * 1;
         display: flex;
-
-
-
         align-items: center;
     }
 
     .change_outer {
- 
         text-align: left;
         height: $fontSize * 1.5;
         overflow: hidden;
@@ -43,13 +36,11 @@ letter-spacing: -.12rem;
         padding: 0;
 
         .change_inner {
-
             animation: rotate 8s ease-in-out infinite;
         }
 
         .element {
             display: block;
-
         }
     }
 }
@@ -81,22 +72,18 @@ letter-spacing: -.12rem;
         display: inline-block;
 
         .pre {
-     
             line-height: $fontSize * 1.2;
+            margin-bottom: $block7;
         }
     }
 }
-
-
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
     .carousel {
         display: inline-block;
 
         .pre {
-
             line-height: $fontSize * 1.2;
         }
     }
-
 }

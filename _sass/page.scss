@@ -29,18 +29,19 @@
         margin-right: 10px;
         color: $mint;
     }
-
 }
 
 .page-title {
-    font-size: 2.5rem;
+    font-size: 1rem;
+
     color: $bodyColor;
-    font-weight: bolder;
+    font-weight: normal;
     margin-bottom: $block8;
 }
 
 .page-content {
-    width: 55%;
+    margin: auto;
+    width: 50%;
     padding: $block8;
     margin-top: $block4;
     background-color: $backgroundColor;
@@ -124,15 +125,15 @@
     padding: $block4 $block6 $block4 $block6;
     text-decoration: none;
 
-    text-transform: uppercase;
     height: 45px;
     align-self: flex-end;
     width: auto;
     margin-bottom: $block4;
     border-radius: 0.8rem;
+    border-color: rgba(130, 130, 130, 0.5);
     white-space: nowrap;
-    font-family: "Roboto Mono", monospace;
-    font-size: 0.8rem;
+    font-family: "Arial";
+    font-size: 1rem;
     line-height: 0.8rem;
     a {
         text-decoration: none;
@@ -141,11 +142,10 @@
 }
 
 .main-button:hover {
-    color: $backgroundColor;
-    background-color: $bodyColor;
+    background-color: rgba(130, 130, 130, 0.1);
     transition-duration: 0.1s;
     transition-timing-function: ease-out;
-cursor: pointer;
+    cursor: s;
     a {
         color: $backgroundColor;
     }

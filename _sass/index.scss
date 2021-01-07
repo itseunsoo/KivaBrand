@@ -8,35 +8,42 @@
     left: 0;
     right: 0;
     padding: $block8;
+
     button {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
         margin-top: $block4;
     }
 }
 
 .hero-header-title {
-    width: 70%;
-    font-size: 4rem;
-    line-height: 4rem;
-    font-weight: bolder;
+    width: auto;
+
     color: $bodyColor;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-header-sub {
-    font-family: "KivaPostGrot-Book";
     opacity: 0.8;
-    width: 70%;
-    font-size: 1.5rem;
-    line-height: 125%;
+
     color: $bodyColor;
-    margin-bottom: $block2;
+
+    text-align: center;
 }
 
 .hero {
-    height: 700px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+p {
+    line-height: 0%;
+}
     img {
         width: 100%;
         height: 100%;
@@ -44,35 +51,60 @@
     }
 }
 
+.page-grid-container {
+    background-color: $bodyColor;
+    line-height: 100%;
+    padding: $block9;
+    a,
+    h1,
+    h2,
+    p {
+        color: $backgroundColor;
+    }
+    p {
+        opacity: 0.5;
+    }
+}
+
 .page-grid {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: $block2;
-    padding: $block8;
-    background-color: rgba(120, 120, 120, 0.075);
+    grid-gap: 0;
+
+    max-width: 1240px;
     a {
         text-decoration: none;
+        margin-bottom: $block6;
+        padding: $block4;
+    }
+
+    a:hover {
+        background-color: rgba(130, 130, 130, 0.05);
+    }
+    h2 {
+        padding-top: $block4;
     }
 
     button {
         width: 100%;
         position: relative;
-        border-radius: $block2;
-        background-color: $twilight;
+
+        background-color: rgba(130, 130, 130, 0.2);
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: $block9;
+
         cursor: pointer;
         border: none;
-        font-family: "KivaPostGrot-Book";
-        font-size: 1rem;
-        height: 300px;
+
+height: 200px;
 
         img {
-            width: $block9;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         .grid-text {
             width: 100%;
@@ -83,34 +115,46 @@
     button:hover img {
         transition-duration: 0.1s;
         transition-timing-function: ease-out;
-        width: 72px;
+
     }
 }
 
-.padding {
-    padding: $block8;
+.section-header {
+    max-width: 1240px;
+    margin: auto;
+    padding-bottom: $block4;
+    margin-right: $block4;
+    color: $bodyColor;
+}
+
+.download-assets-grid-container {
+    line-height: 100%;
+    padding: $block9;
+    a{
+        color: $bodyColor;
+
+    }
 }
 
 .download-assets-grid {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: $block2;
+    grid-gap: 0;
+    max-width: 1240px;
 
     button {
         position: relative;
-
         border-radius: $block2;
         background-color: $backgroundColor;
         color: $bodyColor;
         display: flex;
         align-items: center;
-
-        padding: $block8;
+        padding: $block7;
+        margin: $block4;
         cursor: pointer;
         border-style: solid;
         border-width: 1px;
-        font-family: "KivaPostGrot-Book";
         font-size: 1rem;
         img {
             width: 30px;
@@ -142,13 +186,24 @@
     .hero-header {
         padding: $block4;
     }
+
+    .section-header {
+        max-width: 1240px;
+        margin: auto;
+        padding: $block6;
+        padding-bottom: 0;
+        color: $bodyColor;
+    }
+    .page-grid-container {
+        padding: 0;
+    }
     .page-grid {
         grid-template-columns: 1fr;
-        padding: $block4;
+        padding: $block6;
 
         button {
             padding: $block5;
-            height: 100px;
+            height: 300px;
 
             img {
                 width: 40px;
@@ -167,16 +222,9 @@
     }
 
     .hero {
-        height: 700px;
-        justify-content: flex-end;
-    }
-    .hero-header-title {
-        width: 90%;
+        height: 500px;
     }
 
-    .hero-header-sub {
-        width: 90%;
-    }
     .padding {
         padding: $block4;
     }
@@ -197,12 +245,16 @@
     .hero-header {
         padding: $block8;
     }
+
+    .page-grid-container {
+        padding: 0;
+    }
     .page-grid {
         grid-template-columns: 1fr 1fr;
         padding: $block8;
         button {
             padding: $block5;
-            height: 100px;
+            height: 200px;
 
             img {
                 width: 40px;
@@ -221,16 +273,9 @@
     }
 
     .hero {
-        height: 900px;
-        justify-content: flex-end;
-    }
-    .hero-header-title {
-        width: 75%;
+        height: 400px;
     }
 
-    .hero-header-sub {
-        width: 75%;
-    }
     .padding {
         padding: $block8;
     }

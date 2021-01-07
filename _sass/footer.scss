@@ -1,12 +1,14 @@
 footer {
     opacity: 0.5;
-
+max-width: 1240px;
+margin: auto;
+padding-bottom: $block8;
     p {
         line-height: 0.8rem;
     }
 
     svg {
-        width: 60px;
+        width: 48px;
 
         fill: $bodyColor;
     }

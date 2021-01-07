@@ -9,7 +9,7 @@ body {
   height: 100%;
 }
 body {
-  width: 100%;
+  max-width: 100%;
   margin: auto;
   font-family: $bodyFont;
   background: $backgroundColor;
@@ -38,23 +38,26 @@ $block9: 64px;
 $block10: 96px;
 $block11: 128px;
 
-$twilight: #3e4653;
-$mint: #9eebd5;
+$colorA: #4faf4e;
+
+// $twilight: #3e4653;
+$twilight: #3a3a3a;
+$mint: #4faf4e;
 
 html,
 html[data-theme="light"] {
   --background-color: #ffffff;
-  --light-text-color: #3e4653;
-  --highlight-color: #9eebd5;
+  --light-text-color: #202020;
+  --highlight-color: #ffec80;
   --link-color: rgb(0, 112, 201);
   --main-background-color: rgb(255, 255, 255);
   --main-text-color: rgb(51, 51, 51);
 }
 
 html[data-theme="dark"] {
-  --background-color: #3e4653;
+  --background-color: #202020;
   --light-text-color: #ffffff;
-  --highlight-color: #bf5344;
+  --highlight-color: #fffb00;
   --link-color: rgb(100, 210, 255);
   --main-background-color: rgb(28, 28, 30);
   --main-text-color: rgb(229, 229, 234);
@@ -63,9 +66,9 @@ html[data-theme="dark"] {
 @media (prefers-color-scheme: dark) {
   html,
   html[data-theme="dark"] {
-    --background-color: #26292e;
+    --background-color: #202020;
     --light-text-color: #ffffff;
-    --highlight-color: #bf5344;
+    --highlight-color: #a0b0c5;
     --link-color: rgb(100, 210, 255);
     --main-background-color: rgb(28, 28, 30);
     --main-text-color: rgb(229, 229, 234);
@@ -73,8 +76,8 @@ html[data-theme="dark"] {
 
   html[data-theme="light"] {
     --background-color: #ffffff;
-    --light-text-color: #26292e;
-    --highlight-color: #9eebd5;
+    --light-text-color: #202020;
+    --highlight-color: #a0b0c5;
     --link-color: rgb(0, 112, 201);
     --main-background-color: rgb(255, 255, 255);
     --main-text-color: rgb(51, 51, 51);
@@ -82,25 +85,29 @@ html[data-theme="dark"] {
 }
 
 h1 {
-  font-family: "KivaPostGrot-Bold";
-  font-size: 1.5rem;
-  letter-spacing: -.02rem;
+  font-family: "Arial";
+  font-size: 2.4rem;
+
+
+  font-weight: normal;
+
 
 }
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 
-  opacity: 0.5;
-  font-family: "KivaPostGrot-Medium";
-  letter-spacing: -.02em;
+  font-weight: normal;
 
 }
 
 p {
-  font-family: "KivaPostGrot-Book";
-  font-size: 1rem;
-  line-height: 1.5rem;
-  letter-spacing: -.01rem;
+
+  font-size: .95rem;
+line-height: 150%;
+
+
+
+
 }
 
 hr {

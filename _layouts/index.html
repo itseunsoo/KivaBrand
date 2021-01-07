@@ -1,152 +1,240 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-          <script src="../assets/js/search-script.js"></script>
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>{{ page.title }} - {{ site.title }}</title>
+        <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 
-<body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="../assets/js/search-script.js"></script>
+    </head>
 
+    <body>
 
-
-    {% include header.html %}
-    {% include mobileheader.html %}
+        {% include header.html %}
+        {% include mobileheader.html %}
         {% include popup.html %}
-     
-   
-    <div class="hero">
 
+        <div class="hero">
 
-        <div class="hero-header">
-            <div class="hero-header-title">
+            <div class="hero-header">
+                <div class="hero-header-title">
+                    <h2>   <label id="lblGreetings"></label>Let's make something beautiful.</h2>
+                    <!-- <div class="carousel">
+                        <div class="pre">Designing for </div>
+                        <div class="change_outer">
+                            <div class="change_inner">
+                                <div class="element">Peace</div>
+                                <div class="element">Hope</div>
+                                <div class="element">Love</div>
+                                <div class="element">Good</div>
+                            </div>
+                        </div>
+                    </div> -->
 
+                </div>
+                <div class="hero-header-sub"><p>Assets for building high-quiality, consistent user experiences at Kiva.</p></div>
 
-
-
-
-
-
-         
-                      <div class="carousel">
-                              <div class="pre">Designing for </div>
-                              <div class="change_outer">
-                                  <div class="change_inner">
-                                      <div class="element">Peace</div>
-                                      <div class="element">Hope</div>
-                                      <div class="element">Love</div>
-                                      <div class="element">Good</div>
-                                  </div>
-                              </div>
-                          </div>
-
-  
-
-
-
-
-
-
-
+                <a href="{{ site.url }}{{ site.baseurl }}/logo">
+                    <button class="main-button">Get building 🔧</button>
+                </a>
 
             </div>
-            <div class="hero-header-sub">Assets for building high-quiality, consistent user experiences at Kiva.</div>
+        </div>
 
-            <a href="{{ site.url }}{{ site.baseurl }}/logo"><button class="main-button">Let's get building 🔧</button></a>
+
+
+        <div class="page-grid-container">
+
+          <div class="section-header"><h1>Brand guidelines</h1><p>lorem ipsum dolor sit</p></div>
+
+        <div class="page-grid">
+
+
+            <a href="{{ site.url }}{{ site.baseurl }}/logo">
+                <button>
+                    <img src="../uploads/KivaLogoThumb.png">
+                </button>
+                <div class="grid-text">
+                    <h2>Logo Usage</h2>
+                    <p>lorem ipsum dolor sit</p>
+                </div>
+            </a>
+
+            <a href="{{ site.url }}{{ site.baseurl }}/palette">
+                <button>
+                    <img src="../assets/icons/palette-icon.svg">
+                </button>
+                <div class="grid-text">
+                    <h2>Color Palette</h2>
+                    <p>lorem ipsum dolor sit</p>
+                </div>
+            </a>
+
+            <a href="{{ site.url }}{{ site.baseurl }}/typography">
+                <button>
+                    <img src="../assets/icons/type-icon.svg">
+      
+                </button>
+                <div class="grid-text">
+                    <h2>Typography</h2>
+                    <p>lorem ipsum dolor sit</p>
+                </div>
+            </a>
+
+            <a href="{{ site.url }}{{ site.baseurl }}/usage">
+                <button>
+                    <img src="../assets/icons/image-icon.svg">
+       
+                </button>
+                <div class="grid-text">
+                    <h2>Imagery</h2>
+                    <p>lorem ipsum dolor sit</p>
+                </div>
+            </a>
+
+            <a href="{{ site.url }}{{ site.baseurl }}/voice+tone">
+                <button>
+                    <img src="../assets/icons/voicetone-icon.svg">
+            
+                </button>
+                <div class="grid-text">
+                    <h2>Voice & Tone</h2>
+                    <p>lorem ipsum dolor sit</p>
+                </div>
+            </a>
+
+            <a href="{{ site.url }}{{ site.baseurl }}/copy+data">
+                <button>
+                    <img src="../assets/icons/copydata-icon.svg">
+               
+                </button>
+                <div class="grid-text">
+                    <h2>Copy & Data</h2>
+                    <p>lorem ipsum dolor sit</p>
+                </div>
+            </a>
 
         </div>
     </div>
 
 
-    <div class="page-grid">
-
-        <a href="{{ site.url }}{{ site.baseurl }}/logo">
-            <button>
-                <img src="../assets/icons/kiva-icon.svg">
-                <div class="grid-text">Logo Usage</div>
-            </button>
-        </a>
-        <a href="{{ site.url }}{{ site.baseurl }}/palette">
-            <button>
-                <img src="../assets/icons/palette-icon.svg">
-                <div class="grid-text">Color Palette</div>
-            </button>
-        </a>
-        <a href="{{ site.url }}{{ site.baseurl }}/typography">
-            <button>
-                <img src="../assets/icons/type-icon.svg">
-                <div class="grid-text">Typography</div>
-            </button>
-        </a>
-        <a href="{{ site.url }}{{ site.baseurl }}/usage">
-            <button>
-                <img src="../assets/icons/image-icon.svg">
-                <div class="grid-text">Imagery</div>
-            </button>
-        </a>
-        <a href="{{ site.url }}{{ site.baseurl }}/voice+tone">
-            <button>
-                <img src="../assets/icons/voicetone-icon.svg">
-                <div class="grid-text">Voice & Tone</div>
-            </button>
-        </a>
-        <a href="{{ site.url }}{{ site.baseurl }}/copy+data">
-            <button>
-                <img src="../assets/icons/copydata-icon.svg">
-                <div class="grid-text">Copy & Data</div>
-            </button>
-        </a>
-
-    </div>
-
-
-
-    <div class="padding">
-        <div class="download-assets">
-            <h1>Download Assets</h1>
-            <p>Lorem ipsum dolor sit</p>
-            <div class="download-assets-grid">
-                <button>
-                    <img src="../assets/icons/kiva-dl-icon.svg">
-                    <div class="grid-text">Kiva Logos</div>
-                </button>
-                <button>
-                    <img src="../assets/icons/palette-dl-icon.svg">
-                    <div class="grid-text">Color Palette</div>
-                </button>
-                <button>
-                    <img src="../assets/icons/figma-dl-icon.svg">
-                    <div class="grid-text">Figma Libraries</div>
-                </button>
-                <button>
-                    <img src="../assets/icons/image-dl-icon.svg">
-                    <div class="grid-text">Images</div>
-                </button>
-                <button>
-                    <img src="../assets/icons/illustration-dl-icon.svg">
-                    <div class="grid-text">Illustrations</div>
-                </button>
-                <button>
-                    <img src="../assets/icons/pattern-dl-icon.svg">
-                    <div class="grid-text">Patterns</div>
-                </button>
+    <div class="download-assets-grid-container">
+        <div class="section-header">
+                <h1>Downloadable Assets</h1>
+                <p>Lorem ipsum dolor sit</p>
             </div>
-        </div>
+       
+                <div class="download-assets-grid">
+                    <button>
+                        <img src="../assets/icons/kiva-dl-icon.svg">
+                        <div class="grid-text">Kiva Logos</div>
+                    </button>
+                    <button>
+                        <img src="../assets/icons/palette-dl-icon.svg">
+                        <div class="grid-text">Color Palette</div>
+                    </button>
+                    <button>
+                        <img src="../assets/icons/figma-dl-icon.svg">
+                        <div class="grid-text">Figma Libraries</div>
+                    </button>
+                    <button>
+                        <img src="../assets/icons/image-dl-icon.svg">
+                        <div class="grid-text">Images</div>
+                    </button>
+                    <button>
+                        <img src="../assets/icons/illustration-dl-icon.svg">
+                        <div class="grid-text">Illustrations</div>
+                    </button>
+                    <button>
+                        <img src="../assets/icons/pattern-dl-icon.svg">
+                        <div class="grid-text">Patterns</div>
+                    </button>
+                </div>
     </div>
 
 
 
-    {{ content}}
 
 
-    <div class="padding">
-    {% include footer.html %}
-</div>
-</body>
+
+    <div class="download-assets-grid-container">
+
+        <div class="section-header"><h1>News</h1><p>lorem ipsum dolor sit</p></div>
+
+      <div class="page-grid">
+
+
+          <a href="{{ site.url }}{{ site.baseurl }}/logo">
+              <button>
+                  <img src="../assets/icons/kiva-icon.svg">
+              </button>
+              <div class="grid-text">
+                  <h2>Logo Usage</h2>
+                  <p>lorem ipsum dolor sit</p>
+              </div>
+          </a>
+
+          <a href="{{ site.url }}{{ site.baseurl }}/palette">
+              <button>
+                  <img src="../assets/icons/palette-icon.svg">
+              </button>
+              <div class="grid-text">
+                  <h2>Color Palette</h2>
+                  <p>lorem ipsum dolor sit</p>
+              </div>
+          </a>
+
+          <a href="{{ site.url }}{{ site.baseurl }}/typography">
+              <button>
+                  <img src="../assets/icons/type-icon.svg">
+    
+              </button>
+              <div class="grid-text">
+                  <h2>Typography</h2>
+                  <p>lorem ipsum dolor sit</p>
+              </div>
+          </a>
+
+      
+
+       
+      </div>
+  </div>
+
+
+
+
+
+
+
+        {{ content}}
+
+        <div class="padding">
+            {% include footer.html %}
+        </div>
+    </body>
+
+
+
+    <script>
+        var myDate = new Date();
+        var hrs = myDate.getHours();
+    
+        var greet;
+    
+        if (hrs < 12)
+            greet = 'Good Morning';
+        else if (hrs >= 12 && hrs <= 17)
+            greet = 'Good Afternoon';
+        else if (hrs >= 17 && hrs <= 24)
+            greet = 'Good Evening';
+    
+        document.getElementById('lblGreetings').innerHTML =
+            '' + greet + '. ';
+    </script> 
 
 </html>

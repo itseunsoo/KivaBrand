@@ -46,19 +46,22 @@
 
 .sidenav {
 width: 20%;
-    background-color: $twilight;
-    color: white;
+    background-color: rgba(130, 130, 130, 0.05);
+    color: $bodyColor;
 position: fixed;
     height: 100vh;
     overflow: scroll;
 font-size: 14px;
+border-style: solid;
+border-width: 0 1px  0 0;
+border-color: rgba(130, 130, 130, 0.20);
     ul {
         padding: 0;
     }
 
     li {
         display: flex;
-        padding: $block4 $block8 $block4 $block7;
+        padding: $block6 $block8 $block6 $block8;
         list-style: none;
         border-style: solid;
         border-width: 0px 0px 0px 2px;
@@ -71,13 +74,14 @@ font-size: 14px;
             width: 30px;
             margin-right: $block4;
             filter: grayscale(100%);
+            display: none;
         }
     }
     li:hover {
         background-color: rgba(0, 0, 0, 0.103);
         border-style: solid;
         border-width: 0px 0px 0px 2px;
-        border-color: #afe9d6;
+        border-color: $bodyColor;
         img {
             filter: grayscale(0%);
         }
@@ -85,7 +89,7 @@ font-size: 14px;
 
 
     a {
-        color: white;
+        color: $bodyColor;
         text-decoration: none;
     }
     ul {
@@ -96,8 +100,8 @@ font-size: 14px;
 .sidenav-logo {
     padding: $block8;
     svg {
-        width: 60px;
-        fill: white;
+        width: 55px;
+        fill: $colorA;
     }
 }
 
@@ -152,8 +156,8 @@ font-size: 14px;
     padding-right: $block7;
 
     .st0 {
-        fill: #ffffff;
-        stroke: #ffffff;
+        fill: $bodyColor;
+        stroke: $bodyColor;
         stroke-width: 15;
         stroke-linecap: round;
         stroke-miterlimit: 10;
@@ -193,7 +197,7 @@ font-size: 14px;
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
     display: none;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(130, 130, 130, 0.1);
     padding: $block4;
 
 
