@@ -179,20 +179,6 @@ header svg { width: 55px; fill: #4faf4e; }
   .download-assets-grid button { padding: 24px; }
   .download-assets-grid button img { width: 30px; margin-right: 24px; } }
 
-.kiva-logo-svg g { fill: var(--background-color); }
-
-.kiva-logo-svg .st0 { fill: none; stroke: var(--background-color); stroke-width: 30; stroke-miterlimit: 10; opacity: .5; }
-
-.imagery-icon-svg .st0 { fill: none; stroke: var(--background-color); stroke-width: 30; stroke-miterlimit: 10; }
-
-.imagery-icon-svg .st1 { opacity: 0.5; fill: var(--background-color); }
-
-.imagery-icon-svg .st2 { fill: #FF00FF; }
-
-.voice-tone-icon-svg .st0 { fill: none; stroke: var(--background-color); stroke-width: 30; stroke-linecap: round; stroke-miterlimit: 10; }
-
-.copy-data-icon-svg .st0 { stroke: var(--background-color); stroke-width: 30; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; }
-
 footer { opacity: 0.5; margin: auto; padding: 32px 48px 32px 48px; }
 
 footer p { line-height: 100%; font-size: .875rem; }
