@@ -255,10 +255,9 @@
     }
     .st0 {
         fill: none;
-        stroke: $backgroundColor;
+        stroke: #00FF00;
         stroke-width: 30;
         stroke-miterlimit: 10;
-        opacity: .5;
     }
 }
 
@@ -290,9 +289,9 @@
 
 .copy-data-icon-svg {
     .st0 {
-        stroke: $backgroundColor;
+        stroke: $bodyColor;
         stroke-width: 30;
-        fill: none;
+        fill: $backgroundColor;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-miterlimit: 10;
