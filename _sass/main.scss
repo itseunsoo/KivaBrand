@@ -96,7 +96,7 @@ h2 {
 }
 
 p {
-    font-size: .95rem;
+    font-size: .92rem;
     line-height: 150%;
 }
 
@@ -165,10 +165,10 @@ $animationSpeed1: 180ms;
 
 @media only screen and (max-width: 728px) {
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .triple-grid {
         grid-template-columns: 1fr;
