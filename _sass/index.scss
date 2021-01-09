@@ -81,14 +81,18 @@
     a {
         text-decoration: none;
         margin-bottom: $block6;
-        padding: $block4;
+        padding: $block7 $block4 $block4 $block4;
         border-radius: 0.8rem;
     }
     a:hover {
-        background-color: rgba(130, 130, 130, 0.1);
+        // background-color: rgba(130, 130, 130, 0.1);
     }
     h2 {
         padding-top: $block2;
+    }
+    svg {
+        width: 4rem;
+        opacity: .7;
     }
     button {
         width: 100%;
@@ -101,6 +105,7 @@
         border: none;
         padding: 0;
         img {
+            display: none;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -109,13 +114,19 @@
         .grid-text {
             width: 100%;
             position: absolute;
-            bottom: $block7;
         }
     }
     button:hover img {
         transition-duration: 0.1s;
         transition-timing-function: ease-out;
     }
+}
+
+.page-grid a:hover svg {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    opacity: 1;
+    margin-top: -10px;
 }
 
 // DOWNLOADABLE ASSETS MODULE
@@ -235,5 +246,54 @@
                 margin-right: $block6;
             }
         }
+    }
+}
+
+.kiva-logo-svg {
+    g {
+        fill: $backgroundColor;
+    }
+    .st0 {
+        fill: none;
+        stroke: #ffffff;
+        stroke-width: 30;
+        stroke-miterlimit: 10;
+        opacity: .5;
+    }
+}
+
+.imagery-icon-svg {
+    .st0 {
+        fill: none;
+        stroke: $backgroundColor;
+        stroke-width: 30;
+        stroke-miterlimit: 10;
+    }
+    .st1 {
+        opacity: 0.5;
+        fill: $backgroundColor;
+    }
+    .st2 {
+        fill: #FF00FF;
+    }
+}
+
+.voice-tone-icon-svg {
+    .st0 {
+        fill: none;
+        stroke: $backgroundColor;
+        stroke-width: 30;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+    }
+}
+
+.copy-data-icon-svg {
+    .st0 {
+        stroke: $backgroundColor;
+        stroke-width: 30;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
     }
 }
