@@ -91,7 +91,7 @@
         padding-top: $block2;
     }
     svg {
-        width: 4rem;
+        width: $block8;
         opacity: .7;
     }
     button {
@@ -246,54 +246,5 @@
                 margin-right: $block6;
             }
         }
-    }
-}
-
-.kiva-logo-svg {
-    g {
-        fill: $backgroundColor;
-    }
-    .st0 {
-        fill: none;
-        stroke: #00FF00;
-        stroke-width: 30;
-        stroke-miterlimit: 10;
-    }
-}
-
-.imagery-icon-svg {
-    .st0 {
-        fill: none;
-        stroke: $backgroundColor;
-        stroke-width: 30;
-        stroke-miterlimit: 10;
-    }
-    .st1 {
-        opacity: 0.5;
-        fill: $backgroundColor;
-    }
-    .st2 {
-        fill: #FF00FF;
-    }
-}
-
-.voice-tone-icon-svg {
-    .st0 {
-        fill: none;
-        stroke: $backgroundColor;
-        stroke-width: 30;
-        stroke-linecap: round;
-        stroke-miterlimit: 10;
-    }
-}
-
-.copy-data-icon-svg {
-    .st0 {
-        stroke: $bodyColor;
-        stroke-width: 30;
-        fill: $backgroundColor;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-miterlimit: 10;
     }
 }

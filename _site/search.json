@@ -26,14 +26,6 @@
   
     {
 
-      "title"    : "",
-      "url"      : "/KivaBrand//assets/css/main.css"
-
-
-    } ,
-  
-    {
-
       "title"    : "Color Palette",
       "url"      : "/KivaBrand//palette.html"
 
@@ -92,14 +84,6 @@
 
       "title"    : "Voice &amp; Tone",
       "url"      : "/KivaBrand//voice+tone.html"
-
-
-    } ,
-  
-    {
-
-      "title"    : "",
-      "url"      : "/KivaBrand//assets/css/main.css.map"
 
 
     } 
