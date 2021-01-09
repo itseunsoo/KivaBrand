@@ -2,13 +2,12 @@
 //     border-style: solid;
 //     border-width: 1px;
 // }
-
+// HERO MODULE
 .hero-header {
     position: absolute;
     left: 0;
     right: 0;
     padding: $block8;
-
     button {
         position: absolute;
         left: 50%;
@@ -19,20 +18,17 @@
 
 .hero-header-title {
     width: auto;
-
     color: $bodyColor;
     margin: auto;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .hero-header-sub {
     opacity: 0.8;
-
     color: $bodyColor;
-
     text-align: center;
 }
 
@@ -41,9 +37,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-p {
-    line-height: 0%;
-}
     img {
         width: 100%;
         height: 100%;
@@ -51,6 +44,15 @@ p {
     }
 }
 
+// HEADER FOR EACH SECTION
+.section-header {
+    max-width: 1240px;
+    margin: auto;
+    padding-bottom: $block4;
+    color: $bodyColor;
+}
+
+// PAGES MODULE
 .page-grid-container {
     background-color: $bodyColor;
     line-height: 100%;
@@ -71,40 +73,34 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0;
-
-    max-width: 1240px;
+    max-width: 1274px;
     a {
         text-decoration: none;
         margin-bottom: $block6;
         padding: $block4;
+        border-radius: 0.8rem;
     }
-
     a:hover {
-        background-color: rgba(130, 130, 130, 0.05);
+        background-color: rgba(130, 130, 130, 0.1);
     }
     h2 {
-        padding-top: $block4;
+        padding-top: $block2;
     }
-
     button {
         width: 100%;
-        position: relative;
-
-        background-color: rgba(130, 130, 130, 0.2);
+        background-color: transparent;
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
-
         cursor: pointer;
         border: none;
-
-height: 200px;
-
+        padding: 0;
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 0.8rem;
         }
         .grid-text {
             width: 100%;
@@ -115,24 +111,15 @@ height: 200px;
     button:hover img {
         transition-duration: 0.1s;
         transition-timing-function: ease-out;
-
     }
 }
 
-.section-header {
-    max-width: 1240px;
-    margin: auto;
-    padding-bottom: $block4;
-    margin-right: $block4;
-    color: $bodyColor;
-}
-
+// DOWNLOADABLE ASSETS MODULE
 .download-assets-grid-container {
     line-height: 100%;
     padding: $block9;
-    a{
+    a {
         color: $bodyColor;
-
     }
 }
 
@@ -140,18 +127,16 @@ height: 200px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0;
+    grid-gap: $block4;
     max-width: 1240px;
-
     button {
         position: relative;
-        border-radius: $block2;
+        border-radius: 0.8rem;
         background-color: $backgroundColor;
         color: $bodyColor;
         display: flex;
         align-items: center;
         padding: $block7;
-        margin: $block4;
         cursor: pointer;
         border-style: solid;
         border-width: 1px;
@@ -160,7 +145,6 @@ height: 200px;
             width: 30px;
             margin-right: $block4;
         }
-
         .grid-text {
             width: 100%;
             position: relative;
@@ -173,93 +157,52 @@ height: 200px;
     }
 }
 
-.hollow {
-    border-style: solid;
-    border-width: 1px;
-    background-color: $backgroundColor;
-    color: $bodyColor;
-    border-radius: $block10;
-    padding: $block2 $block4 $block2 $block4;
-}
-
+// MOBILE
 @media only screen and (max-width: 728px) {
     .hero-header {
-        padding: $block4;
-    }
-
-    .section-header {
-        max-width: 1240px;
-        margin: auto;
-        padding: $block6;
-        padding-bottom: 0;
-        color: $bodyColor;
+        padding: $block7;
     }
     .page-grid-container {
-        padding: 0;
+        padding: $block9 $block7 0 $block7;
     }
     .page-grid {
         grid-template-columns: 1fr;
-        padding: $block6;
-
         button {
-            padding: $block5;
-            height: 300px;
-
-            img {
-                width: 40px;
-                margin-right: $block4;
-            }
-            .grid-text {
-                width: 100%;
-                position: relative;
-                bottom: initial;
-                text-align: left;
-            }
+            height: auto;
         }
-        button:hover img {
-            width: 50px;
+        a {
+            margin-bottom: 0px;
+            padding: 0;
+            padding-bottom: $block9;
         }
     }
-
     .hero {
-        height: 500px;
+        height: 550px;
     }
-
-    .padding {
-        padding: $block4;
+    .download-assets-grid-container {
+        padding: $block9 $block7 0 $block7;
     }
-
     .download-assets-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         button {
             padding: $block4;
-            img {
-                width: 30px;
-                margin-right: $block4;
-            }
         }
     }
 }
 
+// TABLET
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
     .hero-header {
         padding: $block8;
     }
-
     .page-grid-container {
-        padding: 0;
+        padding: $block9 $block8 0 $block8;
     }
     .page-grid {
         grid-template-columns: 1fr 1fr;
-        padding: $block8;
+        grid-gap: $block6;
+        padding: 0;
         button {
-            padding: $block5;
-            height: 200px;
-
-            img {
-                width: 40px;
-                margin-right: $block8;
-            }
             .grid-text {
                 width: 100%;
                 position: relative;
@@ -267,24 +210,22 @@ height: 200px;
                 text-align: left;
             }
         }
-        button:hover img {
-            width: 50px;
+        a {
+            margin-bottom: 0px;
+            padding: 0;
+            padding-bottom: $block9;
         }
     }
-
     .hero {
         height: 400px;
     }
-
-    .padding {
-        padding: $block8;
+    .download-assets-grid-container {
+        padding: $block9 $block8 0 $block8;
     }
-
     .download-assets-grid {
         grid-template-columns: 1fr 1fr 1fr;
         button {
             padding: $block6;
-
             img {
                 width: 30px;
                 margin-right: $block6;

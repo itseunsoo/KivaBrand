@@ -7,6 +7,9 @@ title: Version History
 
 
 # Version History
+## 1.0.49
+* index.html refresh and responsive updates
+
 ## 1.0.44
 * Word carousel bug fixes
 

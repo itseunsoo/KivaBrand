@@ -1,24 +1,24 @@
 .color-palette {
     height: 250px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 0.8rem;
     position: relative;
 }
 
 .secondary-color-palette {
     height: 150px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 0.8rem;
     position: relative;
 }
 
 .color-palette-info-container {
     background-color: rgb(235, 235, 235);
     position: absolute;
-padding: 20px;
+    padding: 20px;
     bottom: 0;
     height: auto;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 0.8rem 0.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,9 +33,7 @@ padding: 20px;
     display: flex;
     align-items: center;
     color: $twilight;
-
     width: 90%;
-
     p {
         width: 100%;
         text-align: right;
@@ -46,25 +44,20 @@ padding: 20px;
     .color-palette {
         height: 200px;
     }
-
     .color-palette-info-container {
         height: auto;
         padding: 0px;
-        border-radius: 0 0 20px 20px;
+        border-radius: 0 0 0.8rem 0.8rem;
         display: flex;
         flex-direction: row;
     }
-
     .color-palette-info {
         color: $twilight;
-
         display: flex;
-
         align-items: center;
         justify-content: center;
         width: auto;
         margin: $block2 0 $block2 0;
-
         p {
             text-align: left;
             margin-left: $block4;

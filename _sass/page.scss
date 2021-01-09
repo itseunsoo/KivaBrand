@@ -2,19 +2,21 @@
 //     border-style: solid;
 //     border-width: 1px;
 // }
-
 .page-body {
     display: flex;
-    -webkit-animation: fadein 0.8s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 0.8s; /* Firefox < 16 */
-    -ms-animation: fadein 0.8s; /* Internet Explorer */
-    -o-animation: fadein 0.8s; /* Opera < 12.1 */
+    -webkit-animation: fadein 0.8s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.8s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 0.8s;
+    /* Internet Explorer */
+    -o-animation: fadein 0.8s;
+    /* Opera < 12.1 */
     animation: fadein 0.8s;
     ul {
         list-style-type: none;
         padding: 0;
     }
-
     li {
         line-height: 1.5rem;
         list-style-type: none;
@@ -23,7 +25,6 @@
         padding-left: 1.5em;
         padding-top: $block4;
     }
-
     li:before {
         content: "✓";
         margin-right: 10px;
@@ -33,7 +34,6 @@
 
 .page-title {
     font-size: 1rem;
-
     color: $bodyColor;
     font-weight: normal;
     margin-bottom: $block8;
@@ -41,11 +41,10 @@
 
 .page-content {
     margin: auto;
-    width: 50%;
+    width: 45%;
     padding: $block8;
     margin-top: $block4;
     background-color: $backgroundColor;
-
     h1 {
         margin-top: $block9;
         width: 100%;
@@ -78,7 +77,6 @@
     .page-title {
         margin-top: 90px;
     }
-
     .pages-footer {
         display: initial;
         svg {
@@ -110,21 +108,20 @@
 }
 
 // OTHER STUFF
-
 .h1-link {
     display: flex;
 }
 
 .main-button {
     margin-right: 16px;
-    background-color: transparent; /* Green */
+    background-color: transparent;
+    /* Green */
     border-style: solid;
     border-color: $bodyColor;
     border-width: 0.5px;
     color: $bodyColor;
     padding: $block4 $block6 $block4 $block6;
     text-decoration: none;
-
     height: 45px;
     align-self: flex-end;
     width: auto;

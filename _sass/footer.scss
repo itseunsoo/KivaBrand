@@ -1,18 +1,15 @@
 footer {
     opacity: 0.5;
-max-width: 1240px;
-margin: auto;
-padding-bottom: $block8;
+    margin: auto;
+    padding: $block7 $block8 $block7 $block8;
     p {
         line-height: 0.8rem;
     }
-
     svg {
         width: 48px;
-
         fill: $bodyColor;
     }
-    a{
+    a {
         text-decoration: none;
         color: $bodyColor
     }
@@ -20,9 +17,7 @@ padding-bottom: $block8;
 
 @media only screen and (max-width: 728px) {
     footer {
-        margin-top: $block4;
-        margin-bottom: $block8;   
-
+        padding: $block6;
         svg {
             width: 45px;
         }

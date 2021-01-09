@@ -2,205 +2,177 @@
 //     border-style: solid;
 //     border-width: 1px;
 // }
-
-
-
-
-
 mobileheader {
-
-opacity: .99;
-  background-color: $backgroundColor;
-
-  position: fixed;
-  top:0;
-  transition: top 0.3s ease-in-out;
-  display: none;
-
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: $block9;
-
-  z-index: 1;
-  div {
-    padding: $block6;
-  }
-  svg {
-    width: 45px;
-    fill: $bodyColor;
-  }
+    opacity: .99;
+    background-color: $backgroundColor;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: $block9;
+    z-index: 1;
+    div {
+        padding: $block6;
+    }
+    svg {
+        width: 45px;
+        fill: $bodyColor;
+    }
 }
 
 .mobilenav-up {
-  top: -$block9;
+    top: -$block9;
 }
 
-
 .mobileheader-open {
-  height: $block9;
-  background-color: $twilight;
-	opacity: .99;
-  position: absolute;
-  display: none;
-
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  div {
-    padding: $block6;
-  }
-  svg {
-    width: 45px;
-    fill: $bodyColor;
-  }
+    height: $block9;
+    background-color: $twilight;
+    opacity: .99;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    div {
+        padding: $block6;
+    }
+    svg {
+        width: 45px;
+        fill: $bodyColor;
+    }
 }
 
 .overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 2;
-
-  left: 0;
-  background-color: $twilight;
-
-  overflow-y: hidden;
-  transition: .5s;
-  transition-timing-function: cubic-bezier(.5,0,0,.8);
-
-  svg {
-    width: 45px;
-    fill: white;
-  }
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    background-color: $twilight;
+    overflow-y: hidden;
+    transition: .5s;
+    transition-timing-function: cubic-bezier(.5, 0, 0, .8);
+    svg {
+        width: 45px;
+        fill: white;
+    }
 }
 
 .overlay-content {
-  position: relative;
-  color: white;
-  width: 100%;
-  top: $block8;
-
-  p {
-    padding: $block4 $block4 0 $block4;
-    opacity: 0.9;
-  }
-  a {
-    
-    font-size: 1rem;
-  }
-
-  ul {
-    padding: 0;
-  }
-
-  li {
-    display: flex;
-    padding: $block4;
-    list-style: none;
-    border-style: solid;
-    border-width: 0px 0px 0px 4px;
-    border-color: transparent;
-    cursor: pointer;
-
-    align-items: center;
-
-
-    img {
-      width: 30px;
-      margin-right: $block7;
-      margin-left: $block4
-    }
-  }
-  li:hover {
-    background-color: rgba(0, 0, 0, 0.103);
-    border-style: solid;
-    border-width: 0px 0px 0px 4px;
-    border-color: $colorA;
-  }
-  a {
+    position: relative;
     color: white;
-    text-decoration: none;
-  }
-  hr {
-    margin: $block4 $block7 $block4 $block7;
-  }
+    width: 100%;
+    top: $block8;
+    p {
+        padding: $block4 $block4 0 $block4;
+        opacity: 0.9;
+    }
+    a {
+        font-size: 1rem;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        display: flex;
+        padding: $block4;
+        list-style: none;
+        border-style: solid;
+        border-width: 0px 0px 0px 4px;
+        border-color: transparent;
+        cursor: pointer;
+        align-items: center;
+        img {
+            width: 30px;
+            margin-right: $block7;
+            margin-left: $block4
+        }
+    }
+    li:hover {
+        background-color: rgba(0, 0, 0, 0.103);
+        border-style: solid;
+        border-width: 0px 0px 0px 4px;
+        border-color: $colorA;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    hr {
+        margin: $block4 $block7 $block4 $block7;
+    }
 }
 
-
-
 .overlay a {
-  text-decoration: none;
-
-  color: white;
-  display: block;
-  transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #f1f1f1;
-
+    color: #f1f1f1;
 }
 
 .overlay .closebtn {
-  position: absolute;
-  padding: $block6;
-  right: 0;
+    position: absolute;
+    padding: $block6;
+    right: 0;
 }
 
 .openbtn,
 .closebtn {
-  svg {
-    width: 20px;
-    stroke-width: 15;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-  }
+    svg {
+        width: 20px;
+        stroke-width: 15;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+    }
 }
 
 .openbtn {
-  svg {
-    fill: #ffffff;
-    stroke: $bodyColor;
-  }
+    svg {
+        fill: #ffffff;
+        stroke: $bodyColor;
+    }
 }
 
 .closebtn {
-  svg {
-    fill: #ffffff;
-    stroke: white;
-  }
+    svg {
+        fill: #ffffff;
+        stroke: white;
+    }
 }
 
 @media only screen and (max-width: 728px) {
-  mobileheader {
-    display: flex;
-  }
-  .mobileheader-open {
-    display: flex;
-  }
+    mobileheader {
+        display: flex;
+    }
+    .mobileheader-open {
+        display: flex;
+    }
 }
 
-
-
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
-  
-  mobileheader {
-    display: flex;
-    div {
-      padding: $block8;
+    mobileheader {
+        display: flex;
+        div {
+            padding: $block8;
+        }
     }
-  }
-  .mobileheader-open {
-    display: flex;
-    div {
-      padding: $block8;
+    .mobileheader-open {
+        display: flex;
+        div {
+            padding: $block8;
+        }
     }
-  }
-  .overlay .closebtn {
-    position: absolute;
-    padding: $block8;
-    right: 0;
-  }
+    .overlay .closebtn {
+        position: absolute;
+        padding: $block8;
+        right: 0;
+    }
 }
