@@ -247,3 +247,54 @@
     }
 }
 
+<<<<<<< HEAD
+=======
+.kiva-logo-svg {
+    g {
+        fill: $backgroundColor;
+    }
+    .st0 {
+        fill: none;
+        stroke: #ffffff;
+        stroke-width: 30;
+        stroke-miterlimit: 10;
+        opacity: .5;
+    }
+}
+
+.imagery-icon-svg {
+    .st0 {
+        fill: none;
+        stroke: $backgroundColor;
+        stroke-width: 30;
+        stroke-miterlimit: 10;
+    }
+    .st1 {
+        opacity: 0.5;
+        fill: $backgroundColor;
+    }
+    .st2 {
+        fill: #FF00FF;
+    }
+}
+
+.voice-tone-icon-svg {
+    .st0 {
+        fill: none;
+        stroke: $backgroundColor;
+        stroke-width: 30;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+    }
+}
+
+.copy-data-icon-svg {
+    .st0 {
+        stroke: $backgroundColor;
+        stroke-width: 30;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+    }
+}
+>>>>>>> parent of 77823da... 1.0.54

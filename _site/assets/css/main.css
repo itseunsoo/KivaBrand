@@ -158,6 +158,7 @@ header svg { width: 55px; fill: #4faf4e; }
 
 .download-assets-grid button:hover { background-color: rgba(128, 128, 128, 0.089); }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 728px) { .hero-header { padding: 32px; }
   .page-grid-container { padding: 64px 32px 0 32px; }
   .page-grid { grid-template-columns: 1fr; }
@@ -178,6 +179,25 @@ header svg { width: 55px; fill: #4faf4e; }
   .download-assets-grid { grid-template-columns: 1fr 1fr 1fr; }
   .download-assets-grid button { padding: 24px; }
   .download-assets-grid button img { width: 30px; margin-right: 24px; } }
+=======
+@media only screen and (max-width: 728px) { .hero-header { padding: 32px; } .page-grid-container { padding: 64px 32px 0 32px; } .page-grid { grid-template-columns: 1fr; } .page-grid button { height: auto; } .page-grid a { margin-bottom: 0px; padding: 0; padding-bottom: 64px; } .hero { height: 550px; } .download-assets-grid-container { padding: 64px 32px 0 32px; } .download-assets-grid { grid-template-columns: 1fr; } .download-assets-grid button { padding: 16px; } }
+
+@media only screen and (max-width: 1024px) and (min-width: 729px) { .hero-header { padding: 48px; } .page-grid-container { padding: 64px 48px 0 48px; } .page-grid { grid-template-columns: 1fr 1fr; grid-gap: 24px; padding: 0; } .page-grid button .grid-text { width: 100%; position: relative; bottom: initial; text-align: left; } .page-grid a { margin-bottom: 0px; padding: 0; padding-bottom: 64px; } .hero { height: 400px; } .download-assets-grid-container { padding: 64px 48px 0 48px; } .download-assets-grid { grid-template-columns: 1fr 1fr 1fr; } .download-assets-grid button { padding: 24px; } .download-assets-grid button img { width: 30px; margin-right: 24px; } }
+
+.kiva-logo-svg g { fill: var(--background-color); }
+
+.kiva-logo-svg .st0 { fill: none; stroke: #ffffff; stroke-width: 30; stroke-miterlimit: 10; opacity: .5; }
+
+.imagery-icon-svg .st0 { fill: none; stroke: var(--background-color); stroke-width: 30; stroke-miterlimit: 10; }
+
+.imagery-icon-svg .st1 { opacity: 0.5; fill: var(--background-color); }
+
+.imagery-icon-svg .st2 { fill: #FF00FF; }
+
+.voice-tone-icon-svg .st0 { fill: none; stroke: var(--background-color); stroke-width: 30; stroke-linecap: round; stroke-miterlimit: 10; }
+
+.copy-data-icon-svg .st0 { stroke: var(--background-color); stroke-width: 30; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; }
+>>>>>>> parent of 77823da... 1.0.54
 
 footer { opacity: 0.5; margin: auto; padding: 32px 48px 32px 48px; }
 
@@ -282,12 +302,16 @@ footer a { text-decoration: none; color: var(--light-text-color); }
 
 .pages-footer { display: none; }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 728px) { .page-content { width: 100%; padding: 24px; }
   .page-content h1 { margin-top: 48px; }
   .page-content h1:first-child { margin-top: 48px; }
   .page-title { font-size: 2.5rem; margin-top: 90px; }
   .pages-footer { display: initial; }
   .pages-footer svg { margin-top: 16px; } }
+=======
+@media only screen and (max-width: 728px) { .page-content { width: 100%; padding: 24px; } .page-content h1 { margin-top: 48px; } .page-content h1:first-child { margin-top: 48px; } .page-title { margin-top: 90px; } .pages-footer { display: initial; } .pages-footer svg { margin-top: 16px; } }
+>>>>>>> parent of 77823da... 1.0.54
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) { .page-content { width: 100%; padding: 48px; }
   .page-content h1 { margin-top: 48px; }
