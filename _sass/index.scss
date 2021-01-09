@@ -255,7 +255,7 @@
     }
     .st0 {
         fill: none;
-        stroke: #ffffff;
+        stroke: $backgroundColor;
         stroke-width: 30;
         stroke-miterlimit: 10;
         opacity: .5;
@@ -292,6 +292,7 @@
     .st0 {
         stroke: $backgroundColor;
         stroke-width: 30;
+        fill: none;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-miterlimit: 10;

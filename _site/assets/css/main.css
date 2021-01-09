@@ -150,7 +150,7 @@ header svg { width: 55px; fill: #4faf4e; }
 
 .kiva-logo-svg g { fill: var(--background-color); }
 
-.kiva-logo-svg .st0 { fill: none; stroke: #ffffff; stroke-width: 30; stroke-miterlimit: 10; opacity: .5; }
+.kiva-logo-svg .st0 { fill: none; stroke: var(--background-color); stroke-width: 30; stroke-miterlimit: 10; opacity: .5; }
 
 .imagery-icon-svg .st0 { fill: none; stroke: var(--background-color); stroke-width: 30; stroke-miterlimit: 10; }
 
@@ -160,7 +160,7 @@ header svg { width: 55px; fill: #4faf4e; }
 
 .voice-tone-icon-svg .st0 { fill: none; stroke: var(--background-color); stroke-width: 30; stroke-linecap: round; stroke-miterlimit: 10; }
 
-.copy-data-icon-svg .st0 { stroke: var(--background-color); stroke-width: 30; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; }
+.copy-data-icon-svg .st0 { stroke: var(--background-color); stroke-width: 30; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; }
 
 footer { opacity: 0.5; margin: auto; padding: 32px 48px 32px 48px; }
 
@@ -262,7 +262,7 @@ footer a { text-decoration: none; color: var(--light-text-color); }
 
 .pages-footer { display: none; }
 
-@media only screen and (max-width: 728px) { .page-content { width: 100%; padding: 24px; } .page-content h1 { margin-top: 48px; } .page-content h1:first-child { margin-top: 48px; } .page-title { margin-top: 90px; } .pages-footer { display: initial; } .pages-footer svg { margin-top: 16px; } }
+@media only screen and (max-width: 728px) { .page-content { width: 100%; padding: 24px; } .page-content h1 { margin-top: 48px; } .page-content h1:first-child { margin-top: 48px; } .page-title { font-size: 2.5rem; margin-top: 90px; } .pages-footer { display: initial; } .pages-footer svg { margin-top: 16px; } }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) { .page-content { width: 100%; padding: 48px; } .page-content h1 { margin-top: 48px; } .page-content h1:first-child { margin-top: 48px; } .page-title { margin-top: 48px; } .pages-footer { display: initial; } .pages-footer svg { margin-top: 48px; } }
 
