@@ -1,6 +1,6 @@
 ---
 layout: pages
-title: Kiva Logo Logo Usage
+title: Logo Usage
 
 ---
 <div class="h1-link">
@@ -40,8 +40,8 @@ Our logo is based on simple shapes. It is carefully constructed to maintain owna
 # Clearspace
 Clearspace around the logo is equal to the cap height of the bottom part of the K.
 
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 837.7 368.6" style="enable-background:new 0 0 837.7 368.6;" xml:space="preserve">
 <style type="text/css">

@@ -14,11 +14,11 @@ html[data-theme="dark"] { --background-color: #202020; --light-text-color: #ffff
 
 @media (prefers-color-scheme: dark) { html, html[data-theme="dark"] { --background-color: #202020; --light-text-color: #ffffff; --highlight-color: #a0b0c5; --link-color: rgb(100, 210, 255); --main-background-color: rgb(28, 28, 30); --main-text-color: rgb(229, 229, 234); } html[data-theme="light"] { --background-color: #ffffff; --light-text-color: #202020; --highlight-color: #a0b0c5; --link-color: rgb(0, 112, 201); --main-background-color: rgb(255, 255, 255); --main-text-color: rgb(51, 51, 51); } }
 
-h1 { font-family: "Arial"; font-size: 2.4rem; font-weight: normal; }
+h1 { font-family: "Arial"; font-size: 2rem; font-weight: normal; }
 
-h2 { font-size: 1.4rem; font-weight: normal; }
+h2 { font-size: 1.25rem; font-weight: normal; }
 
-p { font-size: .92rem; line-height: 150%; }
+p { font-size: 1rem; line-height: 1.5; }
 
 hr { border: none; height: 0.5px; /* Set the hr color */ color: rgba(125, 125, 125, 0.5); /* old IE */ background-color: rgba(125, 125, 125, 0.5); /* Modern Browsers */ }
 
@@ -148,7 +148,7 @@ header svg { width: 55px; fill: #4faf4e; }
 
 footer { opacity: 0.5; margin: auto; padding: 32px 48px 32px 48px; }
 
-footer p { line-height: 0.8rem; }
+footer p { line-height: 100%; font-size: .875rem; }
 
 footer svg { width: 48px; fill: var(--light-text-color); }
 
@@ -178,7 +178,7 @@ footer a { text-decoration: none; color: var(--light-text-color); }
 @-o-keyframes fadein { from { opacity: 0; }
   to { opacity: 1; } }
 
-.sidenav { width: 300px; background-color: rgba(130, 130, 130, 0.05); color: var(--light-text-color); position: fixed; height: 100vh; overflow: scroll; font-size: 14px; border-style: solid; border-width: 0 1px 0 0; border-color: rgba(130, 130, 130, 0.2); }
+.sidenav { width: 300px; background-color: rgba(130, 130, 130, 0.05); color: var(--light-text-color); position: fixed; height: 100vh; overflow: scroll; font-size: .875rem; border-style: solid; border-width: 0 1px 0 0; border-color: rgba(130, 130, 130, 0.2); }
 
 .sidenav ul { padding: 0; }
 
@@ -234,7 +234,7 @@ footer a { text-decoration: none; color: var(--light-text-color); }
 
 .page-body li:before { content: "✓"; margin-right: 10px; color: #4faf4e; }
 
-.page-title { font-size: 1rem; color: var(--light-text-color); font-weight: normal; margin-bottom: 48px; }
+.page-title { font-size: 3.75rem; color: var(--light-text-color); font-weight: normal; margin-bottom: 48px; }
 
 .page-content { margin: auto; width: 45%; padding: 48px; margin-top: 16px; background-color: var(--background-color); }
 
