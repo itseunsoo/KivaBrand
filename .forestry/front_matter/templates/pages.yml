@@ -18,3 +18,5 @@ fields:
       format: markdown
   label: excerpt
   description: Excerpt of each brand guideline that will appear on the homepage.
+pages:
+- logo.md

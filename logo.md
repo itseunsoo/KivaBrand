@@ -1,6 +1,7 @@
 ---
 layout: pages
 title: Logo Usage
+excerpt: This is an example excerpt giving a concise summary of the page content
 
 ---
 <div class="h1-link">
