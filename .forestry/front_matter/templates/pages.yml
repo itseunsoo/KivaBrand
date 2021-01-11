@@ -8,3 +8,13 @@ fields:
 - type: text
   name: title
   label: title
+- name: excerpt
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: excerpt
+  description: Excerpt of each brand guideline that will appear on the homepage.
